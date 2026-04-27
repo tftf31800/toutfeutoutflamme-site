@@ -768,7 +768,7 @@ function HomePage() {
               <img
                 src="/Logoweb.png"
                 alt="Logo Tout Feu Tout Flamme"
-                className="relative h-24 w-24 rounded-3xl object-contain md:h-28 md:w-28"
+                className="relative h-36 w-36 rounded-3xl object-contain md:h-28 md:w-28"
                 onError={(event) => {
                   event.currentTarget.style.display = "none";
                 }}
