@@ -1288,7 +1288,7 @@ function CgvPage() {
               <p className="font-bold text-white">Version complète PDF</p>
               </div>
             <a
-              href="/pdf/CGV.pdf"
+              href="/pdf/CGV_NET.pdf"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-2xl border border-white/15 px-6 py-3 font-bold text-white transition hover:border-[#f77f00] hover:text-[#f77f00]"
