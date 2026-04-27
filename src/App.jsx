@@ -133,6 +133,8 @@ const zones = [
   "100 km autour",
 ];
 
+// ===== SEO LOCAL =====
+
 const seoCities = [
   "Saint-Gaudens",
   "Montréjeau",
@@ -141,17 +143,9 @@ const seoCities = [
   "Boulogne-sur-Gesse",
   "Salies-du-Salat",
   "Bagnères-de-Luchon",
-  "Luchon",
-  "Barbazan",
-  "Labarthe-Rivière",
-  "Valentine",
-  "Villeneuve-de-Rivière",
-  "Pointis-de-Rivière",
-  "Cierp-Gaud",
-  "Saint-Béat-Lez",
-  "Mane",
-  "Mazères-sur-Salat",
-  "Roquefort-sur-Garonne",
+  "Carbonne",
+  "Cazères",
+  "Martres-Tolosane",
   "Muret",
   "Portet-sur-Garonne",
   "Cugnaux",
@@ -164,23 +158,67 @@ const seoCities = [
   "Seysses",
   "Eaunes",
   "Labarthe-sur-Lèze",
-  "Carbonne",
-  "Noé",
-  "Longages",
   "Auterive",
   "Venerque",
-  "Lagardelle-sur-Lèze",
-  "Martres-Tolosane",
-  "Cazères",
-  "Rieux-Volvestre",
-  "Montesquieu-Volvestre",
-  "Saint-Martory",
-  "Beauchalot",
-  "Saint-Lys",
-  "Lherm",
-  "Fontenilles",
-  "Rieumes"
+  "Lagardelle-sur-Lèze"
 ];
+
+function slugify(city) {
+  return city
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/'/g, "")
+    .replace(/\s+/g, "-");
+}
+
+const seoPages = seoCities.map((city) => ({
+  city,
+  slug: `entretien-poele-granules-${slugify(city)}`,
+  title: `Entretien poêle à granulés à ${city} | Tout Feu Tout Flamme`,
+  description: `Entretien, ramonage mécanique avec certificat et contrats annuels pour poêle à granulés à ${city}. Intervention artisanale, sérieuse et toutes marques.`
+}));
+
+function SeoCityPage({ city }) {
+  return (
+    <main className="min-h-screen bg-[#050816] px-6 py-24 text-white">
+      <h1 className="text-4xl font-bold mb-6">
+        Entretien poêle à granulés à {city}
+      </h1>
+
+      <p className="text-white/80 max-w-3xl mb-8">
+        Tout Feu Tout Flamme intervient à {city} pour l’entretien,
+        le ramonage et le dépannage de poêles à granulés toutes marques.
+      </p>
+
+      <a
+        href="/souscrire"
+        className="bg-[#f77f00] px-6 py-3 rounded-xl font-semibold"
+      >
+        Voir les contrats →
+      </a>
+    </main>
+  );
+}
+
+function slugify(city) {
+  return city
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/'/g, "")
+    .replace(/\s+/g, "-");
+}
+
+const seoPages = seoCities.map((city) => ({
+  city,
+  slug: `entretien-poele-granules-${slugify(city)}`,
+  title: `Entretien poêle à granulés à ${city}`,
+  metaTitle: `Entretien poêle à granulés à ${city} | Tout Feu Tout Flamme`,
+  metaDescription: `Entretien, ramonage et contrat annuel pour poêle à granulés à ${city}. Intervention artisanale, contrôle sécurité, nettoyage complet et certificat de ramonage.`,
+  h1: `Entretien poêle à granulés à ${city}`,
+  intro: `Vous recherchez un professionnel pour l’entretien de votre poêle à granulés à ${city} ? Tout Feu Tout Flamme intervient pour le nettoyage complet, le ramonage mécanique, les contrôles de sécurité et les réglages standards de votre appareil.`,
+}));
 
 const tariffRows = [
   ["Entretien annuel obligatoire", "Entretien + ramonage conduit, hors pièces éventuelles", "139 € TTC"],
@@ -581,6 +619,113 @@ function Layout({ children }) {
 }
 
 function HomePage() {
+
+  const path = window.location.pathname.replace("/", "");
+const currentSeoPage = seoPages.find((page) => page.slug === path);
+
+if (currentSeoPage) {
+  return (
+    <>
+      <SEO
+        route={`/${currentSeoPage.slug}`}
+        title={currentSeoPage.title}
+        description={currentSeoPage.description}
+        keywords={`entretien poêle à granulés ${currentSeoPage.city}, ramonage poêle à granulés ${currentSeoPage.city}, dépannage poêle à granulés ${currentSeoPage.city}, contrat entretien poêle ${currentSeoPage.city}`}
+      />
+
+      <main className="min-h-screen bg-[#050816] text-white">
+        <section className="relative overflow-hidden px-6 py-24">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(247,127,0,0.22),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(28,37,65,0.9),transparent_45%)]" />
+
+          <div className="relative mx-auto max-w-6xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-[#f77f00]">
+              Tout Feu Tout Flamme
+            </p>
+
+            <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
+              Entretien poêle à granulés à {currentSeoPage.city}
+            </h1>
+
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/80">
+              Vous recherchez un professionnel pour l’entretien de votre poêle à granulés à{" "}
+              {currentSeoPage.city} ? Tout Feu Tout Flamme intervient pour le nettoyage complet,
+              le ramonage mécanique avec certificat, les contrôles de sécurité et les réglages
+              standards de votre appareil.
+            </p>
+
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="/souscrire"
+                className="rounded-xl bg-gradient-to-r from-[#f77f00] to-[#ffb703] px-7 py-4 font-semibold text-white shadow-lg shadow-orange-500/20 transition hover:scale-105"
+              >
+                Voir les contrats d’entretien →
+              </a>
+
+              <a
+                href="tel:0761647765"
+                className="rounded-xl border border-white/15 bg-white/10 px-7 py-4 font-semibold text-white backdrop-blur transition hover:bg-white/15"
+              >
+                Appeler maintenant
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 py-16">
+          <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-7 shadow-xl">
+              <h2 className="mb-3 text-2xl font-bold">Entretien annuel</h2>
+              <p className="text-white/70">
+                Nettoyage complet de l’appareil, contrôle visuel de l’installation,
+                vérification des organes de sécurité et réglages standards.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-[#f77f00]/30 bg-[#f77f00]/10 p-7 shadow-xl">
+              <h2 className="mb-3 text-2xl font-bold">Ramonage certifié</h2>
+              <p className="text-white/70">
+                Ramonage mécanique du conduit avec remise d’un certificat, selon les
+                règles de l’art et les prescriptions applicables.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-7 shadow-xl">
+              <h2 className="mb-3 text-2xl font-bold">Contrats annuels</h2>
+              <p className="text-white/70">
+                Formules Essentiel, Confort et Sérénité pour sécuriser votre chauffage
+                toute l’année autour de {currentSeoPage.city}.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 pb-24">
+          <div className="mx-auto max-w-6xl rounded-3xl border border-white/10 bg-[#0b132b]/80 p-8 shadow-2xl md:p-12">
+            <h2 className="mb-5 text-3xl font-bold">
+              Intervention à {currentSeoPage.city} et aux alentours
+            </h2>
+
+            <p className="max-w-4xl text-lg leading-relaxed text-white/75">
+              Basé dans le secteur de Saint-Gaudens, Tout Feu Tout Flamme accompagne
+              les particuliers pour l’entretien de poêles à granulés toutes marques.
+              L’objectif : un appareil propre, sécurisé, mieux réglé et prêt pour la
+              prochaine saison de chauffe.
+            </p>
+
+            <div className="mt-8">
+              <a
+                href="/#contact"
+                className="inline-flex rounded-xl border border-[#f77f00]/40 px-6 py-3 font-semibold text-[#ffb703] transition hover:bg-[#f77f00]/10"
+              >
+                Demander une intervention à {currentSeoPage.city}
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}
   return (
     <>
       <SEO
