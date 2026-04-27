@@ -751,17 +751,17 @@ function HomePage() {
         description="Tout Feu Tout Flamme intervient à Saint-Gaudens 31800 et dans un rayon de 100 km pour l’entretien, le ramonage mécanique, le dépannage et les contrats de poêles à granulés."
         keywords={defaultKeywords}
       />
+<section className="relative overflow-hidden py-16 md:py-24">
+  <div className="absolute inset-0 -z-10">
+    <img
+      src="/bg-hero.png"
+      alt=""
+      className="h-full w-full object-cover object-left-top"
+    />
+    <div className="absolute inset-0 bg-[#0b132b]/45" />
+  </div>
 
-<div className="absolute inset-0 -z-10">
-  <img
-    src="/bg-hero.png"
-    alt=""
-    className="h-full w-full object-cover object-left-top"
-  />
-
-  {/* voile léger uniquement */}
-  <div className="absolute inset-0 bg-[#0b132b]/45" />
-</div>
+  <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
     <motion.div
       initial={{ opacity: 0, y: -18 }}
       animate={{ opacity: 1, y: 0 }}
