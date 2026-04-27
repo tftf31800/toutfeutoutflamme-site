@@ -768,7 +768,7 @@ function HomePage() {
   {/* GLOW */}
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.20),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%)]" />
 
-</div>
+</section>
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
           <motion.div
             initial={{ opacity: 0, y: -18 }}
