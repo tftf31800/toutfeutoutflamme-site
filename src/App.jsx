@@ -811,6 +811,12 @@ return (
               </span>
             </h1>
 
+          </div>
+        </section>
+      </>
+    );
+}
+
             <p className="mt-8 max-w-2xl text-lg font-medium leading-9 text-white/75">
               Entretien annuel, ramonage mécanique avec certificat, dépannage et contrats d’entretien pour poêles à granulés à Saint-Gaudens, dans le Comminges, en Haute-Garonne et dans un rayon de 100 km.
             </p>
