@@ -774,7 +774,7 @@ function HomePage() {
       className="relative text-center lg:text-left"
     >
       {/* NOM CENTRÉ */}
-      <div className="absolute top-10 left-1/2 w-screen -translate-x-[35%] pointer-events-none">
+      <div className="absolute top-5 left-1/2 w-screen -translate-x-[35%] pointer-events-none">
         <p
           className="text-center text-4xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-6xl lg:text-7xl"
           style={{ fontFamily: "'Great Vibes', cursive" }}
