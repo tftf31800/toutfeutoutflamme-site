@@ -355,21 +355,102 @@ const blogArticles = [
     `,
   },
   {
-    slug: "obligations-ramonage-poele-granules",
-    title: "Ramonage poêle à granulés : quelles sont les obligations réelles ?",
-    date: "27 mars 2026",
-    category: "Ramonage",
-    image: "/blog/ramonage.jpg",
-    excerpt:
-      "Entretien annuel, ramonage mécanique, certificat : ce qu’il faut savoir pour rester en règle.",
-    content: `
-      <p>Le ramonage mécanique du conduit et l’entretien annuel permettent de sécuriser l’installation et de conserver une preuve pour l’assurance.</p>
-      <h2>Le certificat de ramonage</h2>
-      <p>Il constitue la preuve officielle de l’intervention réalisée par un professionnel.</p>
-      <h2>Pourquoi ne pas attendre ?</h2>
-      <p>Un conduit encrassé augmente les risques d’incendie, de mauvais tirage et de panne.</p>
-    `,
-  },
+{
+  slug: "ramonage-poele-granules-obligations-ars-occitanie",
+  title: "Ramonage poêle à granulés : obligations ARS Occitanie, certificat et assurance",
+  date: "6 avril 2026",
+  category: "Ramonage",
+  image: "/blog/ramonage.jpg",
+  excerpt:
+    "Ramonage obligatoire, entretien annuel, certificat : ce que dit la réglementation en Occitanie pour être en règle.",
+  content: `
+    <p>Vous possédez un poêle à granulés à Saint-Gaudens ou dans le Comminges ? Alors vous êtes concerné par une réglementation stricte encadrée par le Code de santé publique et appliquée en Occitanie.</p>
+
+    <p>Depuis 2023, les règles ont été harmonisées au niveau national, notamment sous l’impulsion des autorités sanitaires comme l’ARS, afin de limiter les risques d’incendie et la pollution de l’air.</p>
+
+    <h2>Ramonage obligatoire : ce que dit la loi</h2>
+
+    <p>Le décret n°2023-641 du 20 juillet 2023 impose :</p>
+
+    <ul>
+      <li>Un <strong>entretien annuel obligatoire</strong> de votre poêle</li>
+      <li>Un <strong>ramonage mécanique du conduit au minimum une fois par an</strong></li>
+      <li>Une intervention réalisée par un <strong>professionnel qualifié</strong></li>
+    </ul>
+
+    <p>Ces obligations s’appliquent à tous les appareils à granulés en France, y compris en Occitanie. :contentReference[oaicite:0]{index=0}</p>
+
+    <h2>Le rôle de l’ARS Occitanie</h2>
+
+    <p>L’Agence Régionale de Santé veille à l’application de ces règles dans le cadre du Code de santé publique :</p>
+
+    <ul>
+      <li>Réduction des émissions polluantes</li>
+      <li>Prévention des intoxications au monoxyde de carbone</li>
+      <li>Amélioration de la qualité de l’air intérieur</li>
+    </ul>
+
+    <p>Un appareil mal entretenu peut devenir dangereux pour la santé et l’habitation. :contentReference[oaicite:1]{index=1}</p>
+
+    <h2>Ramonage et entretien : deux obligations différentes</h2>
+
+    <p>Attention, ce sont deux interventions complémentaires :</p>
+
+    <ul>
+      <li><strong>Le ramonage :</strong> nettoyage mécanique du conduit pour éliminer suie et dépôts</li>
+      <li><strong>L’entretien :</strong> nettoyage interne + vérification des organes de sécurité</li>
+    </ul>
+
+    <p>Le décret impose les deux pour garantir un fonctionnement sécurisé. :contentReference[oaicite:2]{index=2}</p>
+
+    <h2>Le certificat de ramonage : obligatoire</h2>
+
+    <p>Après chaque intervention, un certificat doit vous être remis sous 15 jours.</p>
+
+    <ul>
+      <li>Il prouve la conformité de l’installation</li>
+      <li>Il est exigé par les assurances</li>
+      <li>Il doit être conservé plusieurs années</li>
+    </ul>
+
+    <blockquote>
+      <p><strong>Important :</strong> sans certificat valide, votre assurance peut refuser toute indemnisation en cas de sinistre. :contentReference[oaicite:3]{index=3}</p>
+    </blockquote>
+
+    <h2>Quels sont les risques en cas de non-respect ?</h2>
+
+    <ul>
+      <li>Amende pouvant aller jusqu’à 450€</li>
+      <li>Refus d’indemnisation par l’assurance</li>
+      <li>Risque d’incendie de conduit</li>
+      <li>Intoxication au monoxyde de carbone</li>
+    </ul>
+
+    <p>Un simple manque d’entretien peut avoir des conséquences graves. :contentReference[oaicite:4]{index=4}</p>
+
+    <h2>Fréquence recommandée en Occitanie</h2>
+
+    <p>La réglementation impose :</p>
+
+    <ul>
+      <li>1 ramonage minimum par an (obligatoire)</li>
+      <li>2 ramonages recommandés en cas d’usage intensif</li>
+    </ul>
+
+    <p>Cela dépend notamment de votre consommation de granulés. :contentReference[oaicite:5]{index=5}</p>
+
+    <h2>Ramonage et entretien à Saint-Gaudens</h2>
+
+    <p>Tout Feu Tout Flamme intervient à Saint-Gaudens et dans tout le Comminges : Luchon, Montréjeau, Aspet, Lannemezan, Cazères…</p>
+
+    <p>👉 Un entretien conforme à la réglementation vous garantit sécurité, performance et tranquillité toute l’année.</p>
+
+    <div>
+      <p><strong>Besoin d’un ramonage conforme aux normes ?</strong></p>
+      <p>N’attendez pas l’hiver. Prenez rendez-vous dès maintenant.</p>
+    </div>
+  `,
+},
   {
     slug: "point-de-rosee-conduit-poele-granules",
     title: "Poêle à granulés : comprendre et éviter le point de rosée",
@@ -944,21 +1025,108 @@ function BlogPage({ slug }) {
   if (slug) {
     if (!article) {
       return (
-        <section className="mx-auto max-w-7xl px-5 py-16">
-          <SEO
-            route={`/blog/${slug}`}
-            title="Article introuvable | Tout Feu Tout Flamme"
-            description="Article de blog introuvable sur le site Tout Feu Tout Flamme."
-            keywords={defaultKeywords}
-          />
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.055] p-8 shadow-2xl shadow-black/10 backdrop-blur-xl">
-            <p className="text-sm font-black uppercase tracking-[0.35em] text-[#4cc9f0]">Blog</p>
-            <h1 className="mt-3 font-serif text-4xl font-black text-white">Article introuvable</h1>
-            <a href="#/blog" className="mt-8 inline-flex items-center gap-2 font-bold text-[#f77f00]">
-              ← Retour au blog
-            </a>
+<section id="blog" className="bg-[#0b132b] text-white border-t border-white/10">
+  <div className="max-w-6xl mx-auto px-6 py-20">
+
+    {/* HERO BLOG */}
+    <div className="text-center mb-16">
+      <h1 className="text-4xl md:text-5xl font-serif mb-6">
+        Entretien & Ramonage Poêle à Granulés
+        <br />à Saint-Gaudens
+      </h1>
+
+      <p className="text-gray-400 max-w-2xl mx-auto">
+        Conseils d’expert, réglementation ARS Occitanie et bonnes pratiques
+        pour entretenir votre poêle à granulés en toute sécurité.
+      </p>
+    </div>
+
+    {/* ARTICLE MIS EN AVANT */}
+    {blogArticles
+      .filter(article =>
+        article.slug === "ramonage-poele-granules-obligations-ars-occitanie"
+      )
+      .map(article => (
+        <div
+          key={article.slug}
+          className="mb-20 rounded-3xl border border-orange-500/30 bg-orange-500/10 p-8 shadow-2xl"
+        >
+          <p className="text-sm text-orange-400 mb-2">
+            ⭐ Article recommandé
+          </p>
+
+          <h2 className="text-3xl font-semibold mb-4">
+            {article.title}
+          </h2>
+
+          <p className="text-gray-300 mb-6">
+            {article.excerpt}
+          </p>
+
+          <button
+            onClick={() => setSelectedArticle(article)}
+            className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-xl font-semibold transition"
+          >
+            Lire l’article
+          </button>
+        </div>
+      ))}
+
+    {/* LISTE DES AUTRES ARTICLES */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {blogArticles
+        .filter(article =>
+          article.slug !== "ramonage-poele-granules-obligations-ars-occitanie"
+        )
+        .map(article => (
+          <div
+            key={article.slug}
+            className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:scale-[1.02] transition cursor-pointer"
+            onClick={() => setSelectedArticle(article)}
+          >
+            <img
+              src={article.image}
+              alt={article.title}
+              className="h-48 w-full object-cover"
+            />
+
+            <div className="p-6">
+              <p className="text-xs text-gray-400 mb-2">
+                {article.date} • {article.category}
+              </p>
+
+              <h3 className="text-lg font-semibold mb-3">
+                {article.title}
+              </h3>
+
+              <p className="text-gray-400 text-sm">
+                {article.excerpt}
+              </p>
+            </div>
           </div>
-        </section>
+        ))}
+    </div>
+
+    {/* CTA FINAL */}
+    <div className="text-center mt-20">
+      <h3 className="text-2xl font-semibold mb-4">
+        Besoin d’un entretien ou d’un ramonage ?
+      </h3>
+
+      <p className="text-gray-400 mb-6">
+        Intervention rapide à Saint-Gaudens et dans tout le Comminges
+      </p>
+
+      <a
+        href="https://souscrire.toutfeutoutflamme31.fr"
+        className="bg-orange-500 hover:bg-orange-600 px-8 py-4 rounded-xl font-semibold shadow-lg transition"
+      >
+        Prendre rendez-vous
+      </a>
+    </div>
+
+  </div>
+</section>
       );
     }
 
