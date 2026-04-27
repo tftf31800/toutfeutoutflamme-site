@@ -758,12 +758,12 @@ function HomePage() {
     <img
       src="/bg-hero.png"
       alt=""
-      className="absolute inset-0 h-full w-full object-cover"
+       className="absolute inset-0 h-full w-full object-cover opacity-90"
     />
 
-    <div className="absolute inset-0 bg-[linear-gradient(135deg,#0b132b99_0%,#0a192faa_40%,#0f2742cc_100%)]" />
+<div className="absolute inset-0 bg-[linear-gradient(135deg,#0b132b66_0%,#0a192f88_45%,#0f2742bb_100%)]" />
 
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.20),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%)]" />
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_45%,rgba(255,255,255,0.10),transparent_38%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.14),transparent_30%)]" />
   </div>
 
   <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
@@ -776,13 +776,7 @@ function HomePage() {
             <div className="relative mb-5 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30 backdrop-blur-xl md:h-32 md:w-32">
               <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_50%_20%,rgba(247,127,0,0.28),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(76,201,240,0.20),transparent_50%)]" />
 
-              <img
-                src="/Logoweb.png"
-                alt="Logo Tout Feu Tout Flamme"
-                className="relative h-36 w-36 rounded-3xl object-contain md:h-28 md:w-28"
-                onError={(event) => {
-                  event.currentTarget.style.display = "none";
-                }}
+              }}
               />
 
               <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
