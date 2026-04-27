@@ -865,6 +865,14 @@ function HomePage() {
     </motion.div>
   </div>
 </section>
+            <ServicesSection />
+      <FeaturedContract />
+      <SeoTextSection />
+      <ZonesSection />
+      <FinalCta />
+    </>
+  );
+}
 function TrustItem({ title, text, icon: Icon }) {
   return (
     <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
