@@ -745,39 +745,38 @@ function Layout({ children }) {
 function HomePage() {
   return (
     <>
-      <SEO
-        route="/"
-        title="Entretien poêle à granulés Saint-Gaudens 31800 | Tout Feu Tout Flamme"
-        description="Tout Feu Tout Flamme intervient à Saint-Gaudens 31800 et dans un rayon de 100 km pour l’entretien, le ramonage mécanique, le dépannage et les contrats de poêles à granulés."
-        keywords={defaultKeywords}
-      />
-      <div className="fixed inset-0 -z-10">
-  <img
-    src="/bg-hero.png"
-    alt=""
-    className="h-full w-full object-cover object-left-top"
-  />
+      <SEO ... />
 
-  {/* voile sombre pour lisibilité */}
-  <div className="absolute inset-0 bg-[#0b132b]/70" />
-</div>
-  <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
-    <motion.div
-      initial={{ opacity: 0, y: -18 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
-      className="relative text-center lg:text-left"
-    >
-      {/* NOM CENTRÉ */}
-      <div className="absolute top-5 left-1/2 w-screen -translate-x-[35%] pointer-events-none">
-        <p
-          className="text-center text-4xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-5xl lg:text-6xl"
-          style={{ fontFamily: "'Great Vibes', cursive" }}
-        >
-          Tout Feu Tout Flamme
-        </p>
+      {/* BACKGROUND GLOBAL */}
+      <div className="fixed inset-0 -z-10">
+        <img
+          src="/bg-hero.png"
+          alt=""
+          className="h-full w-full object-cover object-left-top"
+        />
+        <div className="absolute inset-0 bg-[#0b132b]/70" />
       </div>
 
+      {/* CONTENU */}
+      <section className="relative z-10 py-16 md:py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
+
+          <motion.div
+            initial={{ opacity: 0, y: -18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            className="relative text-center lg:text-left"
+          >
+
+            {/* NOM CENTRÉ */}
+            <div className="absolute top-5 left-1/2 -translate-x-1/2 w-full pointer-events-none">
+              <p
+                className="text-center text-4xl md:text-5xl lg:text-6xl text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)]"
+                style={{ fontFamily: "'Great Vibes', cursive" }}
+              >
+                Tout Feu Tout Flamme
+              </p>
+            </div>
       <p className="mt-24 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
         Benjamin Plessis
       </p>
