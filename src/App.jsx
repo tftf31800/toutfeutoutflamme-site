@@ -608,6 +608,17 @@ const currentSeoPage = seoPages.find((page) => page.slug === path);
 
 if (currentSeoPage) {
   return (
+        <Routes>
+
+      {/* PAGE ACCUEIL */}
+      <Route path="/" element={<HomePage />} />
+
+      {/* PAGE CGV */}
+      <Route path="/cgv" element={<CGV />} />
+
+    </Routes>
+  );
+}
     <>
       <SEO
         route={`/${currentSeoPage.slug}`}
