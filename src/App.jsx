@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
+
+import { ShieldCheck, FileText, Scale, Flame } from "lucide-react";
 import {
   Flame,
   ShieldCheck,
@@ -1712,7 +1714,7 @@ function CgvPage() {
 }
   import { ShieldCheck, FileText, Scale, Flame } from "lucide-react";
 
-export default function CGV() {
+function CGV() {
   return (
     <main className="min-h-screen bg-[#070b16] text-white">
       <section className="relative overflow-hidden px-6 py-20">
