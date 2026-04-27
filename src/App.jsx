@@ -753,8 +753,22 @@ function HomePage() {
       />
 
       <section className="relative overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.16),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%),linear-gradient(135deg,#0b132b_0%,#0a192f_42%,#0f2742_100%)]" />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
+  
+  {/* IMAGE FOND */}
+  <img
+    src="/bg-hero.png"
+    alt=""
+    className="absolute inset-0 h-full w-full object-cover"
+  />
 
+  {/* OVERLAY SOMBRE PREMIUM */}
+  <div className="absolute inset-0 bg-[linear-gradient(135deg,#0b132bcc_0%,#0a192fcc_40%,#0f2742cc_100%)]" />
+
+  {/* GLOW */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.20),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%)]" />
+
+</div>
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
           <motion.div
             initial={{ opacity: 0, y: -18 }}
