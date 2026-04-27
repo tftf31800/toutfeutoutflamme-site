@@ -1,80 +1,150 @@
-{
-  slug: "comment-fonctionne-poele-granules-saint-gaudens",
-  title: "Comment fonctionne un poêle à granulés ? Le guide de votre expert à Saint-Gaudens",
-  date: "30 mars 2026",
-  category: "Conseils",
-  image: "/blog/fonctionnement_poele_granules.jpg",
-  excerpt:
-    "Vis sans fin, bougie d’allumage, extracteur de fumées… découvrez le fonctionnement complet d’un poêle à granulés.",
-  content: `
-    <p>Vous envisagez d'installer un poêle à granulés en Haute-Garonne, ou vous êtes simplement curieux de comprendre le fonctionnement de ce mode de chauffage moderne ?</p>
+export default function ArticleFonctionnementPoele() {
+  return (
+    <article className="max-w-4xl mx-auto px-6 py-16 text-white">
+      <p className="mb-4 text-sm uppercase tracking-[0.25em] text-orange-400">
+        Conseils poêle à granulés
+      </p>
 
-    <p>Apprécié pour son côté écologique et son confort d'utilisation, le poêle à pellets a révolutionné le chauffage au bois dans le 31 en y apportant une bonne dose de technologie. Fini la corvée de bûches : place à l'automatisation.</p>
+      <h1 className="mb-6 text-4xl font-serif leading-tight md:text-5xl">
+        Comment fonctionne un poêle à granulés ? Le guide de votre expert à
+        Saint-Gaudens
+      </h1>
 
-    <p>Tout Feu Tout Flamme 31, votre spécialiste à Saint-Gaudens, vous explique son fonctionnement étape par étape.</p>
+      <p className="mb-4 text-lg text-gray-300">
+        Vous envisagez d&apos;installer un poêle à granulés en Haute-Garonne, ou
+        vous êtes simplement curieux de comprendre la magie derrière cette
+        chaleur douce et constante ?
+      </p>
 
-    <h2>1. L’approvisionnement : un dosage millimétré</h2>
+      <p className="mb-10 text-gray-300">
+        Apprécié pour son confort d&apos;utilisation, le poêle à pellets a
+        révolutionné le chauffage au bois dans le 31 en y apportant une vraie
+        dose de technologie. Fini la corvée de bûches : place à
+        l&apos;automatisation.
+      </p>
 
-    <p>Tout commence dans la trémie (le réservoir du poêle) où vous versez vos sacs de granulés.</p>
+      <section className="mb-12">
+        <h2 className="mb-4 text-2xl font-semibold text-orange-400">
+          1. L&apos;approvisionnement : un dosage millimétré
+        </h2>
 
-    <p>L’élément central est la <strong>vis sans fin</strong> : ce système motorisé transporte les pellets vers le creuset.</p>
+        <p className="mb-4 text-gray-300">
+          Tout commence dans la trémie, le réservoir du poêle, où vous versez
+          vos sacs de granulés. L&apos;élément central est la vis sans fin : ce
+          système motorisé transporte les granulés vers le creuset.
+        </p>
 
-    <p>Le fonctionnement est entièrement piloté par la carte électronique du poêle :</p>
+        <p className="text-gray-300">
+          La carte électronique contrôle ce mécanisme. Plus vous demandez une
+          température élevée, plus la vis tourne rapidement pour alimenter la
+          flamme.
+        </p>
+      </section>
 
-    <ul>
-      <li>Plus la température demandée est élevée</li>
-      <li>Plus la vis tourne rapidement</li>
-      <li>Plus la combustion est intense</li>
-    </ul>
+      <section className="mb-12">
+        <h2 className="mb-4 text-2xl font-semibold text-orange-400">
+          2. La combustion : un allumage automatique et sécurisé
+        </h2>
 
-    <h2>2. La combustion : un allumage automatique et sécurisé</h2>
+        <p className="mb-4 text-gray-300">
+          Une fois les granulés tombés dans le creuset, le poêle gère
+          l&apos;allumage automatiquement.
+        </p>
 
-    <p>Une fois les granulés déposés dans le creuset, le poêle gère l’allumage sans intervention :</p>
+        <ul className="mb-4 list-disc space-y-2 pl-6 text-gray-300">
+          <li>
+            Une bougie d&apos;allumage chauffe l&apos;air à très haute
+            température.
+          </li>
+          <li>Cet air chaud enflamme les granulés en quelques minutes.</li>
+          <li>
+            Un extracteur de fumées alimente la combustion et évacue les gaz
+            vers le conduit.
+          </li>
+        </ul>
 
-    <ul>
-      <li><strong>Une bougie d’allumage</strong> chauffe l’air à haute température</li>
-      <li>L’air chaud enflamme les granulés</li>
-      <li><strong>Un extracteur de fumées</strong> alimente la combustion et évacue les gaz</li>
-    </ul>
+        <p className="text-gray-300">
+          Le résultat : un démarrage propre, rapide et sécurisé, sans allumage
+          manuel.
+        </p>
+      </section>
 
-    <p>Ce système garantit un démarrage rapide, propre et sécurisé.</p>
+      <section className="mb-12">
+        <h2 className="mb-4 text-2xl font-semibold text-orange-400">
+          3. La diffusion : une chaleur homogène dans la pièce
+        </h2>
 
-    <h2>3. La diffusion : une chaleur homogène</h2>
+        <p className="mb-4 text-gray-300">
+          Contrairement à une cheminée classique, le poêle à granulés diffuse la
+          chaleur de manière active. La flamme chauffe un échangeur thermique.
+        </p>
 
-    <p>Contrairement à une cheminée classique, le poêle à granulés diffuse la chaleur de manière active.</p>
+        <p className="text-gray-300">
+          Un ventilateur aspire l&apos;air ambiant, le réchauffe au contact de
+          l&apos;échangeur, puis le propulse dans la pièce. C&apos;est ce qu’on
+          appelle la convection forcée.
+        </p>
+      </section>
 
-    <p>La flamme chauffe un <strong>échangeur thermique</strong>, puis :</p>
+      <div className="mb-12 rounded-2xl border border-orange-500/30 bg-orange-500/10 p-6">
+        <h2 className="mb-3 text-2xl font-semibold text-orange-400">
+          💡 L&apos;avantage de la régulation électronique
+        </h2>
 
-    <ul>
-      <li>Un ventilateur aspire l’air ambiant</li>
-      <li>L’air est réchauffé au contact de l’échangeur</li>
-      <li>Il est redistribué dans la pièce</li>
-    </ul>
+        <p className="mb-4 text-gray-300">
+          Relié à une sonde, le poêle maintient automatiquement la température
+          programmée. Par exemple, si vous demandez 20°C, l&apos;appareil adapte
+          sa puissance et se met en veille lorsque la température est atteinte.
+        </p>
 
-    <p>Résultat : une montée en température rapide et une chaleur uniforme, idéale pour les maisons du Comminges.</p>
+        <p className="text-gray-300">
+          Cette gestion intelligente permet d&apos;optimiser la consommation de
+          granulés tout en conservant un excellent confort thermique.
+        </p>
+      </div>
 
-    <h2>💡 Le confort de la régulation électronique</h2>
+      <blockquote className="mb-12 rounded-2xl border-l-4 border-green-500 bg-[#1b4332]/20 p-6 text-gray-300">
+        <p>
+          <strong className="text-green-400">Le saviez-vous ?</strong> À la
+          différence d&apos;une cheminée traditionnelle, un poêle à granulés
+          nécessite une alimentation électrique et un entretien régulier pour
+          garantir sa performance, sa sécurité et sa longévité.
+        </p>
+      </blockquote>
 
-    <p>Le véritable atout du poêle à granulés est sa gestion intelligente.</p>
+      <section className="mb-12">
+        <h2 className="mb-4 text-2xl font-semibold text-orange-400">
+          Installation de poêles à granulés autour de Saint-Gaudens
+        </h2>
 
-    <p>Grâce à une sonde de température :</p>
+        <p className="mb-4 text-gray-300">
+          Vous habitez à Montréjeau, Lannemezan, Aspet ou Luchon ? Tout Feu Tout
+          Flamme vous accompagne dans votre projet de chauffage aux granulés.
+        </p>
 
-    <ul>
-      <li>Vous définissez une température (ex : 20°C)</li>
-      <li>Le poêle adapte automatiquement sa puissance</li>
-      <li>Il se met en veille lorsque la température est atteinte</li>
-    </ul>
+        <p className="text-gray-300">
+          Nous intervenons dans un rayon d&apos;environ 100 km autour de
+          Saint-Gaudens pour vous conseiller, entretenir votre appareil et vous
+          aider à profiter d&apos;une chaleur fiable tout l&apos;hiver.
+        </p>
+      </section>
 
-    <p>Ce pilotage permet d’atteindre un rendement supérieur à 85 %, tout en optimisant la consommation de granulés.</p>
+      <div className="mt-16 rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-2xl">
+        <h3 className="mb-4 text-2xl font-semibold">
+          Besoin d&apos;un conseil ou d&apos;un entretien ?
+        </h3>
 
-    <blockquote>
-      <p><strong>À savoir :</strong> un poêle à granulés nécessite une alimentation électrique et un entretien annuel pour garantir performance, sécurité et longévité.</p>
-    </blockquote>
+        <p className="mb-6 text-gray-300">
+          Faites appel à votre spécialiste poêle à granulés à Saint-Gaudens.
+        </p>
 
-    <h2>Installation de poêles à granulés autour de Saint-Gaudens</h2>
-
-    <p>Vous habitez à Montréjeau, Lannemezan, Aspet ou Luchon ?</p>
-
-    <p>Tout Feu Tout Flamme vous accompagne dans votre projet avec des solutions adaptées aux hivers des Pyrénées.</p>
-  `,
-},
+        <a
+          href="https://souscrire.toutfeutoutflamme31.fr"
+          className="inline-block rounded-xl bg-orange-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:bg-orange-600"
+        >
+          Prendre rendez-vous
+        </a>
+      </div>
+    </article>
+  );
+}
