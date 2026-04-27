@@ -752,7 +752,7 @@ function HomePage() {
         keywords={defaultKeywords}
       />
 <section className="relative overflow-hidden py-16 md:py-24">
-  <div className="absolute inset-0 -z-10">
+  <div className="absolute inset-0 z-0">
     <img
       src="/bg-hero.png"
       alt=""
@@ -761,7 +761,7 @@ function HomePage() {
     <div className="absolute inset-0 bg-[#0b132b]/45" />
   </div>
 
-  <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
+  <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
     <motion.div
       initial={{ opacity: 0, y: -18 }}
       animate={{ opacity: 1, y: 0 }}
