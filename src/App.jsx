@@ -1709,7 +1709,7 @@ function CgvPage() {
     ["Prix annuel TTC", "139,00 €", "189,00 €", "249,00 €"],
     ["Mensualité via Stripe", "13,90 € / mois", "18,90 € / mois", "24,90 € / mois"],
   ];
-
+}
   import { ShieldCheck, FileText, Scale, Flame } from "lucide-react";
 
 export default function CGV() {
