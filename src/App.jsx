@@ -859,13 +859,14 @@ function HomePage() {
         </div>
       </div>
     </motion.div>
-  </div>
+</div>
 </section>
+
       <ServicesSection />
       <FeaturedContract />
       <SeoTextSection />
       <ZonesSection />
-      <FinalCta /> 
+      <FinalCta />
     </>
   );
 }
