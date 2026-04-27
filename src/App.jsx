@@ -204,7 +204,7 @@ const blogArticles = [
     title: "Comment fonctionne un poêle à granulés ? Le guide de votre expert à Saint-Gaudens",
     date: "30 mars 2026",
     category: "Conseils",
-    image: "/blog/fonctionnement_poele_granules.png",
+    image: "/blog/fonctionnement_poele_granules.jpg",
     excerpt:
       "Vis sans fin, bougie d’allumage, extracteur de fumées… découvrez le fonctionnement complet d’un poêle à granulés.",
     content: `
