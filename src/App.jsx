@@ -743,65 +743,60 @@ function Layout({ children }) {
 }
 
 function HomePage() {
-return (
-  <>
-    <SEO
-      route="/"
-      title="Entretien poêle à granulés Saint-Gaudens 31800 | Tout Feu Tout Flamme"
-      description="Tout Feu Tout Flamme intervient à Saint-Gaudens 31800 et dans un rayon de 100 km pour l’entretien, le ramonage mécanique, le dépannage et les contrats de poêles à granulés."
-      keywords={defaultKeywords}
-    />
+  return (
+    <>
+      <SEO
+        route="/"
+        title="Entretien poêle à granulés Saint-Gaudens 31800 | Tout Feu Tout Flamme"
+        description="Tout Feu Tout Flamme intervient à Saint-Gaudens 31800 et dans un rayon de 100 km pour l’entretien, le ramonage mécanique, le dépannage et les contrats de poêles à granulés."
+        keywords={defaultKeywords}
+      />
 
-    <section className="relative overflow-hidden py-16 md:py-24">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.16),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%),linear-gradient(135deg,#0b132b_0%,#0a192f_42%,#0f2742_100%)]" />
+      <section className="relative overflow-hidden py-16 md:py-24">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.16),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%),linear-gradient(135deg,#0b132b_0%,#0a192f_42%,#0f2742_100%)]" />
 
-      {/* CONTENEUR IMPORTANT */}
-      <div className="mx-auto max-w-7xl px-5">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
+          <motion.div
+            initial={{ opacity: 0, y: -18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+            className="relative text-center lg:text-left"
+          >
+            <div className="relative mb-5 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30 backdrop-blur-xl md:h-32 md:w-32">
+              <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_50%_20%,rgba(247,127,0,0.28),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(76,201,240,0.20),transparent_50%)]" />
 
-        <motion.div
-          initial={{ opacity: 0, y: -18 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, ease: "easeOut" }}
-          className="relative mb-10 flex flex-col items-center text-center lg:items-start lg:text-left"
-        >
-          {/* LOGO */}
-          <div className="relative mb-5 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30 backdrop-blur-xl md:h-32 md:w-32">
-            <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_50%_20%,rgba(247,127,0,0.28),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(76,201,240,0.20),transparent_50%)]" />
+              <img
+                src="/Logoweb.png"
+                alt="Logo Tout Feu Tout Flamme"
+                className="relative h-24 w-24 rounded-3xl object-contain md:h-28 md:w-28"
+                onError={(event) => {
+                  event.currentTarget.style.display = "none";
+                }}
+              />
 
-            <img
-              src="/Logoweb.png"
-              alt="Logo Tout Feu Tout Flamme"
-              className="relative h-24 w-24 rounded-3xl object-contain md:h-28 md:w-28"
-              onError={(event) => {
-                event.currentTarget.style.display = "none";
-              }}
-            />
+              <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
+            </div>
 
-            <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
-          </div>
+            <div className="absolute top-32 left-1/2 w-screen -translate-x-1/2 pointer-events-none">
+              <p
+                className="text-center text-5xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-7xl"
+                style={{ fontFamily: "'Great Vibes', cursive" }}
+              >
+                Tout Feu Tout Flamme
+              </p>
+            </div>
 
-          {/* NOM CENTRÉ */}
-          <div className="absolute top-32 left-1/2 -translate-x-1/2 w-screen pointer-events-none">
-            <p
-              className="text-5xl md:text-7xl text-white text-center leading-none drop-shadow-[0_0_24px_rgba(255,255,255,0.14)]"
-              style={{ fontFamily: "'Great Vibes', cursive" }}
-            >
-              Tout Feu Tout Flamme
+            <p className="mt-24 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
+              Benjamin Plessis
             </p>
-          </div>
 
-          {/* TEXTE GAUCHE */}
-          <p className="mt-24 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
-            Benjamin Plessis
-          </p>
+            <p className="mt-3 max-w-xl text-sm font-semibold uppercase tracking-[0.18em] text-white/60 md:text-base">
+              Expert en poêle à granulés toutes marques
+            </p>
 
-          <p className="mt-3 max-w-xl text-sm font-semibold uppercase tracking-[0.18em] text-white/60 md:text-base">
-            Expert en poêle à granulés toutes marques
-          </p>
-        </motion.div>
-
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/80 backdrop-blur-xl">
-              <BadgeCheck size={17} className="text-[#4cc9f0]" /> Saint-Gaudens 31800 • Intervention jusqu’à 100 km autour
+            <div className="mt-10 mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/80 backdrop-blur-xl">
+              <BadgeCheck size={17} className="text-[#4cc9f0]" />
+              Saint-Gaudens 31800 • Intervention jusqu’à 100 km autour
             </div>
 
             <h1 className="max-w-5xl font-serif text-5xl font-black leading-[0.95] tracking-tight text-white md:text-7xl">
@@ -810,12 +805,6 @@ return (
                 poêles à granulés
               </span>
             </h1>
-
-          </div>
-        </section>
-      </>
-    );
-}
 
             <p className="mt-8 max-w-2xl text-lg font-medium leading-9 text-white/75">
               Entretien annuel, ramonage mécanique avec certificat, dépannage et contrats d’entretien pour poêles à granulés à Saint-Gaudens, dans le Comminges, en Haute-Garonne et dans un rayon de 100 km.
@@ -837,10 +826,15 @@ return (
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }}>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+          >
             <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.06] p-5 shadow-2xl shadow-black/30 backdrop-blur-xl">
               <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#0b132b] via-[#1c2541] to-[#0f2742] p-8">
                 <p className="text-sm font-black uppercase tracking-[0.35em] text-[#4cc9f0]">Contrat recommandé</p>
+
                 <div className="mt-8 flex items-start justify-between gap-6">
                   <div>
                     <h2 className="font-serif text-5xl font-black text-white">Confort</h2>
@@ -880,7 +874,6 @@ return (
     </>
   );
 }
-
 function TrustItem({ title, text, icon: Icon }) {
   return (
     <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
