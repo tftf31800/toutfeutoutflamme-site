@@ -756,7 +756,7 @@ function HomePage() {
   {/* BACKGROUND */}
   <div className="absolute inset-0 -z-10">
    <img
-  src="/bg-hero.png"
+  src="/bg-hero.jpg"
   alt=""
   className="absolute inset-0 h-full w-full object-cover object-left opacity-80"
 />
