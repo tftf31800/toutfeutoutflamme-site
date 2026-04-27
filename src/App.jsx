@@ -761,7 +761,7 @@ function HomePage() {
               initial={{ opacity: 0, y: -18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, ease: "easeOut" }}
-              className="mb-10 flex flex-col items-center text-center lg:items-start lg:text-left"
+              className="mb-10 flex flex-col items-center text-center lg:items-center lg:text-center"
             >
               <div className="relative mb-5 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30 backdrop-blur-xl md:h-32 md:w-32">
                 <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_50%_20%,rgba(247,127,0,0.28),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(76,201,240,0.20),transparent_50%)]" />
