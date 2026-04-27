@@ -778,9 +778,9 @@ function HomePage() {
             </div>
 
            {/* NOM CENTRÉ */}
-              <div className="absolute top-32 left-[55%] w-screen -translate-x-1/2 pointer-events-none">
-                 <p
-                 className="text-center text-4xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-6xl lg:text-7xl"
+              <div className="absolute top-20 left-1/2 -translate-x-1/2 w-screen pointer-events-none">
+  <p
+    className="text-center text-4xl md:text-6xl lg:text-7xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)]"
     style={{ fontFamily: "'Great Vibes', cursive" }}
   >
     Tout Feu Tout Flamme
