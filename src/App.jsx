@@ -752,27 +752,16 @@ function HomePage() {
         keywords={defaultKeywords}
       />
 
-<section className="relative overflow-hidden py-16 md:py-24">
-  {/* BACKGROUND */}
-  {/* BACKGROUND */}
 <div className="absolute inset-0 -z-10">
   <img
     src="/bg-hero.png"
     alt=""
-    className="absolute inset-0 h-full w-full object-cover object-left opacity-85"
+    className="h-full w-full object-cover object-left-top"
   />
 
-  {/* assombrissement léger */}
-  <div className="absolute inset-0 bg-[#0b132b]/55" />
-
-  {/* dégradé droite pour lisibilité carte */}
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#0b132b]/40 to-[#0b132b]/90" />
-
-  {/* glow subtil */}
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_40%,rgba(255,255,255,0.12),transparent_40%)]" />
+  {/* voile léger uniquement */}
+  <div className="absolute inset-0 bg-[#0b132b]/45" />
 </div>
-
-  <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
     <motion.div
       initial={{ opacity: 0, y: -18 }}
       animate={{ opacity: 1, y: 0 }}
