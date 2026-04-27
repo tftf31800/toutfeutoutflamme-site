@@ -761,7 +761,7 @@ function HomePage() {
       className="absolute inset-0 h-full w-full object-cover opacity-90"
     />
 
-    <div className="absolute inset-0 bg-[linear-gradient(135deg,#0b132b66_0%,#0a192f88_45%,#0f2742bb_100%)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(135deg,#0b132b22_0%,#0a192f55_45%,#0f274288_100%)]" />
 
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_45%,rgba(255,255,255,0.10),transparent_38%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.14),transparent_30%)]" />
   </div>
@@ -776,7 +776,7 @@ function HomePage() {
       {/* NOM CENTRÉ */}
       <div className="absolute top-5 left-1/2 w-screen -translate-x-[35%] pointer-events-none">
         <p
-          className="text-center text-4xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-6xl lg:text-7xl"
+          className="text-center text-4xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-5xl lg:text-6xl"
           style={{ fontFamily: "'Great Vibes', cursive" }}
         >
           Tout Feu Tout Flamme
