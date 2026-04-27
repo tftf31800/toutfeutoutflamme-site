@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import ArticlePrintemps from "./components/ArticlePrintemps";
+import CGV from "./pages/CGV";
 
 const SITE_URL = "https://toutfeutoutflamme.eu";
 const RDV_URL = "https://tout-feu-tout-flamme-2.gazoleen.com/rdv";
