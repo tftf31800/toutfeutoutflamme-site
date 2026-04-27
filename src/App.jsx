@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import ArticlePrintemps from "./components/ArticlePrintemps";
+import { Routes, Route } from "react-router-dom";
 import CGV from "./pages/CGV";
 
 const SITE_URL = "https://toutfeutoutflamme.eu";
