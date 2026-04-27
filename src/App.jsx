@@ -1698,32 +1698,96 @@ function MentionsPage() {
 }
 
 function CgvPage() {
-  return (
-    <SimplePage
-      route="/cgv"
-      icon={FileSignature}
-      kicker="CGV"
-      title="Conditions générales de vente"
-      text="Conditions générales de vente applicables aux prestations d’entretien, de ramonage mécanique, de dépannage et aux contrats annuels de poêles à granulés proposés par Tout Feu Tout Flamme."
-      keywords={[...defaultKeywords, "CGV entretien poêle à granulés", "contrat entretien poêle granulés"]}
-    />
-  );
-}
+  const offerRows = [
+    ["Entretien annuel obligatoire", "Inclus", "Inclus", "Inclus"],
+    ["Ramonage mécanique du conduit + certificat", "✔", "✔", "✔"],
+    ["Nettoyage complet de l’appareil", "✔", "✔", "✔"],
+    ["Contrôle combustion et réglages électroniques", "✔", "✔", "✔"],
+    ["Assistance dépannage", "Hors contrat", "1 intervention\nMO + déplacement inclus", "1 intervention\nMO + déplacement inclus\n+ illimitée*"],
+    ["Délai prioritaire 24h/48h ouvré", "-", "✔", "✔"],
+    ["Remise sur les pièces détachées", "-", "-", "-15 %"],
+    ["Prix annuel TTC", "139,00 €", "189,00 €", "249,00 €"],
+    ["Mensualité via Stripe", "13,90 € / mois", "18,90 € / mois", "24,90 € / mois"],
+  ];
 
-function SimplePage({ route, icon: Icon, kicker, title, text, keywords }) {
   return (
     <section className="mx-auto max-w-7xl px-5 py-16">
+
       <SEO
-        route={route}
-        title={`${title} | Tout Feu Tout Flamme Saint-Gaudens`}
-        description={`${text} Intervention à Saint-Gaudens 31800 et dans un rayon de 100 km.`}
-        keywords={keywords}
+        route="/cgv"
+        title="Conditions générales de vente | Tout Feu Tout Flamme Saint-Gaudens"
+        description="Conditions générales de vente applicables aux prestations d’entretien, de ramonage et aux contrats annuels de poêles à granulés."
+        keywords={[...defaultKeywords, "CGV poêle granulés", "contrat entretien poêle granulés"]}
       />
-      <div className="rounded-[2rem] border border-white/10 bg-white/[0.055] p-8 shadow-2xl shadow-black/10 backdrop-blur-xl md:p-12">
-        <Icon className="mb-6 text-[#4cc9f0]" size={42} />
-        <p className="text-sm font-black uppercase tracking-[0.35em] text-[#4cc9f0]">{kicker}</p>
-        <h1 className="mt-4 font-serif text-5xl font-black text-white">{title}</h1>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-white/70">{text}</p>
+
+      <div className="rounded-[2.5rem] border border-white/10 bg-white/[0.05] p-8 shadow-2xl">
+
+        <h1 className="text-4xl md:text-5xl font-bold text-white text-center mb-10">
+          Conditions générales de vente
+        </h1>
+
+        <div className="space-y-8 text-white/80">
+
+          <div>
+            <h2 className="text-xl font-semibold text-white mb-2">Préambule</h2>
+            <p>
+              Les présentes Conditions Générales de Vente régissent l’ensemble des prestations
+              proposées par Tout Feu Tout Flamme.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold text-white mb-2">Article 1 — Identification</h2>
+            <p>
+              Tout Feu Tout Flamme – Benjamin Plessis – 2045 rue de la vieille serre, 31800 Saint-Gaudens – SIREN 752 185 934.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold text-white mb-2">Article 2 — Prestations</h2>
+            <p>
+              Entretien, ramonage mécanique et dépannage des appareils à granulés conformément aux normes DTU 24.1 et aux prescriptions fabricants.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold text-white mb-2">Article 3 — Paiement</h2>
+            <p>
+              Paiement immédiat après intervention ou mensualisation via Stripe. Certificat remis après paiement.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold text-white mb-2">Article 4 — Responsabilité</h2>
+            <p>
+              Obligation de moyens. Responsabilité limitée au montant de la prestation.
+            </p>
+          </div>
+
+        </div>
+
+        {/* TABLEAU */}
+        <div className="mt-12 overflow-x-auto border border-white/10 rounded-xl">
+          {offerRows.map((row) => (
+            <div key={row[0]} className="grid grid-cols-4 border-t border-white/10 text-sm text-white">
+              {row.map((cell, i) => (
+                <div key={i} className="p-3 text-center">{cell}</div>
+              ))}
+            </div>
+          ))}
+        </div>
+
+        {/* PDF */}
+        <div className="mt-10 text-center">
+          <a
+            href="/pdf/CGV_NET.pdf"
+            target="_blank"
+            className="inline-block px-6 py-3 border border-white/20 rounded-xl text-white hover:border-[#f77f00]"
+          >
+            Télécharger les CGV complètes
+          </a>
+        </div>
+
       </div>
     </section>
   );
