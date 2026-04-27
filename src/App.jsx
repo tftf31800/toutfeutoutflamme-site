@@ -28,7 +28,7 @@ import { motion } from "framer-motion";
 const SITE_URL = "https://toutfeutoutflamme.eu";
 const RDV_URL = "https://tout-feu-tout-flamme-2.gazoleen.com/rdv";
 const SUBSCRIBE_URL = "https://souscrire.toutfeutoutflamme31.fr";
-const EMAIL = "benjamin.plessis@toutfeutoutflamme.eu";
+const EMAIL = "benjamin.@toutfeutoutflamme.eu";
 const PHONE = "07 61 64 77 65";
 const COMPANY = "Tout Feu Tout Flamme";
 const CITY = "Saint-Gaudens";
@@ -780,10 +780,10 @@ function HomePage() {
                 className="text-5xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-7xl"
                 style={{ fontFamily: "'Great Vibes', cursive" }}
               >
-                Benjamin Plessis
+                 Tout Feu Tout Flamme 
               </p>
               <p className="mt-4 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
-                Tout Feu Tout Flamme
+                 Benjamin Plessis
               </p>
               <p className="mt-3 max-w-xl text-sm font-semibold uppercase tracking-[0.18em] text-white/60 md:text-base">
                 Expert en poêle à granulés toutes marques
