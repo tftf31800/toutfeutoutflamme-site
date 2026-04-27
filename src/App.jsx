@@ -1199,7 +1199,7 @@ function GaleriePage() {
         description="Galerie des interventions Tout Feu Tout Flamme : entretien, ramonage et dépannage de poêles à granulés à Saint-Gaudens et alentours."
         keywords={[...defaultKeywords, "galerie entretien poêle granulés", "photos ramonage poêle granulés", "intervention poêle à granulés Saint-Gaudens"]}
       />
-      <SectionTitle kicker="Galerie" title="Réalisations et interventions" text="Une page prête à recevoir vos photos avant/après : entretien, nettoyage, ramonage, dépannage et remise en service." />
+      <SectionTitle kicker="Galerie" title="Réalisations et interventions" />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {["Entretien", "Ramonage", "Dépannage", "Remise en service"].map((item) => (
           <article key={item} className="rounded-[2rem] border border-white/10 bg-white/[0.055] p-6 shadow-2xl shadow-black/10 backdrop-blur-xl">
@@ -1380,7 +1380,7 @@ function PartenariatPage() {
 function AvantApresPage() {
   const images = [
     {
-      src: "/images/entretien-poele-granules-avant-apres-saint-gaudens.png",
+      src: "/images/entretien-poele-granules-avant-apres-haute-garonne-premium.png",
       title: "Entretien poêle à granulés à Saint-Gaudens",
       location: "Saint-Gaudens",
       alt: "Avant après entretien poêle à granulés à Saint-Gaudens avec nettoyage complet et remise en fonctionnement",
@@ -1392,25 +1392,25 @@ function AvantApresPage() {
       alt: "Avant après nettoyage poêle à granulés à Muret avec vitre nettoyée et flamme remise en service",
     },
     {
-      src: "/images/entretien-poele-granules-avant-apres-carbonne.png",
+      src: "/images/entretien-poele-granules-avant-apres-saint-gaudens-cheminee.png",
       title: "Ramonage et entretien poêle à granulés à Carbonne",
       location: "Carbonne",
       alt: "Avant après ramonage et entretien poêle à granulés à Carbonne en Haute-Garonne",
     },
     {
-      src: "/images/entretien-poele-granules-avant-apres-montrejeau.png",
+      src: "/images/entretien-poele-granules-design-luchon.png",
       title: "Entretien poêle à granulés à Montréjeau",
       location: "Montréjeau",
       alt: "Avant après entretien professionnel poêle à granulés à Montréjeau avec contrôle de fonctionnement",
     },
     {
-      src: "/images/entretien-poele-granules-avant-apres-cazeres.png",
+      src: "/images/entretien-poele-granules-performance-cazeres.png",
       title: "Nettoyage poêle à granulés à Cazères",
       location: "Cazères",
       alt: "Avant après nettoyage complet poêle à granulés à Cazères avec performance optimisée",
     },
     {
-      src: "/images/entretien-poele-granules-avant-apres-bagnere-de-luchon.png",
+      src: "/images/nettoyage-poele-granules-avant-apres-montrejeau.png",
       title: "Entretien poêle à granulés à Bagnères-de-Luchon",
       location: "Bagnères-de-Luchon",
       alt: "Avant après entretien poêle à granulés à Bagnères-de-Luchon avec nettoyage en profondeur",
