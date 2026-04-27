@@ -1286,10 +1286,9 @@ function CgvPage() {
           <div className="mt-10 flex flex-col gap-4 rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="font-bold text-white">Version complète PDF</p>
-              <p className="mt-1 text-sm text-white/60">À placer dans /public/pdf/CGV_NET.pdf pour activer le téléchargement.</p>
-            </div>
+              </div>
             <a
-              href="/pdf/CGV_NET.pdf"
+              href="/pdf/CGV.pdf"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-2xl border border-white/15 px-6 py-3 font-bold text-white transition hover:border-[#f77f00] hover:text-[#f77f00]"
