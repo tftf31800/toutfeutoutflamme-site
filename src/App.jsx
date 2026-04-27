@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 import {
+  flame,
   ShieldCheck,
   FileText,
   Wrench,
@@ -865,11 +866,11 @@ function HomePage() {
     </motion.div>
   </div>
 </section>
-            <ServicesSection />
+      {/* <ServicesSection />
       <FeaturedContract />
       <SeoTextSection />
       <ZonesSection />
-      <FinalCta />
+      <FinalCta /> */}
     </>
   );
 }
