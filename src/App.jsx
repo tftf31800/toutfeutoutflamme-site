@@ -755,15 +755,15 @@ function HomePage() {
 <section className="relative overflow-hidden py-16 md:py-24">
   {/* BACKGROUND */}
   <div className="absolute inset-0 -z-10">
-    <img
-      src="/bg-hero.png"
-      alt=""
-      className="absolute inset-0 h-full w-full object-cover opacity-90"
-    />
+   <img
+  src="/bg-hero.png"
+  alt=""
+  className="absolute inset-0 h-full w-full object-cover object-left opacity-80"
+/>
 
-    <div className="absolute inset-0 bg-[linear-gradient(135deg,#0b132b22_0%,#0a192f55_45%,#0f274288_100%)]" />
+<div className="absolute inset-0 bg-[linear-gradient(90deg,#0b132b00_0%,#0b132b44_35%,#0b132bee_75%)]" />
 
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_45%,rgba(255,255,255,0.10),transparent_38%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.14),transparent_30%)]" />
+<div className="absolute inset-0 bg-[#0b132b]/30" />
   </div>
 
   <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
