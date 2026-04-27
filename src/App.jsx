@@ -761,8 +761,10 @@ function HomePage() {
   transition={{ duration: 0.75, ease: "easeOut" }}
   className="relative mb-10 flex flex-col items-center text-center lg:items-start lg:text-left"
 >
+  {/* LOGO */}
   <div className="relative mb-5 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30 backdrop-blur-xl md:h-32 md:w-32">
     <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_50%_20%,rgba(247,127,0,0.28),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(76,201,240,0.20),transparent_50%)]" />
+    
     <img
       src="/Logoweb.png"
       alt="Logo Tout Feu Tout Flamme"
@@ -771,10 +773,12 @@ function HomePage() {
         event.currentTarget.style.display = "none";
       }}
     />
+
     <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
   </div>
 
-  <div className="absolute top-32 left-1/2 w-full -translate-x-1/2 pointer-events-none">
+  {/* NOM CENTRÉ */}
+  <div className="absolute top-32 left-1/2 -translate-x-1/2 w-full pointer-events-none">
     <p
       className="text-5xl md:text-7xl text-white text-center leading-none drop-shadow-[0_0_24px_rgba(255,255,255,0.14)]"
       style={{ fontFamily: "'Great Vibes', cursive" }}
@@ -783,6 +787,7 @@ function HomePage() {
     </p>
   </div>
 
+  {/* TEXTE GAUCHE */}
   <p className="mt-24 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
     Benjamin Plessis
   </p>
@@ -791,25 +796,6 @@ function HomePage() {
     Expert en poêle à granulés toutes marques
   </p>
 </motion.div>
-                />
-                <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
-              </div>
-
-              <div className="w-full flex justify-center lg:justify-center">
-             <p
-                   className="text-5xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-7xl text-center"
-                  style={{ fontFamily: "'Great Vibes', cursive" }}
-                >
-                 Tout Feu Tout Flamme
-               </p>
-               </div>
-              <p className="mt-4 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
-                 Benjamin Plessis
-              </p>
-              <p className="mt-3 max-w-xl text-sm font-semibold uppercase tracking-[0.18em] text-white/60 md:text-base">
-                Expert en poêle à granulés toutes marques
-              </p>
-            </motion.div>
 
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/80 backdrop-blur-xl">
               <BadgeCheck size={17} className="text-[#4cc9f0]" /> Saint-Gaudens 31800 • Intervention jusqu’à 100 km autour
