@@ -745,7 +745,12 @@ function Layout({ children }) {
 function HomePage() {
   return (
     <>
-      <SEO ... />
+      <SEO
+        route="/"
+        title="Entretien poêle à granulés Saint-Gaudens 31800 | Tout Feu Tout Flamme"
+        description="Tout Feu Tout Flamme intervient à Saint-Gaudens 31800 et dans un rayon de 100 km pour l’entretien, le ramonage mécanique, le dépannage et les contrats de poêles à granulés."
+        keywords={defaultKeywords}
+      />
 
       {/* BACKGROUND GLOBAL */}
       <div className="fixed inset-0 -z-10">
