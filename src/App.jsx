@@ -777,14 +777,15 @@ function HomePage() {
               <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
             </div>
 
-            <div className="absolute top-32 left-1/2 w-screen -translate-x-1/2 pointer-events-none">
-              <p
-                className="text-center text-5xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-7xl"
-                style={{ fontFamily: "'Great Vibes', cursive" }}
-              >
-                Tout Feu Tout Flamme
-              </p>
-            </div>
+           {/* NOM CENTRÉ */}
+<div className="absolute top-32 left-1/2 w-full max-w-[760px] -translate-x-1/2 pointer-events-none">
+  <p
+    className="text-center text-4xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-6xl lg:text-7xl"
+    style={{ fontFamily: "'Great Vibes', cursive" }}
+  >
+    Tout Feu Tout Flamme
+  </p>
+</div>
 
             <p className="mt-24 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
               Benjamin Plessis
