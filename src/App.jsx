@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 import {
-  flame,
+  Flame,
   ShieldCheck,
   FileText,
   Wrench,
