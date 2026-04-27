@@ -755,23 +755,42 @@ function HomePage() {
       <section className="relative overflow-hidden py-16 md:py-24">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.16),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%),linear-gradient(135deg,#0b132b_0%,#0a192f_42%,#0f2742_100%)]" />
 
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <motion.div
-              initial={{ opacity: 0, y: -18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.75, ease: "easeOut" }}
-              className="mb-10 flex flex-col items-center text-center lg:items-center lg:text-center"
-            >
-              <div className="relative mb-5 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30 backdrop-blur-xl md:h-32 md:w-32">
-                <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_50%_20%,rgba(247,127,0,0.28),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(76,201,240,0.20),transparent_50%)]" />
-                <img
-                  src="/Logoweb.png"
-                  alt="Logo Tout Feu Tout Flamme"
-                  className="relative h-42 w-42 rounded-3xl object-contain md:h-28 md:w-28"
-                  onError={(event) => {
-                    event.currentTarget.style.display = "none";
-                  }}
+<motion.div
+  initial={{ opacity: 0, y: -18 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.75, ease: "easeOut" }}
+  className="relative mb-10 flex flex-col items-center text-center lg:items-start lg:text-left"
+>
+  <div className="relative mb-5 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30 backdrop-blur-xl md:h-32 md:w-32">
+    <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_50%_20%,rgba(247,127,0,0.28),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(76,201,240,0.20),transparent_50%)]" />
+    <img
+      src="/Logoweb.png"
+      alt="Logo Tout Feu Tout Flamme"
+      className="relative h-24 w-24 rounded-3xl object-contain md:h-28 md:w-28"
+      onError={(event) => {
+        event.currentTarget.style.display = "none";
+      }}
+    />
+    <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
+  </div>
+
+  <div className="absolute top-32 left-1/2 w-full -translate-x-1/2 pointer-events-none">
+    <p
+      className="text-5xl md:text-7xl text-white text-center leading-none drop-shadow-[0_0_24px_rgba(255,255,255,0.14)]"
+      style={{ fontFamily: "'Great Vibes', cursive" }}
+    >
+      Tout Feu Tout Flamme
+    </p>
+  </div>
+
+  <p className="mt-24 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
+    Benjamin Plessis
+  </p>
+
+  <p className="mt-3 max-w-xl text-sm font-semibold uppercase tracking-[0.18em] text-white/60 md:text-base">
+    Expert en poêle à granulés toutes marques
+  </p>
+</motion.div>
                 />
                 <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
               </div>
@@ -780,10 +799,10 @@ function HomePage() {
              <p
                    className="text-5xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)] md:text-7xl text-center"
                   style={{ fontFamily: "'Great Vibes', cursive" }}
-  >
-    Tout Feu Tout Flamme
-  </p>
-</div>
+                >
+                 Tout Feu Tout Flamme
+               </p>
+               </div>
               <p className="mt-4 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
                  Benjamin Plessis
               </p>
