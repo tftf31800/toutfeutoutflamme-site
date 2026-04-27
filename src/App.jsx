@@ -761,7 +761,7 @@ function HomePage() {
       className="absolute inset-0 h-full w-full object-cover"
     />
 
-    <div className="absolute inset-0 bg-[linear-gradient(135deg,#0b132bcc_0%,#0a192fcc_40%,#0f2742cc_100%)]" />
+    <div className="absolute inset-0 bg-[linear-gradient(135deg,#0b132b99_0%,#0a192faa_40%,#0f2742cc_100%)]" />
 
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.20),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%)]" />
   </div>
