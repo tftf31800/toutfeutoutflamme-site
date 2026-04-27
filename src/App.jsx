@@ -1697,16 +1697,144 @@ function MentionsPage() {
   );
 }
 
-function CgvPage() {
+return (
+    <section className="mx-auto max-w-7xl px-5 py-16">
+      <SEO
+        route="/cgv"
+        title="Conditions générales de vente | Tout Feu Tout Flamme Saint-Gaudens"
+        description="Conditions générales de vente applicables aux prestations d’entretien, de ramonage, de dépannage et aux contrats annuels Tout Feu Tout Flamme."
+        keywords={[...defaultKeywords, "CGV entretien poêle à granulés", "contrat entretien poêle granulés", "conditions générales de vente ramonage"]}
+      />
+
+      <div className="overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.055] shadow-2xl shadow-black/20 backdrop-blur-xl">
+        <div className="relative px-6 py-14 text-center md:px-12">
+          <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(247,127,0,0.18),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(76,201,240,0.14),transparent_40%)]" />
+          <Scale className="mx-auto mb-6 text-[#f77f00]" size={48} />
+          <p className="text-sm font-black uppercase tracking-[0.35em] text-[#4cc9f0]">Document contractuel</p>
+          <h1 className="mt-4 font-serif text-4xl font-black text-white md:text-6xl">Conditions Générales de Vente</h1>
+          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-white/70">
+            TOUT FEU TOUT FLAMME — Benjamin PLESSIS. Ces CGV régissent les prestations de ramonage, d’entretien, de dépannage et les contrats d’entretien proposés par l’entreprise.
+          </p>
+        </div>
+
+        <div className="border-t border-white/10 px-6 py-10 md:px-12">
+          <div className="grid gap-4 md:grid-cols-3">
+            <CgvInfo icon={ShieldCheck} title="Sécurité" text="Interventions selon les règles de l’art, DTU 24.1 et prescriptions fabricants." />
+            <CgvInfo icon={FileSignature} title="Contrats" text="Formules Essentiel, Confort et Sérénité conclues pour 12 mois." />
+            <CgvInfo icon={BadgeCheck} title="Paiement" text="Paiement à l’intervention ou mensualisation sécurisée via Stripe." />
+          </div>
+
+          <div className="mt-12 space-y-8 text-white/78">
+            <CgvArticle title="Préambule">
+              Les présentes Conditions Générales de Vente régissent l’ensemble des prestations de services proposées par l’entreprise TOUT FEU TOUT FLAMME. Toute commande ou souscription à un contrat d’entretien implique l’acceptation sans réserve des présentes conditions.
+            </CgvArticle>
+
+            <CgvArticle title="Article 1 — Identification de l’entreprise">
+              L’entreprise TOUT FEU TOUT FLAMME est exploitée par Monsieur Benjamin PLESSIS, dont le siège social est situé au 2045 rue de la Vieille Serre, 31800 Saint-Gaudens. L’entreprise est enregistrée sous le numéro SIREN 752 185 934. Les prestations sont réalisées en propre, sans recours à la sous-traitance, sous la responsabilité exclusive du prestataire.
+            </CgvArticle>
+
+            <CgvArticle title="Article 2 — Objet et prestations">
+              TOUT FEU TOUT FLAMME assure des prestations de ramonage, d’entretien et de dépannage sur les installations de chauffage à bois et à granulés. Les interventions visent à garantir la sécurité et la performance des appareils, conformément aux normes de fumisterie en vigueur, au DTU 24.1, au décret n° 2023-641 du 20 juillet 2023, aux règlements sanitaires départementaux et aux préconisations techniques des fabricants.
+            </CgvArticle>
+
+            <CgvArticle title="Article 3 — Commande, devis et règlement">
+              Toute commande est subordonnée à l’acceptation des présentes CGV. Un devis peut être établi sur demande, avec une validité de dix jours calendaires. Si les conditions réelles constatées lors de l’intervention diffèrent des informations fournies par le client, le tarif pourra être réajusté après accord préalable. Le paiement est exigible immédiatement à l’issue de l’intervention par chèque, carte bancaire ou espèces. Le certificat de ramonage ou d’entretien n’est remis qu’après encaissement complet du prix.
+            </CgvArticle>
+
+            <CgvArticle title="Article 4 — Durée et résiliation des contrats d’entretien">
+              Les contrats d’entretien Essentiel, Confort et Sérénité sont conclus pour une durée ferme de douze mois à compter de la date de signature. Ils sont renouvelables par tacite reconduction, sauf dénonciation par l’une des parties avec un préavis de trente jours. En cas de paiement mensuel via Stripe, toute année commencée est intégralement due par le Client.
+            </CgvArticle>
+
+            <CgvArticle title="Article 5 — Obligations et responsabilité du Client">
+              Le Client s’engage à fournir un accès sécurisé et dégagé à l’appareil et aux conduits, à utiliser un combustible certifié et conforme, et à respecter la fréquence d’entretien réglementaire. Le Client demeure responsable de la conformité initiale de son installation. TOUT FEU TOUT FLAMME ne pourra être tenue responsable des dommages résultant d’un défaut préexistant ou d’une installation non conforme aux normes DTU.
+            </CgvArticle>
+
+            <CgvArticle title="Article 6 — Limitation de responsabilité du prestataire">
+              TOUT FEU TOUT FLAMME est tenue à une obligation de moyens. Sa responsabilité est strictement limitée aux dommages matériels directs et ne peut excéder le montant annuel du contrat ou de la prestation effectuée. Sont exclus les dommages indirects, la perte de jouissance, l’inconfort thermique, les pertes d’exploitation, les pannes résultant de l’usure normale, d’une mauvaise utilisation ou de l’intervention d’un tiers.
+            </CgvArticle>
+
+            <CgvArticle title="Article 7 — Force majeure">
+              La responsabilité du prestataire ne saurait être engagée en cas d’inexécution liée à un cas de force majeure : coupures électriques, conditions climatiques extrêmes empêchant l’accès en sécurité, ou problèmes de tirage liés à l’environnement extérieur.
+            </CgvArticle>
+
+            <CgvArticle title="Article 8 — Protection des données personnelles et droit à l’image">
+              Les données personnelles sont traitées conformément au RGPD et à la loi Informatique et Libertés. Elles sont collectées pour la gestion des rendez-vous, l’exécution du contrat, la facturation, l’édition des certificats légaux et le suivi technique. Les données nécessaires au paiement mensuel sont sécurisées et gérées par Stripe. Aucune donnée n’est cédée ou revendue. Des photographies ou vidéos techniques peuvent être réalisées afin de justifier l’état de l’installation, assurer la traçabilité et illustrer le savoir-faire de l’entreprise de manière anonymisée. Le Client peut s’opposer à l’utilisation promotionnelle sur simple demande.
+            </CgvArticle>
+
+            <CgvArticle title="Article 9 — Litiges et médiation">
+              Les présentes CGV sont soumises au droit français. En cas de litige, le Client peut recourir gratuitement à un médiateur de la consommation conformément à l’article L. 612-1 du Code de la consommation. À défaut d’accord amiable, le tribunal compétent sera celui du Tribunal de Commerce de Toulouse.
+            </CgvArticle>
+
+            <CgvArticle title="Article 10 — Conservation des documents">
+              Il appartient au Client de conserver ses factures et certificats pour justifier de l’entretien régulier auprès de son assureur ou de son propriétaire.
+            </CgvArticle>
+          </div>
+
+          <div className="mt-12 rounded-[2rem] border border-[#f77f00]/25 bg-[#f77f00]/10 p-6 md:p-8">
+            <h2 className="font-serif text-3xl font-black text-white">Annexe — Détail des offres d’entretien</h2>
+            <p className="mt-3 text-white/70">Applicable aux appareils de chauffage à granulés.</p>
+
+            <div className="mt-7 overflow-x-auto rounded-3xl border border-white/10">
+              <div className="min-w-[820px]">
+                <div className="grid grid-cols-[1.25fr_0.75fr_0.75fr_0.75fr] bg-white/10 text-sm font-black uppercase tracking-[0.18em] text-white/75">
+                  <div className="p-4">Prestation</div>
+                  <div className="p-4 text-center">Essentiel</div>
+                  <div className="p-4 text-center">Confort</div>
+                  <div className="p-4 text-center">Sérénité</div>
+                </div>
+                {offerRows.map((row) => (
+                  <div key={row[0]} className="grid grid-cols-[1.25fr_0.75fr_0.75fr_0.75fr] border-t border-white/10 text-sm text-white/72">
+                    {row.map((cell, index) => (
+                      <div key={`${row[0]}-${index}`} className={`whitespace-pre-line p-4 ${index > 0 ? "text-center font-semibold text-white/85" : ""}`}>
+                        {cell}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <p className="mt-5 text-sm leading-7 text-white/65">
+              * L’assistance illimitée en formule Sérénité concerne la main d’œuvre. Le déplacement est en sus pour les pannes justifiées. Les pièces restent à la charge du client, sous réserve de la remise de 15%.
+            </p>
+          </div>
+
+          <div className="mt-10 flex flex-col gap-4 rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="font-bold text-white">Version complète PDF</p>
+              <p className="mt-1 text-sm text-white/60">À placer dans /public/pdf/CGV_NET.pdf pour activer le téléchargement.</p>
+            </div>
+            <a
+              href="/pdf/CGV_NET.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-2xl border border-white/15 px-6 py-3 font-bold text-white transition hover:border-[#f77f00] hover:text-[#f77f00]"
+            >
+              Télécharger les CGV complètes
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CgvInfo({ icon: Icon, title, text }) {
   return (
-    <SimplePage
-      route="/cgv"
-      icon={FileSignature}
-      kicker="CGV"
-      title="Conditions générales de vente"
-      text="Conditions générales de vente applicables aux prestations d’entretien, de ramonage mécanique, de dépannage et aux contrats annuels de poêles à granulés proposés par Tout Feu Tout Flamme."
-      keywords={[...defaultKeywords, "CGV entretien poêle à granulés", "contrat entretien poêle granulés"]}
-    />
+    <div className="rounded-3xl border border-white/10 bg-white/[0.045] p-6">
+      <Icon className="mb-4 text-[#f77f00]" size={30} />
+      <h2 className="font-serif text-2xl font-black text-white">{title}</h2>
+      <p className="mt-3 leading-7 text-white/62">{text}</p>
+    </div>
+  );
+}
+
+function CgvArticle({ title, children }) {
+  return (
+    <article className="rounded-3xl border border-white/10 bg-[#071027]/55 p-6">
+      <h2 className="font-serif text-2xl font-black text-white">{title}</h2>
+      <p className="mt-4 leading-8 text-white/70">{children}</p>
+    </article>
   );
 }
 
