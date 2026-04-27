@@ -778,7 +778,7 @@ function HomePage() {
             </div>
 
            {/* NOM CENTRÉ */}
-              <div className="absolute top-10 left-1/2 -translate-x-[40%] w-screen pointer-events-none">
+              <div className="absolute top-10 left-1/2 -translate-x-[30%] w-screen pointer-events-none">
   <p
     className="text-center text-4xl md:text-6xl lg:text-7xl leading-none text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.14)]"
     style={{ fontFamily: "'Great Vibes', cursive" }}
