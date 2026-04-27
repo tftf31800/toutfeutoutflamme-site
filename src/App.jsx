@@ -1197,7 +1197,7 @@ function GaleriePage() {
         description="Galerie des interventions Tout Feu Tout Flamme : entretien, ramonage et dépannage de poêles à granulés à Saint-Gaudens et alentours."
         keywords={[...defaultKeywords, "galerie entretien poêle granulés", "photos ramonage poêle granulés", "intervention poêle à granulés Saint-Gaudens"]}
       />
-      <SectionTitle kicker="Galerie" title="Réalisations et interventions" text="Une page prête à recevoir vos photos avant/après : entretien, nettoyage, ramonage, dépannage et remise en service." />
+      <SectionTitle kicker="Galerie" title="Réalisations et interventions" />
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {["Entretien", "Ramonage", "Dépannage", "Remise en service"].map((item) => (
           <article key={item} className="rounded-[2rem] border border-white/10 bg-white/[0.055] p-6 shadow-2xl shadow-black/10 backdrop-blur-xl">
