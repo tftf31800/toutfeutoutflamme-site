@@ -1383,7 +1383,7 @@ function MentionsPage() {
           INFORMATIONS LÉGALES
         </p>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white tracking-wide">
           Mentions légales
         </h1>
 
@@ -1397,7 +1397,7 @@ function MentionsPage() {
 
         {/* ÉDITEUR */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Éditeur du site</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Éditeur du site</h2>
           <p className="text-gray-300 leading-relaxed">
             <strong>Tout Feu Tout Flamme</strong><br />
             Benjamin Plessis – Entrepreneur individuel<br />
@@ -1412,7 +1412,7 @@ function MentionsPage() {
 
         {/* PUBLICATION */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Direction de la publication</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Direction de la publication</h2>
           <p className="text-gray-300">
             Responsable : Benjamin Plessis<br />
             Email : tftf31800@gmail.com
@@ -1421,7 +1421,7 @@ function MentionsPage() {
 
         {/* HÉBERGEMENT */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Hébergement</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Hébergement</h2>
           <p className="text-gray-300">
             IONOS<br />
             7 place de la Gare – BP 70109<br />
@@ -1433,7 +1433,7 @@ function MentionsPage() {
 
         {/* CONDITIONS */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Conditions d’utilisation</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Conditions d’utilisation</h2>
           <p className="text-gray-300 leading-relaxed">
             L’accès au site implique l’acceptation des présentes conditions.
             Celles-ci peuvent être modifiées à tout moment.
@@ -1444,7 +1444,7 @@ function MentionsPage() {
 
         {/* PROPRIÉTÉ */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Propriété intellectuelle</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Propriété intellectuelle</h2>
           <p className="text-gray-300 leading-relaxed">
             L’ensemble des contenus (textes, images, logos) est protégé.
             Toute reproduction est interdite sans autorisation.
@@ -1453,7 +1453,7 @@ function MentionsPage() {
 
         {/* DONNÉES */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Données personnelles</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Données personnelles</h2>
           <p className="text-gray-300 leading-relaxed">
             Les données collectées sont utilisées uniquement dans le cadre de la relation client.
             Elles ne sont jamais revendues ni cédées à des tiers.
@@ -1469,7 +1469,7 @@ function MentionsPage() {
 
         {/* DROITS */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Droits de l’utilisateur</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Droits de l’utilisateur</h2>
           <p className="text-gray-300">
             Vous disposez d’un droit d’accès, de rectification et de suppression de vos données.
             <br /><br />
@@ -1479,7 +1479,7 @@ function MentionsPage() {
 
         {/* COOKIES */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Cookies</h2>
           <p className="text-gray-300">
             Le site peut utiliser des cookies afin d’améliorer l’expérience utilisateur.
           </p>
@@ -1487,7 +1487,7 @@ function MentionsPage() {
 
         {/* JURIDICTION */}
         <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
-          <h2 className="text-2xl font-semibold mb-4">Droit applicable</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Droit applicable</h2>
           <p className="text-gray-300">
             Droit français – Tribunal compétent : Toulouse
           </p>
