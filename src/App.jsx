@@ -1815,6 +1815,189 @@ function Footer() {
     </footer>
   );
 }
+function AvantApresPage() {
+  const images = [
+    {
+      src: "/images/entretien-poele-granules-avant-apres-saint-gaudens.png",
+      title: "Entretien poêle à granulés à Saint-Gaudens",
+      alt: "Avant après entretien poêle à granulés à Saint-Gaudens avec nettoyage complet et remise en fonctionnement",
+    },
+    {
+      src: "/images/entretien-poele-granules-avant-apres-muret.png",
+      title: "Nettoyage poêle à granulés à Muret",
+      alt: "Avant après nettoyage poêle à granulés à Muret avec vitre nettoyée et flamme remise en service",
+    },
+    {
+      src: "/images/entretien-poele-granules-avant-apres-carbonne.png",
+      title: "Ramonage et entretien poêle à granulés à Carbonne",
+      alt: "Avant après ramonage et entretien poêle à granulés à Carbonne en Haute-Garonne",
+    },
+    {
+      src: "/images/entretien-poele-granules-avant-apres-montrejeau.png",
+      title: "Entretien poêle à granulés à Montréjeau",
+      alt: "Avant après entretien professionnel poêle à granulés à Montréjeau avec contrôle de fonctionnement",
+    },
+    {
+      src: "/images/entretien-poele-granules-avant-apres-cazeres.png",
+      title: "Nettoyage poêle à granulés à Cazères",
+      alt: "Avant après nettoyage complet poêle à granulés à Cazères avec performance optimisée",
+    },
+    {
+      src: "/images/entretien-poele-granules-avant-apres-bagnere-de-luchon.png",
+      title: "Entretien poêle à granulés à Bagnères-de-Luchon",
+      alt: "Avant après entretien poêle à granulés à Bagnères-de-Luchon avec nettoyage en profondeur",
+    },
+  ];
+
+  return (
+    <>
+      <SEO
+        route="/avant-apres-entretien-poele-granules"
+        title="Avant / Après entretien poêle à granulés Saint-Gaudens | Tout Feu Tout Flamme"
+        description="Découvrez nos réalisations avant/après d’entretien de poêles à granulés à Saint-Gaudens, Muret, Carbonne, Montréjeau, Cazères et Bagnères-de-Luchon."
+        keywords={[
+          ...defaultKeywords,
+          "avant après poêle à granulés",
+          "entretien poêle à granulés Saint-Gaudens",
+          "nettoyage poêle granulés Haute-Garonne",
+          "ramonage poêle granulés 31",
+          "technicien poêle à granulés Saint-Gaudens",
+        ]}
+      />
+
+      <main className="bg-[#070b18] text-white">
+        <section className="px-6 py-24 text-center border-b border-white/10">
+          <p className="mb-4 text-sm font-bold tracking-[0.35em] text-[#f77f00]">
+            RÉALISATIONS AVANT / APRÈS
+          </p>
+
+          <h1 className="mx-auto max-w-5xl text-4xl font-black leading-tight md:text-6xl">
+            Entretien poêle à granulés :
+            <span className="block text-[#ffb703]">
+              résultats visibles en Haute-Garonne
+            </span>
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-slate-300">
+            Tout Feu Tout Flamme intervient autour de Saint-Gaudens pour
+            l’entretien annuel, le nettoyage complet, le ramonage mécanique et
+            le contrôle de sécurité des poêles à granulés toutes marques.
+          </p>
+
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <a
+              href="#/prendre-rendez-vous"
+              className="rounded-full bg-[#f77f00] px-8 py-4 font-bold text-white shadow-xl transition hover:scale-105"
+            >
+              Prendre rendez-vous
+            </a>
+
+            <a
+              href="tel:0761647765"
+              className="rounded-full border border-white/20 px-8 py-4 font-bold text-white transition hover:bg-white/10"
+            >
+              Appeler maintenant
+            </a>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-7xl px-6 py-20">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-black md:text-4xl">
+              Avant / Après nettoyage poêle à granulés
+            </h2>
+            <p className="mx-auto mt-4 max-w-3xl text-slate-300">
+              Ces visuels montrent l’intérêt d’un entretien régulier : vitre
+              propre, foyer nettoyé, combustion améliorée et appareil contrôlé.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {images.map((image) => (
+              <article
+                key={image.src}
+                className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl transition hover:-translate-y-1 hover:bg-white/10"
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  title={image.title}
+                  loading="lazy"
+                  className="h-[420px] w-full object-cover"
+                />
+
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-white">
+                    {image.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                    Intervention Tout Feu Tout Flamme : nettoyage complet,
+                    contrôle de sécurité, remise en fonctionnement et conseils
+                    d’utilisation.
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-[#0b132b] px-6 py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2">
+            <div>
+              <p className="mb-3 text-sm font-bold tracking-[0.3em] text-[#f77f00]">
+                SEO LOCAL
+              </p>
+
+              <h2 className="text-3xl font-black md:text-4xl">
+                Entretien poêle à granulés autour de Saint-Gaudens
+              </h2>
+
+              <p className="mt-5 leading-relaxed text-slate-300">
+                Nous intervenons à Saint-Gaudens, Montréjeau, Cazères,
+                Carbonne, Muret, Bagnères-de-Luchon et dans les communes
+                voisines pour l’entretien, le ramonage mécanique et le dépannage
+                des appareils à granulés.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+              <h3 className="mb-4 text-2xl font-bold">
+                Prestations réalisées
+              </h3>
+
+              <ul className="space-y-3 text-slate-300">
+                <li>✓ Nettoyage complet du poêle à granulés</li>
+                <li>✓ Ramonage mécanique avec certificat</li>
+                <li>✓ Contrôle de sécurité</li>
+                <li>✓ Vérification de la combustion</li>
+                <li>✓ Conseils d’entretien et d’utilisation</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-6 py-20 text-center">
+          <h2 className="text-3xl font-black md:text-4xl">
+            Votre poêle mérite un entretien sérieux
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-slate-300">
+            Un appareil bien entretenu, c’est plus de sécurité, une meilleure
+            combustion et moins de risques de panne en hiver.
+          </p>
+
+          <a
+            href="#/tarifs"
+            className="mt-8 inline-flex rounded-full bg-[#f77f00] px-9 py-4 font-bold text-white shadow-xl transition hover:scale-105"
+          >
+            Voir les contrats d’entretien
+          </a>
+        </section>
+      </main>
+    </>
+  );
+}
 function AppRouter() {
   const route = useRoute();
   const page = useMemo(() => {
