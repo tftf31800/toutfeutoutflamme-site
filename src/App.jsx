@@ -1214,27 +1214,27 @@ function PartenariatPage() {
   const partners = [
     {
       name: "Jolly Mec",
-      logo: "/logos/jollymec.png",
+      logo: "/logo/jollymec.png",
       url: "https://jolly-mec.it/fr/",
     },
     {
       name: "Poele.net",
-      logo: "/logos/poele-net.png",
+      logo: "/logo/poele-net.png",
       url: "https://www.poelesabois.com/",
     },
     {
       name: "Palazzetti",
-      logo: "/logos/palazzetti.png",
+      logo: "/logo/palazzetti.png",
       url: "https://palazzetti.fr/",
     },
     {
       name: "Solzaima",
-      logo: "/logos/solzaima.png",
+      logo: "/logo/solzaima.png",
       url: "https://solzaima.fr/",
     },
     {
       name: "SPS",
-      logo: "/logos/sps.png",
+      logo: "/logo/sps.png",
       url: "https://www.servicepoele.fr/",
     },
   ];
@@ -1317,7 +1317,7 @@ function PartenariatPage() {
               Marques, réseaux et partenaires
             </h2>
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-white/65">
-              Les logos présentés indiquent les marques, réseaux ou partenaires avec lesquels
+              Les logo présentés indiquent les marques, réseaux ou partenaires avec lesquels
               nous travaillons, collaborons ou dont nous suivons les prescriptions techniques.
             </p>
 
