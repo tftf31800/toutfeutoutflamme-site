@@ -866,11 +866,11 @@ function HomePage() {
     </motion.div>
   </div>
 </section>
-      {/* <ServicesSection />
+      <ServicesSection />
       <FeaturedContract />
       <SeoTextSection />
       <ZonesSection />
-      <FinalCta /> */}
+      <FinalCta /> 
     </>
   );
 }
