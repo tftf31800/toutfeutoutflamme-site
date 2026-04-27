@@ -1383,7 +1383,7 @@ function MentionsPage() {
           INFORMATIONS LÉGALES
         </p>
 
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white tracking-wide">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blue-100 tracking-wide">
           Mentions légales
         </h1>
 
