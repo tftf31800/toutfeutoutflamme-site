@@ -1375,14 +1375,126 @@ function PartenariatPage() {
 
 function MentionsPage() {
   return (
-    <SimplePage
-      route="/mention-legale"
-      icon={Scale}
-      kicker="Mentions légales"
-      title="Mentions légales"
-      text="Tout Feu Tout Flamme — M. Benjamin Plessis, EI — 2045 rue de la vieille serre, 31800 Saint-Gaudens — SIREN : 752 185 934. Contact : 07 61 64 77 65."
-      keywords={[...defaultKeywords, "mentions légales Tout Feu Tout Flamme"]}
-    />
+    <div className="bg-[#0b132b] text-white">
+
+      {/* HERO */}
+      <section className="py-20 text-center px-6 border-b border-white/10">
+        <p className="text-sm tracking-widest text-blue-400 mb-3">
+          INFORMATIONS LÉGALES
+        </p>
+
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Mentions légales
+        </h1>
+
+        <p className="max-w-2xl mx-auto text-gray-400">
+          Informations légales et obligations réglementaires du site Tout Feu Tout Flamme.
+        </p>
+      </section>
+
+      {/* CONTENU */}
+      <section className="max-w-5xl mx-auto px-6 py-16 space-y-12">
+
+        {/* ÉDITEUR */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Éditeur du site</h2>
+          <p className="text-gray-300 leading-relaxed">
+            <strong>Tout Feu Tout Flamme</strong><br />
+            Benjamin Plessis – Entrepreneur individuel<br />
+            2045 rue de la vieille serre<br />
+            31800 Saint-Gaudens<br /><br />
+
+            Téléphone : 07 61 64 77 65<br />
+            Email : benjamin.plessis@toutfeutoutflamme.eu<br />
+            SIREN : 752 185 934
+          </p>
+        </div>
+
+        {/* PUBLICATION */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Direction de la publication</h2>
+          <p className="text-gray-300">
+            Responsable : Benjamin Plessis<br />
+            Email : tftf31800@gmail.com
+          </p>
+        </div>
+
+        {/* HÉBERGEMENT */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Hébergement</h2>
+          <p className="text-gray-300">
+            IONOS<br />
+            7 place de la Gare – BP 70109<br />
+            57200 Sarreguemines – France<br />
+            Téléphone : 09 70 808 911<br />
+            https://www.ionos.fr
+          </p>
+        </div>
+
+        {/* CONDITIONS */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Conditions d’utilisation</h2>
+          <p className="text-gray-300 leading-relaxed">
+            L’accès au site implique l’acceptation des présentes conditions.
+            Celles-ci peuvent être modifiées à tout moment.
+            <br /><br />
+            Le site est accessible en continu, sauf interruption pour maintenance.
+          </p>
+        </div>
+
+        {/* PROPRIÉTÉ */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Propriété intellectuelle</h2>
+          <p className="text-gray-300 leading-relaxed">
+            L’ensemble des contenus (textes, images, logos) est protégé.
+            Toute reproduction est interdite sans autorisation.
+          </p>
+        </div>
+
+        {/* DONNÉES */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Données personnelles</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Les données collectées sont utilisées uniquement dans le cadre de la relation client.
+            Elles ne sont jamais revendues ni cédées à des tiers.
+          </p>
+
+          <ul className="mt-4 space-y-2 text-gray-300">
+            <li>✔ Gestion des demandes clients</li>
+            <li>✔ Suivi des prestations</li>
+            <li>✔ Communication (email / téléphone)</li>
+            <li>✔ Amélioration du service</li>
+          </ul>
+        </div>
+
+        {/* DROITS */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Droits de l’utilisateur</h2>
+          <p className="text-gray-300">
+            Vous disposez d’un droit d’accès, de rectification et de suppression de vos données.
+            <br /><br />
+            Contact : benjamin.plessis@toutfeutoutflamme.eu
+          </p>
+        </div>
+
+        {/* COOKIES */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
+          <p className="text-gray-300">
+            Le site peut utiliser des cookies afin d’améliorer l’expérience utilisateur.
+          </p>
+        </div>
+
+        {/* JURIDICTION */}
+        <div className="bg-[#1c2541] p-8 rounded-2xl border border-white/10 shadow-xl">
+          <h2 className="text-2xl font-semibold mb-4">Droit applicable</h2>
+          <p className="text-gray-300">
+            Droit français – Tribunal compétent : Toulouse
+          </p>
+        </div>
+
+      </section>
+    </div>
   );
 }
 
