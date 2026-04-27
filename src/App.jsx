@@ -754,7 +754,6 @@ function HomePage() {
 
       <section className="relative overflow-hidden py-16 md:py-24">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(247,127,0,0.16),transparent_30%),radial-gradient(circle_at_80%_0%,rgba(58,134,255,0.20),transparent_30%),linear-gradient(135deg,#0b132b_0%,#0a192f_42%,#0f2742_100%)]" />
-
 <motion.div
   initial={{ opacity: 0, y: -18 }}
   animate={{ opacity: 1, y: 0 }}
@@ -796,6 +795,7 @@ function HomePage() {
     Expert en poêle à granulés toutes marques
   </p>
 </motion.div>
+              </section>
 
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/80 backdrop-blur-xl">
               <BadgeCheck size={17} className="text-[#4cc9f0]" /> Saint-Gaudens 31800 • Intervention jusqu’à 100 km autour
