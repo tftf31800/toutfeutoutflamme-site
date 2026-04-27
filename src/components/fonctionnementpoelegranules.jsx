@@ -9,6 +9,9 @@ export default function ArticleFonctionnementPoele() {
         Comment fonctionne un poêle à granulés ? Le guide de votre expert à
         Saint-Gaudens
       </h1>
+      <p className="text-sm text-gray-500 mb-6">
+  Publié le 26 avril 2026 • Fonctionnement poêle à granulés • Saint-Gaudens (31800)
+</p>
 
       <p className="mb-4 text-lg text-gray-300">
         Vous envisagez d&apos;installer un poêle à granulés en Haute-Garonne, ou
