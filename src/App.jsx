@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 
 import {
-  Flame,
   ShieldCheck,
   FileText,
   Wrench,
@@ -768,16 +767,6 @@ function HomePage() {
 
   <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.15fr_0.85fr]">
           <motion.div
-            initial={{ opacity: 0, y: -18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, ease: "easeOut" }}
-            className="relative text-center lg:text-left"
-          >
-            <div className="relative mb-5 flex h-28 w-28 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30 backdrop-blur-xl md:h-32 md:w-32">
-              <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_50%_20%,rgba(247,127,0,0.28),transparent_45%),radial-gradient(circle_at_50%_90%,rgba(76,201,240,0.20),transparent_50%)]" />
-              <Flame className="absolute -bottom-2 -right-2 text-[#f77f00] drop-shadow-[0_0_16px_rgba(247,127,0,0.55)]" size={34} />
-            </div>
-
            {/* NOM CENTRÉ */}
               <div className="absolute top-10 left-1/2 -translate-x-[35%] w-screen pointer-events-none">
   <p
