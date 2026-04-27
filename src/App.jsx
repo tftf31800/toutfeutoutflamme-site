@@ -192,7 +192,7 @@ function SeoCityPage({ city }) {
       </p>
 
       <a
-        href="/souscrire"
+        href={SUBSCRIBE_URL}
         className="bg-[#f77f00] px-6 py-3 rounded-xl font-semibold"
       >
         Voir les contrats →
@@ -200,25 +200,6 @@ function SeoCityPage({ city }) {
     </main>
   );
 }
-
-function slugify(city) {
-  return city
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/'/g, "")
-    .replace(/\s+/g, "-");
-}
-
-const seoPages = seoCities.map((city) => ({
-  city,
-  slug: `entretien-poele-granules-${slugify(city)}`,
-  title: `Entretien poêle à granulés à ${city}`,
-  metaTitle: `Entretien poêle à granulés à ${city} | Tout Feu Tout Flamme`,
-  metaDescription: `Entretien, ramonage et contrat annuel pour poêle à granulés à ${city}. Intervention artisanale, contrôle sécurité, nettoyage complet et certificat de ramonage.`,
-  h1: `Entretien poêle à granulés à ${city}`,
-  intro: `Vous recherchez un professionnel pour l’entretien de votre poêle à granulés à ${city} ? Tout Feu Tout Flamme intervient pour le nettoyage complet, le ramonage mécanique, les contrôles de sécurité et les réglages standards de votre appareil.`,
-}));
 
 const tariffRows = [
   ["Entretien annuel obligatoire", "Entretien + ramonage conduit, hors pièces éventuelles", "139 € TTC"],
@@ -630,7 +611,7 @@ if (currentSeoPage) {
         route={`/${currentSeoPage.slug}`}
         title={currentSeoPage.title}
         description={currentSeoPage.description}
-        keywords={`entretien poêle à granulés ${currentSeoPage.city}, ramonage poêle à granulés ${currentSeoPage.city}, dépannage poêle à granulés ${currentSeoPage.city}, contrat entretien poêle ${currentSeoPage.city}`}
+        keywords={[`entretien poêle à granulés ${currentSeoPage.city}`, `ramonage poêle à granulés ${currentSeoPage.city}`, `dépannage poêle à granulés ${currentSeoPage.city}`, `contrat entretien poêle ${currentSeoPage.city}`]}
       />
 
       <main className="min-h-screen bg-[#050816] text-white">
@@ -655,7 +636,7 @@ if (currentSeoPage) {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="/souscrire"
+                href={SUBSCRIBE_URL}
                 className="rounded-xl bg-gradient-to-r from-[#f77f00] to-[#ffb703] px-7 py-4 font-semibold text-white shadow-lg shadow-orange-500/20 transition hover:scale-105"
               >
                 Voir les contrats d’entretien →
