@@ -566,6 +566,7 @@ Tout Feu Tout Flamme intervient à Saint-Gaudens et en Haute-Garonne pour l’en
 
 Confiez votre appareil à un professionnel pour un entretien conforme aux règles de l’art et profitez d’un chauffage fiable toute l’année.
  `,
+ },
 },
   {
   slug: "contrat-entretien-poele-granules-rentable",
