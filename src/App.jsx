@@ -471,151 +471,56 @@ const blogArticles = [
     `,
   },
   {
-    slug: "entretien-annuel-technicien-poele-granules",
-    title: "Entretien annuel : que fait vraiment votre technicien ?",
-    date: "26 mars 2026",
-    category: "Entretien",
-    image: "/blog/technicien-poele.jpg",
-    excerpt:
-      "Nettoyage interne, sécurité, joints, extracteur, ramonage : ce que comprend une vraie révision professionnelle.",
-    content: `
-L’entretien annuel d’un poêle à granulés est souvent perçu comme un simple nettoyage. En réalité, il s’agit d’une intervention technique complète, essentielle pour garantir le bon fonctionnement, la sécurité et la durée de vie de votre appareil.
-
-Mais concrètement, que fait vraiment un technicien lors d’un entretien professionnel ?
-
-## Un nettoyage complet, bien au-delà du visible
-
-Le technicien ne se contente pas de vider le cendrier. Il démonte les éléments essentiels du poêle pour accéder aux zones invisibles :
-
-- nettoyage du creuset
-- nettoyage de la chambre de combustion
-- nettoyage des échangeurs thermiques
-- aspiration des cendres fines dans les circuits internes
-- nettoyage du ventilateur d’air et d’extraction
-
-👉 Ces zones sont souvent inaccessibles pour un particulier, mais essentielles pour une bonne combustion.
-
-## Le ramonage mécanique du conduit
-
-L’entretien comprend également le ramonage mécanique du conduit de fumées.
-
-Cette opération permet :
-- d’éliminer les dépôts de suie
-- d’assurer une bonne évacuation des fumées
-- de réduire les risques d’incendie
-
-Un certificat de ramonage peut être remis à l’issue de l’intervention, selon la prestation.
-
-## Le contrôle des éléments de sécurité
-
-Un technicien vérifie les composants sensibles du poêle :
-
-- pressostat
-- sondes de température
-- sécurité de surchauffe
-- joints d’étanchéité
-- état général du conduit
-
-👉 Objectif : éviter toute anomalie pouvant entraîner une panne ou un danger.
-
-## Vérification et réglage de la combustion
-
-Un point souvent négligé, mais essentiel.
-
-Le technicien contrôle :
-- l’arrivée d’air
-- l’alimentation en granulés
-- la qualité de la flamme
-- les paramètres de fonctionnement
-
-Un mauvais réglage peut entraîner :
-- une surconsommation de granulés
-- un encrassement rapide
-- une baisse de performance
-
-## Inspection générale de l’installation
-
-Enfin, le technicien réalise une inspection globale :
-
-- état du poêle
-- propreté générale
-- fonctionnement des ventilateurs
-- bruit anormal
-- usure des pièces
-
-👉 Cela permet d’anticiper les pannes avant qu’elles ne surviennent.
-
-## Pourquoi cet entretien est indispensable
-
-Un poêle à granulés mal entretenu :
-- consomme plus
-- chauffe moins bien
-- tombe plus souvent en panne
-- peut devenir dangereux
-
-L’entretien annuel permet donc de garantir :
-- performance
-- sécurité
-- longévité
-
-## Faites appel à un professionnel
-
-Tout Feu Tout Flamme intervient à Saint-Gaudens et en Haute-Garonne pour l’entretien, le ramonage et le dépannage de poêles à granulés toutes marques.
-
-Confiez votre appareil à un professionnel pour un entretien conforme aux règles de l’art et profitez d’un chauffage fiable toute l’année.
- `,
-},
-  {
-  slug: "contrat-entretien-poele-granules-rentable",
-  title: "Contrat d’entretien poêle à granulés : est-ce vraiment rentable ?",
-  date: "28 avril 2026",
-  category: "Contrats d’entretien",
-  image: "/blog/contrat-entretien-poele-granules.jpg",
+  slug: "entretien-annuel-technicien-poele-granules",
+  title: "Entretien annuel : que fait vraiment votre technicien ?",
+  date: "26 mars 2026",
+  category: "Entretien",
+  image: "/blog/technicien-poele.jpg",
   excerpt:
-    "Prix des pannes, entretien annuel, dépannage, priorité d’intervention : découvrez pourquoi un contrat d’entretien peut vite devenir rentable.",
-  content: `
-Chaque hiver, beaucoup de propriétaires de poêles à granulés se posent la même question : faut-il souscrire un contrat d’entretien, ou se contenter d’un simple entretien annuel ?
+    "Nettoyage interne, sécurité, joints, extracteur, ramonage : ce que comprend une vraie révision professionnelle.",
+  content:
+    '<h1>Entretien annuel poêle à granulés : que fait vraiment votre technicien ?</h1>' +
+    '<p>L’entretien annuel d’un poêle à granulés est souvent perçu comme un simple nettoyage. En réalité, il s’agit d’une intervention technique complète, essentielle pour garantir le bon fonctionnement, la sécurité et la durée de vie de votre appareil.</p>' +
+    '<p>Mais concrètement, que fait vraiment un technicien lors d’un entretien professionnel ?</p>' +
 
-Entre les pannes imprévues, le ramonage, les contrôles de sécurité et les délais en pleine saison, la réponse est souvent plus évidente qu’il n’y paraît.
+    '<h2>Un nettoyage complet, bien au-delà du visible</h2>' +
+    '<p>Le technicien ne se contente pas de vider le cendrier. Il démonte les éléments essentiels du poêle pour accéder aux zones invisibles :</p>' +
+    '<ul>' +
+      '<li><strong>Nettoyage du creuset :</strong> élimination des résidus de combustion.</li>' +
+      '<li><strong>Chambre de combustion :</strong> nettoyage des parois et zones d’accumulation.</li>' +
+      '<li><strong>Échangeurs thermiques :</strong> optimisation du rendement de chauffe.</li>' +
+      '<li><strong>Circuits internes :</strong> aspiration des cendres fines.</li>' +
+      '<li><strong>Ventilateur d’air et extracteur :</strong> contrôle et nettoyage selon accessibilité.</li>' +
+    '</ul>' +
 
-## Entretien classique ou contrat : quelle différence ?
+    '<h2>Le ramonage mécanique du conduit</h2>' +
+    '<p>L’entretien comprend également le ramonage mécanique du conduit de fumées. Cette opération permet d’éliminer les dépôts, d’assurer une bonne évacuation des fumées et de réduire les risques d’incendie.</p>' +
+    '<p>Un certificat de ramonage peut être remis à l’issue de l’intervention, selon la prestation prévue.</p>' +
 
-Un entretien classique permet de nettoyer le poêle, vérifier les organes principaux, effectuer le ramonage mécanique et remettre une attestation lorsque l’intervention le prévoit.
+    '<h2>Le contrôle des éléments de sécurité</h2>' +
+    '<p>Le technicien vérifie les composants sensibles du poêle :</p>' +
+    '<ul>' +
+      '<li>Pressostat</li>' +
+      '<li>Sondes de température</li>' +
+      '<li>Sécurité de surchauffe</li>' +
+      '<li>Joints d’étanchéité</li>' +
+      '<li>État général du conduit</li>' +
+    '</ul>' +
 
-Le contrat d’entretien va plus loin : il ajoute un suivi annuel, une priorité de rendez-vous, et selon la formule, une intervention dépannage incluse ou des avantages sur les pièces.
+    '<h2>Vérification et réglage de la combustion</h2>' +
+    '<p>Le technicien contrôle l’arrivée d’air, l’alimentation en granulés, la qualité de la flamme et les paramètres de fonctionnement.</p>' +
+    '<p>Un mauvais réglage peut entraîner une surconsommation de granulés, un encrassement rapide et une baisse de performance.</p>' +
 
-## Combien peut coûter une panne de poêle à granulés ?
+    '<h2>Inspection générale de l’installation</h2>' +
+    '<p>Enfin, le technicien réalise une inspection globale : état du poêle, propreté générale, fonctionnement des ventilateurs, bruit anormal et usure des pièces.</p>' +
 
-Une panne peut rapidement dépasser le prix d’un contrat annuel.
+    '<h2>Pourquoi cet entretien est indispensable</h2>' +
+    '<p>Un poêle à granulés mal entretenu consomme plus, chauffe moins bien, tombe plus souvent en panne et peut devenir dangereux.</p>' +
+    '<p>L’entretien annuel permet donc de garantir performance, sécurité et longévité.</p>' +
 
-Une carte électronique, un motoréducteur, un extracteur de fumées ou une bougie d’allumage peuvent représenter un budget important, surtout lorsqu’il faut ajouter le déplacement et la main-d’œuvre.
-
-## Le vrai risque : tomber en panne en plein hiver
-
-En pleine saison de chauffe, les demandes explosent. Les délais peuvent s’allonger, les pièces peuvent manquer, et une panne devient vite inconfortable.
-
-Avec un contrat, le client bénéficie d’un meilleur suivi et d’une priorité selon la formule choisie.
-
-## Le contrat est-il rentable ?
-
-Oui, dans la majorité des cas.
-
-Le contrat d’entretien n’est pas seulement une dépense : c’est une protection. Il permet de prolonger la durée de vie du poêle, d’améliorer la sécurité, d’anticiper les problèmes et de garder une installation suivie par un professionnel.
-
-## Quelle formule choisir ?
-
-ESSENTIEL : entretien annuel, ramonage mécanique, certificat et contrôles de sécurité.
-
-CONFORT : tout ESSENTIEL, avec un dépannage inclus et une priorité de rendez-vous.
-
-SÉRÉNITÉ : tout CONFORT, avec priorité 24/48h et -15% sur les pièces détachées.
-
-## Passez à la tranquillité toute l’année
-
-Tout Feu Tout Flamme intervient à Saint-Gaudens et dans un rayon d’environ 100 km pour l’entretien, le ramonage et le dépannage de poêles à granulés toutes marques.
-
-Découvrez nos contrats d’entretien et choisissez la formule adaptée à votre installation.
-`,
+    '<h2>Faites appel à un professionnel</h2>' +
+    '<p>Tout Feu Tout Flamme intervient à Saint-Gaudens et en Haute-Garonne pour l’entretien, le ramonage et le dépannage de poêles à granulés toutes marques.</p>' +
+    '<p><strong>Confiez votre appareil à un professionnel pour un entretien conforme aux règles de l’art et profitez d’un chauffage fiable toute l’année.</strong></p>',
 },
 ];
 function App() {
