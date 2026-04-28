@@ -479,11 +479,101 @@ const blogArticles = [
     excerpt:
       "Nettoyage interne, sécurité, joints, extracteur, ramonage : ce que comprend une vraie révision professionnelle.",
     content: `
-      <p>Le nettoyage courant par l’utilisateur est indispensable, mais il ne remplace pas l’entretien annuel réalisé par un professionnel.</p>
-      <h2>Les zones invisibles</h2>
-      <p>Les cendres fines s’accumulent dans des zones difficiles d’accès : échangeur, extracteur, passages de fumées.</p>
-      <h2>Les contrôles importants</h2>
-      <p>Le technicien vérifie les organes de sécurité, les joints, la combustion, le tirage et réalise le ramonage mécanique si prévu.</p>
+     {
+  slug: "entretien-annuel-poele-granules-que-fait-technicien",
+  title: "Entretien annuel poêle à granulés : que fait vraiment votre technicien ?",
+  date: "28 avril 2026",
+  category: "Entretien",
+  image: "/blog/entretien-technicien-poele.jpg",
+  excerpt:
+    "Nettoyage, réglages, sécurité, ramonage… découvrez en détail ce que fait réellement un technicien lors de l’entretien annuel de votre poêle à granulés.",
+  content: `
+L’entretien annuel d’un poêle à granulés est souvent perçu comme un simple nettoyage. En réalité, il s’agit d’une intervention technique complète, essentielle pour garantir le bon fonctionnement, la sécurité et la durée de vie de votre appareil.
+
+Mais concrètement, que fait vraiment un technicien lors d’un entretien professionnel ?
+
+## Un nettoyage complet, bien au-delà du visible
+
+Le technicien ne se contente pas de vider le cendrier. Il démonte les éléments essentiels du poêle pour accéder aux zones invisibles :
+
+- nettoyage du creuset
+- nettoyage de la chambre de combustion
+- nettoyage des échangeurs thermiques
+- aspiration des cendres fines dans les circuits internes
+- nettoyage du ventilateur d’air et d’extraction
+
+👉 Ces zones sont souvent inaccessibles pour un particulier, mais essentielles pour une bonne combustion.
+
+## Le ramonage mécanique du conduit
+
+L’entretien comprend également le ramonage mécanique du conduit de fumées.
+
+Cette opération permet :
+- d’éliminer les dépôts de suie
+- d’assurer une bonne évacuation des fumées
+- de réduire les risques d’incendie
+
+Un certificat de ramonage peut être remis à l’issue de l’intervention, selon la prestation.
+
+## Le contrôle des éléments de sécurité
+
+Un technicien vérifie les composants sensibles du poêle :
+
+- pressostat
+- sondes de température
+- sécurité de surchauffe
+- joints d’étanchéité
+- état général du conduit
+
+👉 Objectif : éviter toute anomalie pouvant entraîner une panne ou un danger.
+
+## Vérification et réglage de la combustion
+
+Un point souvent négligé, mais essentiel.
+
+Le technicien contrôle :
+- l’arrivée d’air
+- l’alimentation en granulés
+- la qualité de la flamme
+- les paramètres de fonctionnement
+
+Un mauvais réglage peut entraîner :
+- une surconsommation de granulés
+- un encrassement rapide
+- une baisse de performance
+
+## Inspection générale de l’installation
+
+Enfin, le technicien réalise une inspection globale :
+
+- état du poêle
+- propreté générale
+- fonctionnement des ventilateurs
+- bruit anormal
+- usure des pièces
+
+👉 Cela permet d’anticiper les pannes avant qu’elles ne surviennent.
+
+## Pourquoi cet entretien est indispensable
+
+Un poêle à granulés mal entretenu :
+- consomme plus
+- chauffe moins bien
+- tombe plus souvent en panne
+- peut devenir dangereux
+
+L’entretien annuel permet donc de garantir :
+- performance
+- sécurité
+- longévité
+
+## Faites appel à un professionnel
+
+Tout Feu Tout Flamme intervient à Saint-Gaudens et en Haute-Garonne pour l’entretien, le ramonage et le dépannage de poêles à granulés toutes marques.
+
+Confiez votre appareil à un professionnel pour un entretien conforme aux règles de l’art et profitez d’un chauffage fiable toute l’année.
+`,
+},
     `,
   },
   {
