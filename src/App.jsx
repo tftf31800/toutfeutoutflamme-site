@@ -459,7 +459,7 @@ const blogArticles = [
   title: "Le point de rosée : l’ennemi caché de votre poêle à granulés (et comment l’éviter)",
   date: "28 avril 2026",
   category: "Conseils",
-  image: "/blog/point-rosee-condensation.jpg",
+  image: "/blog/point-rosee.jpg",
   excerpt:
     "Condensation, bistre, corrosion : découvrez pourquoi le point de rosée est un danger pour votre poêle à granulés et comment l’éviter efficacement.",
   content:
