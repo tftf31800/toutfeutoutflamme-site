@@ -865,6 +865,78 @@ function HomePage() {
     </motion.div>
 </div>
 </section>
+      <section className="mx-auto mt-20 max-w-7xl px-5">
+  <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-2xl backdrop-blur-xl md:p-10">
+    <div className="mb-8 text-center">
+      <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#f77f00]">
+        Avis clients
+      </p>
+
+      <h2 className="mt-3 text-3xl font-bold text-white md:text-4xl">
+        Ils m’ont fait confiance
+      </h2>
+
+      <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-300 md:text-base">
+        Retrouvez les retours de mes clients sur l’entretien, le ramonage mécanique
+        et le dépannage de poêles à granulés autour de Saint-Gaudens.
+      </p>
+    </div>
+
+    <div className="grid gap-5 md:grid-cols-3">
+      {[
+        {
+          name: "Thierry M.",
+          text: "Ponctuel, professionnel, compétent et surtout souriant.",
+        },
+        {
+          name: "Christian T.",
+          text: "Sérieux et efficace ! Travail propre et surtout bien fait 👍 Je recommande ++",
+        },
+        {
+          name: "Amélie G.",
+          text: "Entretien impeccable de mon poêle 🔥Je recommande vivement Benjamin : très professionnel et à l’écoute.Il a remis mon poêle à neuf, avec un nettoyage complet et minutieux.",
+        },
+      ].map((review, index) => (
+        <article
+          key={index}
+          className="rounded-3xl border border-white/10 bg-[#0b132b]/70 p-6 shadow-xl"
+        >
+          <div className="mb-4 flex items-center gap-1 text-[#ffb703]">
+            ★★★★★
+          </div>
+
+          <p className="text-sm leading-7 text-slate-200">
+            “{review.text}”
+          </p>
+
+          <p className="mt-5 text-sm font-semibold text-white">
+            {review.name}
+          </p>
+        </article>
+      ))}
+    </div>
+
+    <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+      <a
+        href="https://www.google.com/search?q=Benjamin+Plessis+-+tout+feu+tout+flamme-+Ramonage+%26+Entretien+Po%C3%AAles+Granul%C3%A9s+Comminges.&stick=H4sIAAAAAAAA_-NgU1IxqDAyNzEwtzRMS7QwSU4yMbUyqDBPSkxKMUmxSEtOtDBMSrRcxBrllJqXlZibmacQkJNaXJxZrKCrUJJfWqKQlloKZeQk5uam6ioEJebm5yWmpyqoKbjmlRSllmSmAjXlH14F1KfgXpSYV5pzeGWxgnN-LtC09NRiPQBb-1QlhQAAAA&hl=fr&mat=CQMnimG9IilnElcBTVDHnl7nBJi0YWrJFIuAcLBbnR1zQniwg5G22yjGlRBYd6m_4q3zOUR7kaaMaC_JUtko1BAdwGUgZF0xr5moDAQ8eYmR1z2BjKwV03vnlKr3NC0O_JQ&authuser=0&ved=2ahUKEwjb66C_iJCUAxUyZaQEHVfkMZwQ-MgIegQIExAl"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
+      >
+        Voir les avis Google
+      </a>
+
+      <a
+        href="https://g.page/r/CakbqPzY1Kt7EAE/review"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#f77f00] to-[#ffb703] px-6 py-3 text-sm font-bold text-[#0b132b] shadow-lg transition hover:scale-105"
+      >
+        Laisser un avis
+      </a>
+    </div>
+  </div>
+</section>
 
       <ServicesSection />
       <FeaturedContract />
