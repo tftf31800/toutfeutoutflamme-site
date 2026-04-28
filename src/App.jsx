@@ -344,7 +344,7 @@ const blogArticles = [
       </ul>
       <h2>Exemple concret pour une maison autour de Saint-Gaudens</h2>
       <p>Pour une maison de 90 à 120 m² dans le Comminges, la consommation varie fortement selon l’isolation et l’usage du poêle : chauffage principal, appoint, présence en journée ou programmation.</p>
-      <p>Un contrôle professionnel permet de vérifier que l’appareil brûle correctement, que le tirage est adapté et que l’échange thermique reste efficace.</p>
+      <p>Un contrôle professionnel permet de vérifier que l’appareil brûle correctement, que le tirage est adapté et que l’échange thermique reste efficace. on parle d'une moyenne de  3/4 de sac de15kg par 24 heures.</p>
       <h2>Comment réduire sa consommation de granulés ?</h2>
       <ul>
         <li>Réaliser l’entretien annuel complet.</li>
@@ -454,22 +454,64 @@ const blogArticles = [
     </div>
   `,
 },
-  {
-    slug: "point-de-rosee-conduit-poele-granules",
-    title: "Poêle à granulés : comprendre et éviter le point de rosée",
-    date: "27 mars 2026",
-    category: "Technique",
-    image: "/blog/point-rosee.jpg",
-    excerpt:
-      "Le point de rosée peut provoquer condensation, bistre et corrosion dans le conduit.",
-    content: `
-      <p>Le point de rosée apparaît lorsque les fumées refroidissent trop vite et que la vapeur d’eau se condense dans le conduit.</p>
-      <h2>Quels sont les risques ?</h2>
-      <p>Condensation, bistre, corrosion du tubage et baisse de performance.</p>
-      <h2>Comment l’éviter ?</h2>
-      <p>Un conduit bien dimensionné, isolé, un bon réglage de combustion et un entretien régulier limitent fortement ce phénomène.</p>
-    `,
-  },
+{
+  slug: "point-de-rosee-poele-granules",
+  title: "Le point de rosée : l’ennemi caché de votre poêle à granulés (et comment l’éviter)",
+  date: "28 avril 2026",
+  category: "Conseils",
+  image: "/blog/point-de-rosee-poele.jpg",
+  excerpt:
+    "Condensation, bistre, corrosion : découvrez pourquoi le point de rosée est un danger pour votre poêle à granulés et comment l’éviter efficacement.",
+  content:
+    '<h1>Le point de rosée : l’ennemi caché de votre poêle à granulés</h1>' +
+
+    '<p>Le poêle à granulés est devenu l’un des modes de chauffage préférés en Haute-Garonne : écologique, économique et performant. Cependant, pour que votre appareil fonctionne de manière optimale à Saint-Gaudens ou dans le Comminges, il est crucial de comprendre un phénomène physique méconnu mais potentiellement destructeur : le point de rosée.</p>' +
+
+    '<p>Qu’est-ce que c’est ? Quels sont les risques pour votre installation et comment l’éviter ? Tout Feu Tout Flamme 31 vous explique tout.</p>' +
+
+    '<h2>Qu’est-ce que le point de rosée dans un conduit ?</h2>' +
+
+    '<p>Le point de rosée est la température à laquelle la vapeur d’eau contenue dans un gaz se condense pour devenir liquide.</p>' +
+
+    '<p>Dans votre poêle, la combustion produit de la vapeur d’eau. Ces fumées montent dans le conduit pour être évacuées. Si votre conduit est mal isolé ou trop froid, les fumées refroidissent. Si elles descendent sous environ 45°C à 50°C, l’eau se condense sur les parois du tubage.</p>' +
+
+    '<p><strong>Bon à savoir :</strong> les poêles à granulés sont plus sensibles à ce phénomène car leur excellent rendement rejette des fumées moins chaudes qu’une cheminée traditionnelle.</p>' +
+
+    '<h2>Pourquoi la condensation est-elle dangereuse ?</h2>' +
+
+    '<p>La présence d’eau dans un conduit entraîne deux problèmes majeurs :</p>' +
+
+    '<ul>' +
+      '<li><strong>Formation de bistre et de goudron :</strong> l’eau se mélange à la suie pour créer une substance noire collante et hautement inflammable. C’est la principale cause des feux de conduit.</li>' +
+      '<li><strong>Corrosion du conduit :</strong> ce mélange devient acide et attaque le métal. Un conduit endommagé peut entraîner des fuites de fumées et représenter un danger pour les occupants.</li>' +
+    '</ul>' +
+
+    '<h2>Comment éviter le point de rosée ?</h2>' +
+
+    '<h3>1. Utiliser un conduit isolé (double paroi)</h3>' +
+    '<p>Un conduit isolé permet de maintenir les fumées à une température suffisante jusqu’à leur évacuation. C’est indispensable pour les installations extérieures ou en zones froides.</p>' +
+
+    '<h3>2. Respecter le bon dimensionnement</h3>' +
+    '<p>Un conduit trop large ralentit les fumées, favorise leur refroidissement et donc la condensation. Le respect des diamètres adaptés garantit un tirage efficace.</p>' +
+
+    '<h3>3. Utiliser des granulés de qualité</h3>' +
+    '<p>Des pellets humides produisent davantage de vapeur d’eau. Il est essentiel d’utiliser des granulés certifiés et de les stocker dans un endroit sec.</p>' +
+
+    '<h3>4. Faire régler son appareil par un professionnel</h3>' +
+    '<p>Un poêle mal réglé produit des fumées trop froides. Un réglage précis permet d’optimiser la combustion et de limiter les risques de condensation.</p>' +
+
+    '<h2>Un enjeu de sécurité et de longévité</h2>' +
+
+    '<p>Le point de rosée est un phénomène invisible mais redoutable. Il peut réduire la durée de vie de votre installation et augmenter les risques d’incident.</p>' +
+
+    '<p>Un entretien régulier, un bon dimensionnement et une installation conforme permettent d’éviter ces problèmes.</p>' +
+
+    '<h2>Votre expert à Saint-Gaudens</h2>' +
+
+    '<p>Tout Feu Tout Flamme intervient à Saint-Gaudens, Montréjeau, Lannemezan, Aspet et dans toute la Haute-Garonne pour l’installation, le réglage et l’entretien de poêles à granulés.</p>' +
+
+    '<p><strong>Faites appel à un professionnel local pour garantir la sécurité et la performance de votre installation.</strong></p>',
+},
   {
   slug: "entretien-annuel-technicien-poele-granules",
   title: "Entretien annuel : que fait vraiment votre technicien ?",
