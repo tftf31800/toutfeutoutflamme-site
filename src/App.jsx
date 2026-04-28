@@ -480,13 +480,6 @@ const blogArticles = [
       "Nettoyage interne, sécurité, joints, extracteur, ramonage : ce que comprend une vraie révision professionnelle.",
     content: `
      {
-  slug: "entretien-annuel-poele-granules-que-fait-technicien",
-  title: "Entretien annuel poêle à granulés : que fait vraiment votre technicien ?",
-  date: "28 avril 2026",
-  category: "Entretien",
-  image: "/blog/entretien-technicien-poele.jpg",
-  excerpt:
-    "Nettoyage, réglages, sécurité, ramonage… découvrez en détail ce que fait réellement un technicien lors de l’entretien annuel de votre poêle à granulés.",
   content: `
 L’entretien annuel d’un poêle à granulés est souvent perçu comme un simple nettoyage. En réalité, il s’agit d’une intervention technique complète, essentielle pour garantir le bon fonctionnement, la sécurité et la durée de vie de votre appareil.
 
