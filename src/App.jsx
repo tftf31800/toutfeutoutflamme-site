@@ -471,6 +471,10 @@ const blogArticles = [
 
     '<h2>Qu’est-ce que le point de rosée dans un conduit ?</h2>' +
 
+   '<img src="/blog/point-rosee-condensation.jpg" alt="Condensation dans conduit poêle granulés" class="my-6 rounded-xl shadow-lg" />' +
+
+  '<p>Dans un conduit froid, les fumées se refroidissent et provoquent de la condensation.</p>'
+
     '<p>Le point de rosée est la température à laquelle la vapeur d’eau contenue dans un gaz se condense pour devenir liquide.</p>' +
 
     '<p>Dans votre poêle, la combustion produit de la vapeur d’eau. Ces fumées montent dans le conduit pour être évacuées. Si votre conduit est mal isolé ou trop froid, les fumées refroidissent. Si elles descendent sous environ 45°C à 50°C, l’eau se condense sur les parois du tubage.</p>' +
