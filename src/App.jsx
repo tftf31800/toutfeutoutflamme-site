@@ -479,8 +479,6 @@ const blogArticles = [
     excerpt:
       "Nettoyage interne, sécurité, joints, extracteur, ramonage : ce que comprend une vraie révision professionnelle.",
     content: `
-     {
-  content: `
 L’entretien annuel d’un poêle à granulés est souvent perçu comme un simple nettoyage. En réalité, il s’agit d’une intervention technique complète, essentielle pour garantir le bon fonctionnement, la sécurité et la durée de vie de votre appareil.
 
 Mais concrètement, que fait vraiment un technicien lors d’un entretien professionnel ?
@@ -566,7 +564,6 @@ Tout Feu Tout Flamme intervient à Saint-Gaudens et en Haute-Garonne pour l’en
 
 Confiez votre appareil à un professionnel pour un entretien conforme aux règles de l’art et profitez d’un chauffage fiable toute l’année.
  `,
- },
 },
   {
   slug: "contrat-entretien-poele-granules-rentable",
