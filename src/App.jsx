@@ -774,14 +774,14 @@ function HomePage() {
           >
 
             {/* NOM CENTRÉ */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full flex justify-center pointer-events-none">
-              <p
-  className="mt-4 text-center text-4xl md:text-5xl lg:text-6xl text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]"
-  style={{ fontFamily: "'Great Vibes', cursive" }}
->
-  Tout Feu Tout Flamme
-</p>
-            </div>
+            <div className="absolute top-6 left-1/2 -translate-x-[5%] pointer-events-none z-20">
+  <p
+    className="text-center text-4xl md:text-5xl lg:text-6xl text-white drop-shadow-[0_0_30px_rgba(255,255,255,0.25)] whitespace-nowrap"
+    style={{ fontFamily: "'Great Vibes', cursive" }}
+  >
+    Tout Feu Tout Flamme
+  </p>
+</div>
       <p className="mt-24 text-xs font-black uppercase tracking-[0.34em] text-[#4cc9f0] md:text-sm">
         Benjamin Plessis
       </p>
@@ -1781,27 +1781,70 @@ function CgvPage() {
                 Il appartient au Client de conserver ses factures et certificats afin de justifier de l’entretien régulier auprès de son assureur ou de son propriétaire.
               </Article>
 
-              <div className="rounded-2xl border border-[#f77f00]/30 bg-[#f77f00]/10 p-5">
-                <h2 className="mb-3 text-xl font-bold text-[#f77f00]">
-                  Annexe — Offres d’entretien
-                </h2>
+              <div className="mt-10 rounded-[2rem] border border-[#f77f00]/40 bg-white/[0.04] p-6">
+  <h2 className="mb-6 text-center text-2xl font-black uppercase text-[#f77f00]">
+    Annexe : détail des offres d’entretien
+  </h2>
 
-                <div className="grid gap-4 md:grid-cols-3">
-                  <Offer name="Essentiel" price="139€/an" month="13,90€/mois" />
-                  <Offer name="Confort" price="189€/an" month="18,90€/mois" />
-                  <Offer name="Sérénité" price="249€/an" month="24,90€/mois" />
-                </div>
-              </div>
-            </div>
+  <div className="overflow-x-auto rounded-2xl border border-white/10">
+    <table className="w-full min-w-[760px] border-collapse text-sm text-white">
+      <thead>
+        <tr className="bg-[#1c2541] text-white">
+          <th className="border border-white/10 p-4 text-left">Prestations et services</th>
+          <th className="border border-white/10 p-4 text-center">Essentiel</th>
+          <th className="border border-white/10 p-4 text-center">Confort</th>
+          <th className="border border-white/10 p-4 text-center">Sérénité</th>
+        </tr>
+      </thead>
 
-            <div className="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
-              <p>Dernière version applicable lors de la souscription.</p>
+      <tbody className="bg-[#0b132b]/70">
+        {[
+          ["Entretien annuel obligatoire", "Inclus", "Inclus", "Inclus"],
+          ["Ramonage mécanique du conduit + certificat", "✓", "✓", "✓"],
+          ["Nettoyage complet de l’appareil", "✓", "✓", "✓"],
+          ["Contrôle combustion et réglages électroniques", "✓", "✓", "✓"],
+          ["Assistance dépannage", "Hors contrat", "1 intervention", "1 intervention + illimitée*"],
+          ["Délai d’intervention prioritaire 24h/48h ouvré", "—", "✓", "✓"],
+          ["Remise sur les pièces détachées", "—", "—", "-15 %"],
+        ].map((row) => (
+          <tr key={row[0]} className="border border-white/10">
+            <td className="border border-white/10 p-4 font-semibold text-white/85">{row[0]}</td>
+            <td className="border border-white/10 p-4 text-center">{row[1]}</td>
+            <td className="border border-white/10 p-4 text-center">{row[2]}</td>
+            <td className="border border-white/10 p-4 text-center">{row[3]}</td>
+          </tr>
+        ))}
+
+        <tr className="bg-white/[0.06] font-black">
+          <td className="border border-white/10 p-4">Prix annuel TTC</td>
+          <td className="border border-white/10 p-4 text-center">139,00 €</td>
+          <td className="border border-white/10 p-4 text-center">189,00 €</td>
+          <td className="border border-white/10 p-4 text-center">249,00 €</td>
+        </tr>
+
+        <tr className="bg-[#f77f00] font-black text-white">
+          <td className="border border-white/10 p-4">Ou mensualité via Stripe</td>
+          <td className="border border-white/10 p-4 text-center">13,90 € / mois</td>
+          <td className="border border-white/10 p-4 text-center">18,90 € / mois</td>
+          <td className="border border-white/10 p-4 text-center">24,90 € / mois</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p className="mt-4 text-center text-xs italic text-white/60">
+    * L’assistance illimitée en formule Sérénité concerne la main d’œuvre.  
+    Le déplacement est en sus pour les pannes justifiées. Les pièces restent à la charge du client, avec remise de 15 %.
+  </p>
+</div>
+
 
               <a
                 href="/pdf/CGV_NET.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-white/15 px-5 py-2 text-white transition hover:border-[#f77f00] hover:text-[#f77f00]"
+                className="mt-8 inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white/80 backdrop-blur transition hover:bg-white/10"
+
               >
                 Télécharger les CGV complètes
               </a>
