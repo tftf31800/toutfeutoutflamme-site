@@ -471,9 +471,9 @@ const blogArticles = [
 
     '<h2>Qu’est-ce que le point de rosée dans un conduit ?</h2>' +
 
-   '<img src="/blog/point-rosee-condensation.jpg" alt="Condensation dans conduit poêle granulés" class="my-6 rounded-xl shadow-lg" />' +
+    '<img src="/blog/point-rosee-condensation.jpg" alt="Condensation dans conduit poêle granulés" class="my-6 rounded-xl shadow-lg" />' +
 
-  '<p>Dans un conduit froid, les fumées se refroidissent et provoquent de la condensation.</p>'
+    '<p>Dans un conduit froid, les fumées se refroidissent et provoquent de la condensation.</p>' +
 
     '<p>Le point de rosée est la température à laquelle la vapeur d’eau contenue dans un gaz se condense pour devenir liquide.</p>' +
 
@@ -486,35 +486,28 @@ const blogArticles = [
     '<p>La présence d’eau dans un conduit entraîne deux problèmes majeurs :</p>' +
 
     '<ul>' +
-      '<li><strong>Formation de bistre et de goudron :</strong> l’eau se mélange à la suie pour créer une substance noire collante et hautement inflammable. C’est la principale cause des feux de conduit.</li>' +
-      '<li><strong>Corrosion du conduit :</strong> ce mélange devient acide et attaque le métal. Un conduit endommagé peut entraîner des fuites de fumées et représenter un danger pour les occupants.</li>' +
+      '<li><strong>Formation de bistre et de goudron :</strong> l’eau se mélange à la suie pour créer une substance noire collante et hautement inflammable.</li>' +
+      '<li><strong>Corrosion du conduit :</strong> ce mélange devient acide et attaque le métal.</li>' +
     '</ul>' +
 
     '<h2>Comment éviter le point de rosée ?</h2>' +
 
     '<h3>1. Utiliser un conduit isolé (double paroi)</h3>' +
-    '<p>Un conduit isolé permet de maintenir les fumées à une température suffisante jusqu’à leur évacuation. C’est indispensable pour les installations extérieures ou en zones froides.</p>' +
+    '<p>Un conduit isolé permet de maintenir les fumées à une température suffisante.</p>' +
 
     '<h3>2. Respecter le bon dimensionnement</h3>' +
-    '<p>Un conduit trop large ralentit les fumées, favorise leur refroidissement et donc la condensation. Le respect des diamètres adaptés garantit un tirage efficace.</p>' +
+    '<p>Un conduit trop large ralentit les fumées et favorise la condensation.</p>' +
 
     '<h3>3. Utiliser des granulés de qualité</h3>' +
-    '<p>Des pellets humides produisent davantage de vapeur d’eau. Il est essentiel d’utiliser des granulés certifiés et de les stocker dans un endroit sec.</p>' +
+    '<p>Des pellets humides produisent davantage de vapeur d’eau.</p>' +
 
     '<h3>4. Faire régler son appareil par un professionnel</h3>' +
-    '<p>Un poêle mal réglé produit des fumées trop froides. Un réglage précis permet d’optimiser la combustion et de limiter les risques de condensation.</p>' +
-
-    '<h2>Un enjeu de sécurité et de longévité</h2>' +
-
-    '<p>Le point de rosée est un phénomène invisible mais redoutable. Il peut réduire la durée de vie de votre installation et augmenter les risques d’incident.</p>' +
-
-    '<p>Un entretien régulier, un bon dimensionnement et une installation conforme permettent d’éviter ces problèmes.</p>' +
+    '<p>Un poêle mal réglé produit des fumées trop froides.</p>' +
 
     '<h2>Votre expert à Saint-Gaudens</h2>' +
 
-    '<p>Tout Feu Tout Flamme intervient à Saint-Gaudens, Montréjeau, Lannemezan, Aspet et dans toute la Haute-Garonne pour l’installation, le réglage et l’entretien de poêles à granulés.</p>' +
-
-    '<p><strong>Faites appel à un professionnel local pour garantir la sécurité et la performance de votre installation.</strong></p>',
+    '<p>Tout Feu Tout Flamme intervient à Saint-Gaudens et en Haute-Garonne.</p>' +
+    '<p><strong>Faites appel à un professionnel pour garantir la sécurité de votre installation.</strong></p>',
 },
   {
   slug: "entretien-annuel-technicien-poele-granules",
