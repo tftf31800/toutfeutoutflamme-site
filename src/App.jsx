@@ -605,7 +605,7 @@ const blogArticles = [
   title: "Entretien annuel : que fait vraiment votre technicien ?",
   date: "26 mars 2026",
   category: "Entretien",
-  image: "/blog/technicien-poele.jpg",
+  image: "/blog/technicien-poele.webp",
   excerpt:
     "Nettoyage interne, sécurité, joints, extracteur, ramonage : ce que comprend une vraie révision professionnelle.",
   content:
