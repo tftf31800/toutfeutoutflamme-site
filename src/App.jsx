@@ -299,7 +299,7 @@ const blogArticles = [
     title: "Comment fonctionne un poêle à granulés ? Le guide de votre expert à Saint-Gaudens",
     date: "30 mars 2026",
     category: "Conseils",
-    image: "/blog/fonctionnement_poele_granules.jpg",
+    image: "/blog/fonctionnement_poele_granules.webp",
     excerpt:
       "Vis sans fin, bougie d’allumage, extracteur de fumées… découvrez le fonctionnement complet d’un poêle à granulés.",
     content: `
@@ -412,7 +412,7 @@ const blogArticles = [
     title: "Combien consomme un poêle à granulés ? Calcul réel pour une maison à Saint-Gaudens",
     date: "3 avril 2026",
     category: "Conseils",
-    image: "/blog/consommation.jpg",
+    image: "/blog/consommation.webp",
     excerpt:
       "Consommation réelle de granulés selon la maison, la surface, l’isolation et les réglages du poêle.",
     content: `
@@ -454,7 +454,7 @@ const blogArticles = [
   title: "Ramonage poêle à granulés : obligations ARS Occitanie, certificat et assurance",
   date: "6 avril 2026",
   category: "Ramonage",
-  image: "/blog/ramonage.jpg",
+  image: "/blog/ramonage.webp",
   excerpt:
     "Ramonage obligatoire, entretien annuel, certificat : ce que dit la réglementation en Occitanie pour être en règle.",
   content: `
@@ -562,7 +562,7 @@ const blogArticles = [
 
     '<h2>Qu’est-ce que le point de rosée dans un conduit ?</h2>' +
 
-    '<img src="/blog/point-rosee-condensation.jpg" alt="Condensation dans conduit poêle granulés" class="my-6 rounded-xl shadow-lg" />' +
+    '<img src="/blog/point-rosee-condensation.webp" alt="Condensation dans conduit poêle granulés" class="my-6 rounded-xl shadow-lg" />' +
 
     '<p>Dans un conduit froid, les fumées se refroidissent et provoquent de la condensation.</p>' +
 
