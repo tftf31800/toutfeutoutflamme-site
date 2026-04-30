@@ -1,183 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://toutfeutoutflamme.eu/</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://toutfeutoutflamme.eu/tarifs</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+
   <url>
     <loc>https://toutfeutoutflamme.eu/contact</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://toutfeutoutflamme.eu/blog</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://toutfeutoutflamme.eu/galerie</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
+
   <url>
     <loc>https://toutfeutoutflamme.eu/avant-apres-entretien-poele-granules</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://toutfeutoutflamme.eu/partenariat</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
+
   <url>
     <loc>https://toutfeutoutflamme.eu/cgv</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.35</priority>
+    <priority>0.3</priority>
   </url>
+
   <url>
     <loc>https://toutfeutoutflamme.eu/mention-legale</loc>
-    <lastmod>2026-04-30</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
+    <priority>0.3</priority>
   </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/saint-gaudens</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/muret</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/cazeres</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/carbonne</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/montrejeau</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/aurignac</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/lannemezan</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/saint-girons</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/cugnaux</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/eaunes</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/longages</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/noe</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/ville/martres-tolosane</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.88</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/blog/entretien-poele-granules-printemps</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/blog/comment-fonctionne-poele-granules-saint-gaudens</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/blog/entretien-poele-granules-saint-gaudens-prix</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/blog/panne-poele-granules-hiver-saint-gaudens</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/blog/consommation-poele-granules-maison-saint-gaudens</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/blog/ramonage-poele-granules-obligations-ars-occitanie</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/blog/point-de-rosee-poele-granules</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://toutfeutoutflamme.eu/blog/entretien-annuel-technicien-poele-granules</loc>
-    <lastmod>2026-04-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
+
+  <!-- VILLES SEO -->
+  <url><loc>https://toutfeutoutflamme.eu/ville/saint-gaudens</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/muret</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/cazeres</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/carbonne</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/montrejeau</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/aurignac</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/lannemezan</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/saint-girons</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/cugnaux</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/eaunes</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/longages</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/noe</loc><priority>0.9</priority></url>
+  <url><loc>https://toutfeutoutflamme.eu/ville/martres-tolosane</loc><priority>0.9</priority></url>
+
 </urlset>
