@@ -1,10 +1,11 @@
 {
   "routes": [
     {
+      "src": "/google(.*).html",
+      "dest": "/google$1.html"
+    },
+    {
       "src": "/sitemap.xml",
-      "headers": {
-        "Content-Type": "application/xml"
-      },
       "dest": "/sitemap.xml"
     },
     {
