@@ -8,66 +8,66 @@
   </url>
 
   <url>
-    <loc>https://www.toutfeutoutflamme.eutarifs</loc>
+    <loc>https://www.toutfeutoutflamme.eu/tarifs</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://www.toutfeutoutflamme.eucontact</loc>
+    <loc>https://www.toutfeutoutflamme.eu/contact</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.toutfeutoutflamme.eublog</loc>
+    <loc>https://www.toutfeutoutflamme.eu/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.toutfeutoutflamme.eugalerie</loc>
+    <loc>https://www.toutfeutoutflamme.eu/galerie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
 
   <url>
-    <loc>https://www.toutfeutoutflamme.euavant-apres-entretien-poele-granules</loc>
+    <loc>https://www.toutfeutoutflamme.eu/avant-apres-entretien-poele-granules</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://www.toutfeutoutflamme.eupartenariat</loc>
+    <loc>https://www.toutfeutoutflamme.eu/partenariat</loc>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
 
   <url>
-    <loc>https://www.toutfeutoutflamme.eucgv</loc>
+    <loc>https://www.toutfeutoutflamme.eu/cgv</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
-    <loc>https://www.toutfeutoutflamme.eumention-legale</loc>
+    <loc>https://www.toutfeutoutflamme.eu/mention-legale</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- VILLES SEO -->
-  <url><loc>https://www.toutfeutoutflamme.euville/saint-gaudens</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/muret</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/cazeres</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/carbonne</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/montrejeau</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/aurignac</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/lannemezan</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/saint-girons</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/cugnaux</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/eaunes</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/longages</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/noe</loc><priority>0.9</priority></url>
-  <url><loc>https://www.toutfeutoutflamme.euville/martres-tolosane</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/saint-gaudens</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/muret</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/cazeres</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/carbonne</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/montrejeau</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/aurignac</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/lannemezan</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/saint-girons</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/cugnaux</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/eaunes</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/longages</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/noe</loc><priority>0.9</priority></url>
+  <url><loc>https://www.toutfeutoutflamme.eu/ville/martres-tolosane</loc><priority>0.9</priority></url>
 
 </urlset>
