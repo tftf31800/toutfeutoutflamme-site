@@ -341,7 +341,7 @@ const blogArticles = [
     title: "Entretien poêle à granulés à Saint-Gaudens : prix, fréquence et conseils d’expert",
     date: "5 avril 2026",
     category: "Entretien",
-    image: "/blog/ramonage.webp",
+    image: "/blog/contrat-entretien-poele-granules.webp",
     excerpt:
       "Quel est le prix d’un entretien de poêle à granulés à Saint-Gaudens ? Fréquence, obligations et conseils d’expert.",
     content: `
