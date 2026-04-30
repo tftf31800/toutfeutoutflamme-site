@@ -1,12 +1,18 @@
 {
-  "routes": [
+  "redirects": [
     {
-      "src": "^https://toutfeutoutflamme.eu/(.*)",
-      "status": 301,
-      "headers": {
-        "Location": "https://www.toutfeutoutflamme.eu/$1"
-      }
-    },
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "toutfeutoutflamme.eu"
+        }
+      ],
+      "destination": "https://www.toutfeutoutflamme.eu/$1",
+      "permanent": true
+    }
+  ],
+  "routes": [
     {
       "src": "/google(.*).html",
       "dest": "/google$1.html"
