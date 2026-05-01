@@ -1,7 +1,15 @@
 {
   "rewrites": [
     {
-      "source": "/((?!sitemap.xml|google30cd4d5b8be8c040.html|assets/|favicon.ico).* )",
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/google30cd4d5b8be8c040.html",
+      "destination": "/google30cd4d5b8be8c040.html"
+    },
+    {
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ]
