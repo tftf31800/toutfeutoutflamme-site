@@ -1,4 +1,5 @@
 import { seoCities } from "../data/cities";
+import { Link } from "react-router-dom";
 
 export default function CityLinksSection() {
   return (
@@ -14,14 +15,17 @@ export default function CityLinksSection() {
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {seoCities.map((city) => (
-            <a
-              key={city.slug}
-              href={`/ville/${city.slug}`}
-              className="rounded-2xl border border-white/10 bg-white/[0.06] p-5 font-bold text-white transition hover:border-[#f77f00]/60 hover:bg-white/[0.1]"
-            >
-              Entretien poêle à granulés {city.name}
-            </a>
-          ))}
+           <Link key={city.slug} to={`/entretien-poele-granules/${city.slug}`}
+             className="group rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5 text-center transition hover:border-[#f77f00]/40 hover:bg-[#f77f00]/10" >
+             <p className="text-sm font-semibold text-white/70">
+              Entretien poêle à granulés
+             </p>
+
+    <p className="mt-2 text-lg font-black text-white transition group-hover:text-[#ffb347]">
+      {city.name}
+    </p>
+  </Link>
+))}
         </div>
       </div>
     </section>

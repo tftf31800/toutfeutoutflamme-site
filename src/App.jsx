@@ -12,6 +12,7 @@ import MentionsLegalesPage from "./pages/MentionsLegales";
 import CGV from "./pages/CGV";
 import PolitiqueConfidentialitePage from "./pages/PolitiqueConfidentialite";
 import CookiesPage from "./pages/Cookies";
+import CityPage from "./pages/CityPage";
 
 export default function App() {
   return (
@@ -26,9 +27,11 @@ export default function App() {
       <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
       <Route path="/cgv" element={<CGV />}/>
       <Route path="/politique-confidentialite" element={<PolitiqueConfidentialitePage />}/>
+      <Route path="/entretien-poele-granules/:citySlug" element={<CityPage />} />
       <Route path="/zones-intervention" element={<ZonesIntervention />} />
       <Route path="/cookies" element={<CookiesPage />} />
-    </Routes>
+      
+      </Routes>
   </Layout>
 
   <CookieBanner />

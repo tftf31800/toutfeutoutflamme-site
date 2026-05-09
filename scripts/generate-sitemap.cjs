@@ -15,6 +15,20 @@ const staticPages = [
   "/zones-intervention",
 ];
 
+const cityPages = [
+  "/entretien-poele-granules-saint-gaudens",
+  "/entretien-poele-granules-lannemezan",
+  "/entretien-poele-granules-carbonne",
+];
+
+cityPages.forEach((url) => {
+  sitemap.write({
+    url,
+    changefreq: "monthly",
+    priority: 0.85,
+  });
+});
+
 const blogPosts = [
   "/blog/comment-fonctionne-poele-granules-saint-gaudens",
   "/blog/poele-granules-entree-gamme-vs-haut-gamme",
@@ -49,6 +63,7 @@ async function generateSitemap() {
   );
 
   console.log("✅ sitemap.xml généré");
+  
 }
 
 generateSitemap();
