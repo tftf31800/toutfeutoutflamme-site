@@ -27,7 +27,7 @@ import {
   Sparkles,
   Star,
 } from "lucide-react";
-const SUBSCRIBE_URL = "https://souscrire.toutfeutoutflamme.eu";
+const SUBSCRIBE_URL = "https://souscrire.toutfeutoutflamme31.fr";
 const RDV_URL = "/contact";
 
 export default function Home() {
