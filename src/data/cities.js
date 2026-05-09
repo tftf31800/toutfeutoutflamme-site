@@ -1,0 +1,41 @@
+export const seoCities = [
+  { name: "Saint-Gaudens", slug: "saint-gaudens" },
+  { name: "Montréjeau", slug: "montrejeau" },
+  { name: "Aspet", slug: "aspet" },
+  { name: "Salies-du-Salat", slug: "salies-du-salat" },
+  { name: "Aurignac", slug: "aurignac" },
+  { name: "Martres-Tolosane", slug: "martres-tolosane" },
+  { name: "Cazères", slug: "cazeres" },
+  { name: "Carbonne", slug: "carbonne" },
+  { name: "Noé", slug: "noe" },
+  { name: "Longages", slug: "longages" },
+  { name: "Muret", slug: "muret" },
+
+  { name: "Portet-sur-Garonne", slug: "portet-sur-garonne" },
+  { name: "Castanet-Tolosan", slug: "castanet-tolosan" },
+  { name: "Balma", slug: "balma" },
+  { name: "Tournefeuille", slug: "tournefeuille" },
+  { name: "Plaisance-du-Touch", slug: "plaisance-du-touch" },
+  { name: "Colomiers", slug: "colomiers" },
+  { name: "Blagnac", slug: "blagnac" },
+  { name: "Léguevin", slug: "leguevin" },
+
+  { name: "Lombez", slug: "lombez" },
+  { name: "Samatan", slug: "samatan" },
+  { name: "Auch", slug: "auch" },
+  { name: "Mirande", slug: "mirande" },
+
+  { name: "Saint-Girons", slug: "saint-girons" },
+  { name: "Foix", slug: "foix" },
+  { name: "Pamiers", slug: "pamiers" },
+
+  { name: "Bagnères-de-Luchon", slug: "bagneres-de-luchon" },
+  { name: "Fos", slug: "fos" },
+  { name: "Saint-Lary-Soulan", slug: "saint-lary-soulan" },
+
+  { name: "Capvern", slug: "capvern" },
+  { name: "Lannemezan", slug: "lannemezan" },
+  { name: "Bagnères-de-Bigorre", slug: "bagneres-de-bigorre" },
+  { name: "Tarbes", slug: "tarbes" },
+  { name: "Castelnau-Magnoac", slug: "castelnau-magnoac" },
+];

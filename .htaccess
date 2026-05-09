@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Redirection permanente du .eu vers le .fr
+RewriteCond %{HTTP_HOST} ^(www\.)?toutfeutoutflamme\.eu$ [NC]
+RewriteRule ^(.*)$ https://toutfeutoutflamme31.fr/$1 [L,R=301]
+
+# Laisse passer les vrais fichiers/dossiers existants
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Toutes les URLs propres React reviennent vers index.html
+RewriteRule ^ index.html [L]

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @keyframes fadeSlide {
   from {
     opacity: 0;
@@ -11,6 +11,14 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes premiumReveal {
@@ -157,4 +165,180 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+/* =========================
+   LETTRES SCINTILLANTES
+========================= */
+
+.scintillant {
+  position: relative;
+  display: inline-block;
+
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #f8f9fa 20%,
+    #f77f00 40%,
+    #ffffff 60%,
+    #4cc9f0 80%,
+    #ffffff 100%
+  );
+
+  background-size: 300% auto;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  animation:
+    shine 4s linear infinite,
+    glow 2s ease-in-out infinite;
+}
+
+/* Halo lumineux */
+.scintillant::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.9) 0 1px, transparent 3px),
+    radial-gradient(circle, rgba(247,127,0,0.8) 0 1px, transparent 4px),
+    radial-gradient(circle, rgba(76,201,240,0.8) 0 1px, transparent 4px);
+
+  background-size:
+    80px 80px,
+    120px 120px,
+    100px 100px;
+
+  opacity: 0.18;
+  pointer-events: none;
+
+  animation: sparkles 2.8s linear infinite;
+}
+
+/* Effet balayage brillant */
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 300% center;
+  }
+}
+
+/* Pulsation lumineuse */
+@keyframes glow {
+  0%, 100% {
+    filter:
+      drop-shadow(0 0 4px rgba(255,255,255,0.35))
+      drop-shadow(0 0 10px rgba(247,127,0,0.25));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 0 8px rgba(255,255,255,0.7))
+      drop-shadow(0 0 20px rgba(247,127,0,0.5))
+      drop-shadow(0 0 28px rgba(76,201,240,0.3));
+  }
+}
+
+/* Petites étincelles */
+@keyframes sparkles {
+  0%, 100% {
+    transform: translateY(0px);
+    opacity: 0.12;
+  }
+
+  50% {
+    transform: translateY(-2px);
+    opacity: 0.4;
+  }
+}
+.prose img {
+  border-radius: 1.5rem;
+}
+
+.prose p {
+  text-wrap: pretty;
+}
+.premium-blog-box {
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255,255,255,.1);
+  background: linear-gradient(135deg, #0b1220, #111827, #000);
+  box-shadow: 0 0 60px rgba(0,0,0,.45);
+}
+
+.premium-blog-eyebrow {
+  color: #f77f00;
+  font-size: .75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .35em;
+}
+
+.premium-blog-box h2 {
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.premium-blog-box h2 span {
+  background: linear-gradient(90deg, #f77f00, #ffb703, #4cc9f0);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.premium-blog-box p {
+  color: rgba(255,255,255,.75);
+}
+
+.premium-blog-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.premium-blog-badges span {
+  padding: .8rem 1.1rem;
+  border-radius: 1rem;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  color: white;
+  font-weight: 700;
+}
+@keyframes premiumBadgeGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(247, 127, 0, 0);
+    border-color: rgba(247, 127, 0, 0.25);
+  }
+
+  50% {
+    transform: scale(1.04);
+    box-shadow:
+      0 0 18px rgba(247, 127, 0, 0.25),
+      0 0 40px rgba(247, 127, 0, 0.12);
+    border-color: rgba(247, 127, 0, 0.7);
+  }
+}
+
+.premium-badge {
+  animation: premiumBadgeGlow 3s ease-in-out infinite;
+}
+
+.premium-badge:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.premium-badge:nth-child(3) {
+  animation-delay: 2s;
 }
