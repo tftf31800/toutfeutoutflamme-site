@@ -28,10 +28,6 @@ export default function ContactPage() {
         >
           <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-center">
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.35em] text-[#4cc9f0]">
-                Contact
-              </p>
-
               <h2 className="mt-3 font-serif text-4xl font-black text-white md:text-5xl">
                 Votre poêle fonctionne. Votre maison est chaude. Point.
               </h2>
