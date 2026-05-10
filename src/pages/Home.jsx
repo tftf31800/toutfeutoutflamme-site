@@ -28,7 +28,7 @@ import {
   Star,
 } from "lucide-react";
 const SUBSCRIBE_URL = "https://souscrire.toutfeutoutflamme31.fr";
-const RDV_URL = "/contact";
+const RDV_URL = "https://tout-feu-tout-flamme-2.gazoleen.com/rdv";
 
 export default function Home() {
   return (
