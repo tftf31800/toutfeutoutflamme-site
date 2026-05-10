@@ -19,10 +19,7 @@ export default function LocalSeoPowerSection() {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
-            <h3 className="text-3xl font-black text-[#4cc9f0]">
-                 Pourquoi entretenir son poêle ?
-            </h3>
-
+            <h3 className="text-xl font-bold text-[#4cc9f0]"> Pourquoi entretenir son poêle ? </h3>
              <ul className="mt-6 space-y-4 text-white/80">
              <li>✓ Meilleure performance de chauffe</li>
              <li>✓ Réduction de la consommation de granulés</li>
