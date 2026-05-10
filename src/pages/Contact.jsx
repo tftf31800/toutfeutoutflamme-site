@@ -28,27 +28,48 @@ function updateField(e) {
   }));
 }
 
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
 
-  const subject = `Demande contact - ${form.requestType} - ${form.city || "Ville non précisée"}`;
+  if (!form.consent) {
+    alert("Veuillez accepter la politique de confidentialité.");
+    return;
+  }
 
-  const body = `
-Nom : ${form.name}
-Téléphone : ${form.phone}
-Email : ${form.email}
-Ville : ${form.city}
-Type de demande : ${form.requestType}
-Marque du poêle : ${form.stoveBrand || "Non précisée"}
-Urgence dépannage : ${form.urgent}
+  try {
+    const response = await fetch("https://ttf-backend-lkqe.onrender.com/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
 
-Message :
-${form.message}
-  `.trim();
+    const data = await response.json();
 
-  window.location.href = `mailto:benjamin.plessis@toutfeutoutflamme.eu?subject=${encodeURIComponent(
-    subject
-  )}&body=${encodeURIComponent(body)}`;
+    if (!response.ok || !data.success) {
+      throw new Error("Erreur formulaire");
+    }
+
+    window.fbq?.("track", "Lead");
+
+    alert("Votre demande a bien été envoyée.");
+
+    setForm({
+      name: "",
+      phone: "",
+      email: "",
+      city: "",
+      requestType: "Entretien annuel",
+      stoveBrand: "",
+      urgent: "Non",
+      message: "",
+      consent: false,
+    });
+  } catch (error) {
+    console.error(error);
+    alert("Une erreur est survenue. Vous pouvez aussi nous contacter par téléphone.");
+  }
 }
   return (
     <>
