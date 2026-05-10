@@ -70,7 +70,7 @@ export default function Header() {
             href={SUBSCRIBE_URL}
             className="inline-flex items-center gap-2 rounded-full bg-[#f77f00] px-5 py-3 text-sm font-black text-white transition hover:bg-[#ff8c1a]"
           >
-            Souscrire
+            Contrats
             <ChevronRight size={17} />
           </a>
         </div>
