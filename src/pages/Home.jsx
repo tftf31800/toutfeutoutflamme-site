@@ -67,12 +67,12 @@ export default function Home() {
       </p>
 
       <p className="scintillant mt-3 max-w-xl text-sm font-semibold uppercase tracking-[0.18em] text-white/60 md:text-base">
-        25 ans d'expérience en maintenance, dont 5 sur les appareils granulés. 
+        25 ans d'expérience en maintenance, dont 5 sur les appareils à granulés. 
       </p>
 
       <div className="mt-10 mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-white/80 backdrop-blur-xl">
         <BadgeCheck size={17} className="text-[#4cc9f0]" />
-        Saint-Gaudens 31800 • Intervention jusqu’à 100 km autour
+        Saint-Gaudens 31800 • Intervention jusqu’à ~ 100 km autour
       </div>
 
       <h1 className="max-w-5xl font-serif text-4xl font-black leading-[0.95] tracking-tight text-white md:text-7xl">
@@ -91,8 +91,9 @@ export default function Home() {
   href={RDV_URL}
   className="inline-flex items-center gap-2 rounded-2xl bg-blue-500 px-6 py-4 font-bold text-white"
 >
-          <FileSignature size={18} /> Prendre rendez-vous sans contrat
+          <CalendarDays size={22} /> Prendre rendez-vous sans contrat
         </a>
+        
       </div>
 
       <div className="mt-12 grid gap-5 sm:grid-cols-3">
@@ -135,11 +136,12 @@ export default function Home() {
               <li>✓ Rendez-vous priorisé</li>
             </ul>
           </div>
-          <div className="mt-8">
+        <div className="mt-8">
          <ButtonLink href={SUBSCRIBE_URL}>
          <FileSignature size={18} /> Contrat d’entretien
          </ButtonLink>
-        </div>
+         </div>
+        
         </div>
       </div>
     </motion.div>
@@ -171,7 +173,6 @@ export default function Home() {
   </a>
 </PageContainer>
 </section>
-      <LocalSeoPowerSection />
       {/* <ZonesSection /> */}
       {/* <FinalCta /> */}
       

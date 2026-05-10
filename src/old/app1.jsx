@@ -12,14 +12,12 @@ import CGV from "./pages/CGV";
 import PolitiqueConfidentialitePage from "./pages/PolitiqueConfidentialite";
 import CookiesPage from "./pages/Cookies";
 import CityPage from "./pages/CityPage";
-import RealisationsPage from "./pages/RealisationsPage";
 
 export default function App() {
   return (
     <BrowserRouter>
   <Layout>
     <Routes>
-      <Route path="/realisations" element={<RealisationsPage />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogPost />} />
       <Route path="/" element={<Home />} />

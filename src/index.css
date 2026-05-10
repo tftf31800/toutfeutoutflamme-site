@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @keyframes fadeSlide {
   from {
     opacity: 0;
@@ -341,4 +343,19 @@ code {
 
 .premium-badge:nth-child(3) {
   animation-delay: 2s;
+}
+
+@keyframes realisations-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 0.5rem));
+  }
+}
+
+.animate-realisations-scroll {
+  animation: realisations-scroll 45s linear infinite;
+  will-change: transform;
 }
