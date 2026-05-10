@@ -88,16 +88,10 @@ export default function Home() {
 
       <div className="mt-9 flex flex-col gap-4 sm:flex-row">
         <a
-  href={SUBSCRIBE_URL}
+  href={RDV_URL}
   className="inline-flex items-center gap-2 rounded-2xl bg-blue-500 px-6 py-4 font-bold text-white"
 >
-          <FileSignature size={18} /> Contrat d’entretien
-        </a>
-        <a
-  href={RDV_URL}
-  className="inline-flex items-center gap-2 rounded-2xl border border-white/20 px-6 py-4 font-bold text-white"
->
-          <CalendarDays size={18} /> Prendre rendez-vous
+          <FileSignature size={18} /> Prendre rendez-vous sans contrat
         </a>
       </div>
 
@@ -141,18 +135,19 @@ export default function Home() {
               <li>✓ Rendez-vous priorisé</li>
             </ul>
           </div>
-
+          <div className="mt-8">
          <ButtonLink href={SUBSCRIBE_URL}>
          <FileSignature size={18} /> Contrat d’entretien
          </ButtonLink>
-
-          <ButtonLink href={RDV_URL} variant="secondary">
-        <CalendarDays size={18} /> Prendre rendez-vous
-        </ButtonLink>
+        </div>
         </div>
       </div>
     </motion.div>
 </div>
+<ServicesSection />
+<StationTechniqueSection />
+<GoogleReviewsBlock />
+<SeoTextSection />
 <PageContainer className="text-center text-white">
   <p className="text-sm font-black uppercase tracking-[0.35em] text-[#4cc9f0]">
     Zones d’intervention
@@ -176,11 +171,6 @@ export default function Home() {
   </a>
 </PageContainer>
 </section>
-      <StationTechniqueSection />
-      <GoogleReviewsBlock />
-      <ServicesSection />
-      <FeaturedContract />
-      <SeoTextSection />
       <LocalSeoPowerSection />
       {/* <ZonesSection /> */}
       {/* <FinalCta /> */}
