@@ -1,3 +1,4 @@
+import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Tarifs from "./pages/Tarifs";
@@ -16,7 +17,9 @@ import RealisationsPage from "./pages/RealisationsPage";
 
 export default function App() {
   return (
-    <BrowserRouter>
+  <BrowserRouter>
+  <ScrollToTop />
+ 
   <Layout>
     <Routes>
       <Route path="/realisations" element={<RealisationsPage />} />
