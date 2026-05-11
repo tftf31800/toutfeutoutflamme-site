@@ -1,4 +1,12 @@
 {
+  "redirects": [
+    {
+      "source": "/ville/:slug",
+      "destination": "/entretien-poele-granules/:slug",
+      "permanent": true
+    }
+  ],
+
   "rewrites": [
     {
       "source": "/sitemap.xml",
