@@ -1,6 +1,6 @@
 export default function Vision() {
   return (
-    <div className="premium-blog-box">
+    <div className="relative sticky top-0 z-50 overflow-hidden border-b border-white/10 bg-white/[0.04] shadow-2xl shadow-black/20 backdrop-blur-3xl before:pointer-events-none before:absolute before:inset-0 before:bg-gradient-to-r before:from-white/[0.03] before:to-transparent">>
       <p className="premium-blog-eyebrow">Notre vision</p>
 
       <h2>
