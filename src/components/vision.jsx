@@ -37,4 +37,3 @@
    </a>.<li/>
 
     <a href="/contact">Contactez Tout Feu Tout Flamme</a>.
-`,
