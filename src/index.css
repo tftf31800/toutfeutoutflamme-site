@@ -359,3 +359,19 @@ code {
   animation: realisations-scroll 45s linear infinite;
   will-change: transform;
 }
+.premium-glass-box {
+  @apply relative overflow-hidden rounded-[2rem]
+  border border-white/10
+  bg-white/[0.04]
+  shadow-2xl shadow-black/20
+  backdrop-blur-3xl
+  p-8 md:p-10;
+}
+
+.premium-glass-box::before {
+  content: "";
+  @apply pointer-events-none absolute inset-0
+  bg-gradient-to-r
+  from-white/[0.03]
+  to-transparent;
+}
