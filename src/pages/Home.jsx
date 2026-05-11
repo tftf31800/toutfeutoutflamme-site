@@ -152,8 +152,10 @@ export default function Home() {
 <GoogleReviewsBlock />
         <div className="mt-8">
 <Vision />
+        </div>
            <div className="mt-8">
 <SeoTextSection />
+           </div>
 <PageContainer className="text-center text-white">
   <p className="text-sm font-black uppercase tracking-[0.35em] text-[#4cc9f0]">
     Zones d’intervention
