@@ -11,7 +11,7 @@ import StationTechniqueSection from "../components/StationTechniqueSection";
 import GoogleReviewsBlock from "../components/GoogleReviewsBlock";
 import SeoTextSection from "../components/SeoTextSection";
 import LocalSeoPowerSection from "../components/LocalSeoPowerSection";
-import vision from "../components/vision";
+import Vision from "../components/vision";
 import {
   SITE_URL,
   defaultKeywords,
@@ -151,7 +151,7 @@ export default function Home() {
 <StationTechniqueSection />
 <GoogleReviewsBlock />
         <div className="mt-8">
-<vision />
+<Vision />
            <div className="mt-8">
 <SeoTextSection />
 <PageContainer className="text-center text-white">
