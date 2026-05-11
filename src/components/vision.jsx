@@ -1,3 +1,4 @@
+export default function Vision ()
 <div class="premium-blog-box">
   <p class="premium-blog-eyebrow">Notre vision</p>
 
