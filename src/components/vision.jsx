@@ -36,4 +36,4 @@
     savoir plus sur les tarifs ?
    </a>.<li/>
 
-    <a href="/contact">Contactez Tout Feu Tout Flamme</a>.
+    <a href="/contact">Contactez Tout Feu Tout Flamme</a>
