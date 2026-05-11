@@ -9,27 +9,26 @@ export default function Vision() {
       </h2>
 
       <p>
-        Chez <strong>Tout Feu Tout Flamme</strong>, nous accompagnons aussi bien
-        les clients recherchant une solution économique et fiable que ceux souhaitant
-        investir dans un appareil premium silencieux, performant et durable.
+        Chez <strong>Tout Feu Tout Flamme</strong>, nous accompagnons aussi bien les clients possédant un poêle à granulés d’entrée de gamme que ceux équipés d’appareils premium plus haut de gamme.
       </p>
 
       <p>
-        Notre objectif n’est pas de pousser vers le modèle le plus cher,
-        mais vers le poêle réellement adapté à votre logement, votre confort et votre budget.
+        Chaque installation mérite le même niveau d’exigence, de soin et de fiabilité, quel que soit le modèle ou le budget d’origine. Notre objectif est de garantir un fonctionnement optimal, durable et sécurisé de votre appareil grâce à un entretien sérieux, des réglages adaptés et un dépannage efficace.
+
+
       </p>
 
       <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm font-semibold">
         <span className="premium-badge rounded-full border border-[#f77f00]/30 bg-[#f77f00]/10 px-4 py-2 text-[#ffb347] backdrop-blur">
-          ✔ Toutes gammes de prix
+          ✔ Entretien toutes marques
+        </span>
+
+        <span className="premium-badge rounded-full border border-[#f77f00]/30 bg-[#f77f00]/10 px-4 py-2 text-[#ffb347] backdrop-blur">
+          ✔ Dépannage & diagnostic
         </span>
 
         <span className="premium-badge rounded-full border border-[#f77f00]/30 bg-[#f77f00]/10 px-4 py-2 text-[#ffb347] backdrop-blur">
           ✔ Conseil personnalisé
-        </span>
-
-        <span className="premium-badge rounded-full border border-[#f77f00]/30 bg-[#f77f00]/10 px-4 py-2 text-[#ffb347] backdrop-blur">
-          ✔ Entretien & dépannage
         </span>
       </div>
 
