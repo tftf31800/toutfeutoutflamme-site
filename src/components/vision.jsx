@@ -1,6 +1,7 @@
 export default function Vision() {
   return (
-    <div className="premium-blog-box">
+    <div className="premium-glass-box premium-reveal">
+      <div className="relative z-10">
       <p className="premium-blog-eyebrow">Notre vision</p>
 
       <h2>
