@@ -14,6 +14,7 @@ import PolitiqueConfidentialitePage from "./pages/PolitiqueConfidentialite";
 import CookiesPage from "./pages/Cookies";
 import CityPage from "./pages/CityPage";
 import RealisationsPage from "./pages/RealisationsPage";
+import Partenariats from "./pages/Partenariats";
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
       <Route path="/entretien-poele-granules/:citySlug" element={<CityPage />} />
       <Route path="/zones-intervention" element={<ZonesIntervention />} />
       <Route path="/cookies" element={<CookiesPage />} />
+      <Route path="/partenariats" element={<Partenariats />} />
             </Routes>
   </Layout>
         <CookieBanner />
