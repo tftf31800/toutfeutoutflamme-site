@@ -130,7 +130,7 @@ export const blogPosts = [
     slug: "entretien-poele-granules-printemps",
     title: "Pourquoi faire l’entretien de son poêle à granulés au printemps à Saint-Gaudens ?",
     author: "Benjamin Plessis",
-    date: "1 avril 2026",
+    date: "2026-01-04",
     category: "Entretien",
     image: "/blog/entretien-printemps.webp",
     excerpt:
@@ -177,7 +177,7 @@ export const blogPosts = [
     slug: "comment-fonctionne-poele-granules-saint-gaudens",
     title: "Comment fonctionne un poêle à granulés ? Le guide de votre expert à Saint-Gaudens",
     author: "Benjamin Plessis",
-    date: "30 mars 2026",
+    date: "2026-03-05",
     category: "Conseils",
     image: "/blog/fonctionnement_poele_granules.webp",
     excerpt:
@@ -227,7 +227,7 @@ export const blogPosts = [
     slug: "entretien-poele-granules-saint-gaudens-prix",
     title: "Entretien poêle à granulés à Saint-Gaudens : prix, fréquence et conseils d’expert",
     author: "Benjamin Plessis",
-    date: "5 avril 2026",
+    date: "2026-05-04",
     category: "Entretien",
     image: "/blog/contrat-entretien-poele-granules.webp",
     excerpt:
@@ -269,7 +269,7 @@ export const blogPosts = [
     slug: "panne-poele-granules-hiver-saint-gaudens",
     title: "Poêle à granulés en panne en hiver : que faire à Saint-Gaudens ?",
     author: "Benjamin Plessis",
-    date: "4 avril 2026",
+    date: "2026-09-05",
     category: "Dépannage",
     image: "/blog/panne-poele.webp",
     excerpt:
@@ -309,7 +309,7 @@ export const blogPosts = [
     slug: "consommation-poele-granules-maison-saint-gaudens",
     title: "Combien consomme un poêle à granulés ? Calcul réel pour une maison à Saint-Gaudens",
     author: "Benjamin Plessis",
-    date: "3 avril 2026",
+    date: "2026-20-03",
     category: "Conseils",
     image: "/blog/consommation.webp",
     excerpt:
@@ -359,7 +359,7 @@ export const blogPosts = [
     slug: "ramonage-poele-granules-obligations-ars-occitanie",
   title: "Ramonage poêle à granulés : obligations ARS Occitanie, certificat et assurance",
   author: "Benjamin Plessis",
-  date: "6 avril 2026",
+  date: "2026-06-04",
   category: "Ramonage",
   image: "/blog/ramonage.webp",
   excerpt:
@@ -462,7 +462,7 @@ export const blogPosts = [
   slug: "point-de-rosee-poele-granules",
   title: "Le point de rosée : l’ennemi caché de votre poêle à granulés (et comment l’éviter)",
   author: "Benjamin Plessis",
-  date: "28 avril 2026",
+  date: "2026-03-03",
   category: "Conseils",
   image: "/blog/point-rosee.webp",
   excerpt:
@@ -519,7 +519,7 @@ export const blogPosts = [
   slug: "entretien-annuel-technicien-poele-granules",
   title: "Entretien annuel : que fait vraiment votre technicien ?",
   author: "Benjamin Plessis",
-  date: "26 mars 2026",
+  date: "2026-15-03",
   category: "Entretien",
   image: "/blog/technicien-poele.webp",
   excerpt:
@@ -572,7 +572,7 @@ export const blogPosts = [
   slug: "poele-granules-entree-gamme-vs-haut-gamme",
   title: "Poêle à granulés entrée de gamme vs haut de gamme : quelles vraies différences ?",
   author : "Benjamin Plessis",
-  date: "8 mai 2026",
+  date: "2026-08-05",
   category: "Conseils",
   image: "/blog/poele-entree-gamme-vs-haut-gamme.webp",
   excerpt:
