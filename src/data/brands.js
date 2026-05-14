@@ -30,6 +30,12 @@ export const brands = [
   },
 
   {
+    name: "Jotul",
+    logo: "/brands/jotul.webp",
+    url: "https://www.jotul.fr/produits/granules-de-bois",
+  },
+
+  {
     name: "MCZ",
     logo: "/brands/mcz.webp",
     url: "/entretien-poele-mcz",
@@ -104,7 +110,7 @@ export const brands = [
     url: "https://www.austroflamm.com/fr",
   },
 
-    {
+  {
     name: "Le guide du chauffage aux bois ",
     logo: "/brands/poele-net.webp",
     url: "https://www.poelesabois.com/",
