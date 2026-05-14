@@ -2,7 +2,7 @@ export const blogPosts = [
   {
   slug: "fabrication-pellets-granules-bois",
   title: "La fabrication des pellets : de la sciure au granulé de bois performant",
-  date: "3 mai 2026",
+  date: "2026-05-03",
   author: "Benjamin Plessis",
   updated: "2026-05-08", 
   category: "Conseils",
