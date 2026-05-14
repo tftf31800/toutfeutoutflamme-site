@@ -19,6 +19,22 @@
     {
       "source": "/:path*",
       "destination": "/index.html"
+
+      {
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/ville/saint-gaudens",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
     }
   ]
 }

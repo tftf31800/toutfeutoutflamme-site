@@ -2,10 +2,10 @@ export const seoFaqs = [
   {
     question: "L’entretien d’un poêle à granulés est-il obligatoire ?",
     answer:
-      "L’entretien annuel d’un poêle à granulés est indispensable pour conserver un fonctionnement sûr, limiter l’encrassement et préserver le rendement. Il est aussi généralement demandé par les assurances et les fabricants.",
+      "L’entretien annuel d’un poêle à granulés est indispensable pour conserver un fonctionnement sûr, limiter l’encrassement et préserver le rendement. Il est aussi obligatoire par périodes de 12 mois selon le décret n° 2023-641 du 20 juillet 2023 .",
   },
   {
-    question: "Le ramonage mécanique est-il compris dans vos contrats ?",
+    question: "Le ramonage mécanique est-il compris dans vos contrats ou l'entretien annuel hors contrat ?",
     answer:
       "Oui, les contrats d’entretien Tout Feu Tout Flamme comprennent le ramonage mécanique avec certificat, en complément de l’entretien complet de l’appareil.",
   },

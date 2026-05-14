@@ -37,6 +37,10 @@ export default function Footer() {
           <a href="/zones-intervention" className="transition hover:text-white">
             Zones d’intervention
           </a>
+
+           <a href="/FAQ" className="transition hover:text-white">
+            Une question ?
+          </a>
         </div>
       </div>
 

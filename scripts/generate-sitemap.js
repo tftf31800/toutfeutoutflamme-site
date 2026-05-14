@@ -8,11 +8,14 @@ const sitemap = new SitemapStream({
   hostname: "https://toutfeutoutflamme31.fr",
 });
 
+const today = new Date().toISOString();
+
 const staticRoutes = [
   "/",
   "/tarifs",
   "/contact",
   "/blog",
+  "/faqs",
   "/zones-intervention",
   "/galerie",
   "/avant-apres-entretien-poele-granules",
@@ -26,6 +29,7 @@ const staticRoutes = [
 staticRoutes.forEach((route) => {
   sitemap.write({
     url: route,
+    lastmod: today,
     changefreq: "weekly",
     priority: 0.9,
   });
@@ -34,6 +38,7 @@ staticRoutes.forEach((route) => {
 blogPosts.forEach((post) => {
   sitemap.write({
     url: `/blog/${post.slug}`,
+    lastmod: post.date || today,
     changefreq: "monthly",
     priority: 0.8,
   });
@@ -42,6 +47,7 @@ blogPosts.forEach((post) => {
 seoCities.forEach((city) => {
   sitemap.write({
     url: `/entretien-poele-granules/${city.slug}`,
+    lastmod: today,
     changefreq: "monthly",
     priority: 0.8,
   });
@@ -51,5 +57,4 @@ sitemap.end();
 
 streamToPromise(sitemap).then((data) => {
   fs.writeFileSync("./public/sitemap.xml", data.toString());
-  console.log("✅ Sitemap généré");
 });

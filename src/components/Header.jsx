@@ -63,6 +63,11 @@ export default function Header() {
                 <Link to="/partenariats" onClick={() => setOpenMenu(false)} className="block px-5 py-4 text-sm font-semibold text-white/70 transition hover:bg-white/10 hover:text-white">
                   Partenariats
                 </Link>
+
+                 <Link to="/FAQ" onClick={() => setMobileOpen(false)} className="block px-5 py-4 text-sm font-semibold text-white/70 transition hover:bg-white/10 hover:text-white">
+              Questions / réponses
+            </Link>
+
               </div>
             )}
           </div>
@@ -118,6 +123,10 @@ export default function Header() {
 
             <Link to="/partenariats" onClick={() => setMobileOpen(false)} className="text-white/80">
               Partenariats
+            </Link>
+
+             <Link to="/FAQ" onClick={() => setMobileOpen(false)} className="text-white/80">
+              Questions / réponses
             </Link>
 
             <a href={RDV_URL} className="mt-3 inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-5 py-3 font-bold text-white">
