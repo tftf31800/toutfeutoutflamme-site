@@ -60,13 +60,18 @@ export default function EntretienMCZ() {
           <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[#4cc9f0]/10 blur-3xl" />
 
           <div className="relative z-10 mx-auto max-w-4xl text-center">
-            <div className="mx-auto mb-8 flex h-28 w-56 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-xl">
+            <a
+  href="https://www.mcz.it/fr"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mx-auto mb-8 flex h-28 w-56 items-center justify-center rounded-[2rem] border border-white/10 bg-white/[0.045] p-6 backdrop-blur-xl transition hover:scale-[1.02] hover:border-white/30"
+>
   <img
     src="/brands/mcz.webp"
     alt="MCZ"
     className="max-h-16 object-contain opacity-95"
   />
-</div>
+</a>
 
             
 
