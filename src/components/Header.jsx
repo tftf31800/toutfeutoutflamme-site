@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CalendarDays, ChevronRight, ChevronDown, menu, x } from "lucide-react";
+import { CalendarDays, ChevronRight, ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const RDV_URL = "https://tout-feu-tout-flamme-2.gazoleen.com/rdv";
