@@ -32,7 +32,10 @@ export const brands = [
   {
     name: "MCZ",
     logo: "/brands/mcz.webp",
-    url: "https://www.mcz.it/fr",
+    url: "/entretien-poele-mcz",
+    servicePage: "/entretien-poele-mcz",
+
+    text: "Entretien & suivi technique",
   },
 
   {
@@ -99,6 +102,12 @@ export const brands = [
     name: "AustoFlamm",
     logo: "/brands/austroflamm.webp",
     url: "https://www.austroflamm.com/fr",
+  },
+
+    {
+    name: "Le guide du chauffage aux bois ",
+    logo: "/brands/poele-net.webp",
+    url: "https://www.poelesabois.com/",
   },
 
 

@@ -15,6 +15,7 @@ import CookiesPage from "./pages/Cookies";
 import CityPage from "./pages/CityPage";
 import RealisationsPage from "./pages/RealisationsPage";
 import Partenariats from "./pages/Partenariats";
+import EntretienMCZ from "./pages/entretien-poele-mcz";
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
       <Route path="/zones-intervention" element={<ZonesIntervention />} />
       <Route path="/cookies" element={<CookiesPage />} />
       <Route path="/partenariats" element={<Partenariats />} />
+      <Route path="/entretien-poele-mcz" element={<EntretienMCZ />} />
             </Routes>
   </Layout>
         <CookieBanner />
