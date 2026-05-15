@@ -200,7 +200,16 @@ export default function GoogleReviewsBlock() {
             rel="noreferrer"
             className="inline-flex items-center gap-3 rounded-full border border-[#f77f00]/25 bg-[#f77f00]/10 px-8 py-4 text-sm font-black uppercase tracking-[0.2em] text-[#f77f00] transition duration-300 hover:bg-[#f77f00] hover:text-black"
           >
-            Voir tous les avis Google
+            Laisser un avis
+          </a>
+
+          <a
+            href="https://www.google.com/maps/place/?q=place_id:ChIJRcuE-pEHdAIRqRuo_NjUq3s"
+            target="_blank"
+            rel="noreferrer"
+            className="ml-4 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.04] px-8 py-4 text-sm font-black uppercase tracking-[0.2em] text-white/70 transition duration-300 hover:border-white/20 hover:bg-white/[0.08] hover:text-white"
+          >
+            Voir tous les avis
           </a>
 
         </div>
