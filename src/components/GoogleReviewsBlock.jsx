@@ -87,7 +87,7 @@ export default function GoogleReviewsBlock() {
             return (
               <article
                 key={index}
-                className="group relative min-h-[420px] overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b1728]/80 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-[#f77f00]/30 hover:shadow-[0_0_40px_rgba(247,127,0,0.12)]"
+                className="group relative min-h-[340px] overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-b from-[#10233d]/95 to-[#081526]/95 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-[#f77f00]/30 hover:shadow-[0_0_40px_rgba(247,127,0,0.12)]"
               >
                 {/* glow */}
                 <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_top,rgba(247,127,0,0.12),transparent_55%)]" />
@@ -108,7 +108,7 @@ export default function GoogleReviewsBlock() {
                           {review.authorAttribution?.displayName || "Client Google"}
                         </p>
 
-                        <p className="mt-1 text-sm text-white/40">
+                        <p className="mt-1 text-sm text-white/55">
                           {review.relativePublishTimeDescription || "Avis Google"}
                         </p>
 
@@ -132,7 +132,7 @@ export default function GoogleReviewsBlock() {
                     {[...Array(review.rating || 5)].map((_, i) => (
                       <Star
                         key={i}
-                        size={16}
+                        size={14}
                         fill="#f77f00"
                         strokeWidth={1.5}
                         className="text-[#f77f00]"
