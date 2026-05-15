@@ -1,3 +1,4 @@
+import SEO from "../components/SEO";
 import { motion } from "framer-motion";
 import TrustItem from "../components/TrustItem";
 import ButtonLink from "../components/ButtonLink";
