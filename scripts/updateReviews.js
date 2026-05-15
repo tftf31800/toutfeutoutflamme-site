@@ -58,7 +58,7 @@ async function updateReviews() {
       git commit -m "Update Google reviews"
     `);
 
-    execSync(`git push origin main`);
+    execSync(`git push origin HEAD:main`);
 
     console.log("reviews.json push sur GitHub.");
   } catch (err) {
