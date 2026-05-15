@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+
 
 export default function GoogleReviewsBlock() {
   const [data, setData] = useState(null);
+  const [startIndex, setStartIndex] = useState(0);
 
   useEffect(() => {
     fetch("/reviews.json")
@@ -23,6 +25,26 @@ export default function GoogleReviewsBlock() {
           ))}
         </div>
       </section>
+    );
+  }
+  const visibleReviews =
+    data?.reviews?.slice(startIndex, startIndex + 3) || [];
+
+  function nextReviews() {
+    if (!data?.reviews) return;
+
+    setStartIndex((prev) =>
+      prev + 3 >= data.reviews.length ? 0 : prev + 3
+    );
+  }
+
+  function prevReviews() {
+    if (!data?.reviews) return;
+
+    setStartIndex((prev) =>
+      prev - 3 < 0
+        ? Math.max(data.reviews.length - 3, 0)
+        : prev - 3
     );
   }
 
@@ -70,9 +92,26 @@ export default function GoogleReviewsBlock() {
         </div>
 
         {/* GRID */}
+        <div className="mb-10 flex justify-center gap-4">
+
+          <button
+            onClick={prevReviews}
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[#0b1728]/80 text-white transition hover:border-[#f77f00]/40 hover:text-[#f77f00]"
+          >
+            <ChevronLeft size={20} />
+          </button>
+
+          <button
+            onClick={nextReviews}
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-[#0b1728]/80 text-white transition hover:border-[#f77f00]/40 hover:text-[#f77f00]"
+          >
+            <ChevronRight size={20} />
+          </button>
+
+        </div>
         <div className="grid auto-rows-fr gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-          {data.reviews?.slice(0, 6).map((review, index) => {
+          {visibleReviews.map((review, index) => {
 
             const text =
               review.text?.text ||
