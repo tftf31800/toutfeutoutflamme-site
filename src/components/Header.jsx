@@ -64,7 +64,7 @@ export default function Header() {
                   Partenariats
                 </Link>
 
-                 <Link to="/FAQ" onClick={() => setOpenMenu(false)} className="block px-5 py-4 text-sm font-semibold text-white/70 transition hover:bg-white/10 hover:text-white">
+                 <Link to="/FAQ" onClick={() => setMobileOpen(false)} className="block px-5 py-4 text-sm font-semibold text-white/70 transition hover:bg-white/10 hover:text-white">
               Questions / réponses
             </Link>
 

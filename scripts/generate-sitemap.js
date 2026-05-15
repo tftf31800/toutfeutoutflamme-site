@@ -58,3 +58,4 @@ sitemap.end();
 streamToPromise(sitemap).then((data) => {
   fs.writeFileSync("./public/sitemap.xml", data.toString());
 });
+

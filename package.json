@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
   "dev": "vite",
+  "build": "npm run generate:sitemap && npm run indexnow && vite build",
+  "preview": "vite preview",
   "generate:sitemap": "node scripts/generate-sitemap.js",
-  "build": "npm run generate:sitemap && vite build",
-  "lint": "eslint .",
-  "preview": "vite preview"
+  "indexnow": "node scripts/indexnow.js"
 },
   "dependencies": {
     "framer-motion": "^12.38.0",
