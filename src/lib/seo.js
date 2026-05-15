@@ -69,6 +69,11 @@ export function buildLocalBusinessSchema(url = SITE_URL) {
       addressLocality: CITY,
       addressCountry: "FR",
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "13",
+    },
     areaServed: seoCities.map((city) => ({
       "@type": "City",
       name: city.name,
