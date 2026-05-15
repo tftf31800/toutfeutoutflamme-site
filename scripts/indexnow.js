@@ -15,7 +15,9 @@ if (!fs.existsSync(sitemapPath)) {
 
 const sitemap = fs.readFileSync(sitemapPath, "utf8");
 
-const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
+const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)]
+  .map((m) => m[1])
+  .filter((url) => url.startsWith(SITE_URL));
 
 if (!urls.length) {
   console.log("IndexNow: aucune URL trouvée.");
@@ -30,7 +32,6 @@ const response = await fetch("https://www.bing.com/indexnow", {
   body: JSON.stringify({
     host: HOST,
     key: KEY,
-    keyLocation: KEY_LOCATION,
     urlList: urls,
   }),
 });
