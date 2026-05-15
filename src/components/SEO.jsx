@@ -3,7 +3,7 @@ import {
   SITE_URL,
   COMPANY,
   routeToPath,
-  buildLocalBusinessSchema,
+  buildSeoGraph,
 } from "../lib/seo";
 
 export default function SEO({ title, description, route = "/", keywords = [], schema }) {
@@ -49,7 +49,7 @@ export default function SEO({ title, description, route = "/", keywords = [], sc
     canonical.href = canonicalUrl;
 
     // SCHEMA JSON-LD
-    const schemaData = schema || buildLocalBusinessSchema(canonicalUrl);
+    const schemaData = schema || buildSeoGraph(canonicalUrl);
     let script = document.getElementById("local-business-schema");
     if (!script) {
       script = document.createElement("script");

@@ -113,9 +113,55 @@ export function buildFaqSchema(faqs = seoFaqs) {
   };
 }
 
+export function buildBreadcrumbSchema(route = "/") {
+  const path = routeToPath(route);
+
+  const labels = {
+    "/": "Accueil",
+    "/tarifs": "Tarifs",
+    "/contact": "Contact",
+    "/blog": "Blog",
+    "/zones-intervention": "Zones d’intervention",
+    "/realisations": "Réalisations",
+    "/partenariats": "Partenariats",
+    "/faq": "FAQ",
+    "/cgv": "CGV",
+    "/mentions-legales": "Mentions légales",
+    "/politique-confidentialite": "Politique de confidentialité",
+    "/cookies": "Cookies",
+  };
+
+  const itemListElement = [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Accueil",
+      item: SITE_URL,
+    },
+  ];
+
+  if (path !== "/") {
+    itemListElement.push({
+      "@type": "ListItem",
+      position: 2,
+      name: labels[path] || path.replace("/", "").replaceAll("-", " "),
+      item: `${SITE_URL}${path}`,
+    });
+  }
+
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement,
+  };
+}
+
 export function buildSeoGraph(url, faqs = seoFaqs) {
   return {
     "@context": "https://schema.org",
-    "@graph": [buildLocalBusinessSchema(url), buildFaqSchema(faqs)],
+    "@graph": [
+      buildLocalBusinessSchema(url),
+      buildFaqSchema(faqs),
+      buildBreadcrumbSchema(routeToPath(new URL(url).pathname)),
+    ],
   };
 }
