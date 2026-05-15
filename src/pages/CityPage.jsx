@@ -16,9 +16,27 @@ export default function CityPage() {
     );
   }
 
-  const nearbyCities = seoCities
-    .filter((c) => c.slug !== city.slug)
-    .slice(0, 8);
+  const intros = {
+    comminges: `Tout Feu Tout Flamme intervient à ${city.name} pour l’entretien, le dépannage et le ramonage mécanique de poêles à granulés avec une approche soignée adaptée aux appareils du Comminges.`,
+
+    toulouse: `Entretien et dépannage de poêles à granulés à ${city.name} pour particuliers recherchant un suivi sérieux, des interventions propres et un fonctionnement optimal de leur appareil.`,
+
+    montagne: `Intervention sur poêles à granulés à ${city.name} avec une attention particulière portée aux appareils fortement sollicités durant la période hivernale.`,
+
+    gers: `Tout Feu Tout Flamme accompagne les utilisateurs de poêles à granulés à ${city.name} pour l’entretien annuel, le ramonage mécanique et le dépannage toutes marques.`,
+
+    ariege: `Entretien, ramonage mécanique et dépannage de poêles à granulés à ${city.name} avec intervention locale soignée et adaptée aux besoins des particuliers.`,
+  };
+
+  const cityIntro =
+    intros[city.zone] ||
+    `Entretien et dépannage de poêles à granulés à ${city.name}.`;
+
+  const nearbyCities = city.nearby
+    ? city.nearby
+        .map((slug) => seoCities.find((c) => c.slug === slug))
+        .filter(Boolean)
+    : seoCities.filter((c) => c.slug !== city.slug).slice(0, 8);
 
   return (
     <>
@@ -39,8 +57,7 @@ export default function CityPage() {
           </h1>
 
           <p className="mt-8 max-w-4xl text-center text-xl leading-9 text-white/80">
-            Tout Feu Tout Flamme intervient à {city.name} pour l’entretien,
-            le dépannage et le ramonage mécanique de poêles à granulés toutes marques.
+            {cityIntro}
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
