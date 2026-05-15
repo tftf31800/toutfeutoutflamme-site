@@ -1,7 +1,9 @@
 import fs from "fs";
+import { execSync } from "child_process";
 
 const API_KEY = process.env.GOOGLE_API_KEY;
 const PLACE_ID = process.env.GOOGLE_PLACE_ID;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 
 async function updateReviews() {
   try {
@@ -36,7 +38,29 @@ async function updateReviews() {
       JSON.stringify(output, null, 2)
     );
 
-    console.log("Avis Google mis à jour.");
+    console.log("reviews.json généré.");
+
+    execSync(`
+      git config --global user.email "bot@render.com"
+    `);
+
+    execSync(`
+      git config --global user.name "Render Bot"
+    `);
+
+    execSync(`
+      git remote set-url origin https://${GITHUB_TOKEN}@github.com/tftf31800/toutfeutoutflamme-site.git
+    `);
+
+    execSync(`git add public/reviews.json`);
+
+    execSync(`
+      git commit -m "Update Google reviews"
+    `);
+
+    execSync(`git push origin main`);
+
+    console.log("reviews.json push sur GitHub.");
   } catch (err) {
     console.error(err);
     process.exit(1);
