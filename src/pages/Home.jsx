@@ -34,13 +34,13 @@ const RDV_URL = "https://tout-feu-tout-flamme-2.gazoleen.com/rdv";
 export default function Home() {
   return (
     <>
-      {/* <SEO
+      <SEO
         route="/"
         title="Entretien poêle à granulés Saint-Gaudens 31800 | Tout Feu Tout Flamme"
         description="Tout Feu Tout Flamme intervient à Saint-Gaudens 31800 et dans un rayon de 100 km pour l’entretien, le ramonage mécanique, le dépannage et les contrats de poêles à granulés."
         keywords={defaultKeywords}
         schema={buildSeoGraph(`${SITE_URL}/`, seoFaqs)}
-      /> */}
+      />
 
 
       {/* CONTENU */}
