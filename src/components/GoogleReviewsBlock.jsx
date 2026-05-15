@@ -70,7 +70,7 @@ export default function GoogleReviewsBlock() {
         </div>
 
         {/* GRID */}
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid auto-rows-fr gap-8 md:grid-cols-2 xl:grid-cols-3">
 
           {data.reviews?.slice(0, 6).map((review, index) => {
 
@@ -87,7 +87,7 @@ export default function GoogleReviewsBlock() {
             return (
               <article
                 key={index}
-                className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-[#f77f00]/30 hover:bg-white/[0.07]"
+                className="group relative min-h-[420px] overflow-hidden rounded-[2rem] border border-white/10 bg-[#0b1728]/80 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-[#f77f00]/30 hover:shadow-[0_0_40px_rgba(247,127,0,0.12)]"
               >
                 {/* glow */}
                 <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_top,rgba(247,127,0,0.12),transparent_55%)]" />
@@ -111,7 +111,8 @@ export default function GoogleReviewsBlock() {
                         <p className="mt-1 text-sm text-white/40">
                           {review.relativePublishTimeDescription || "Avis Google"}
                         </p>
-                        <span className="mt-1 inline-block text-xs font-semibold uppercase tracking-[0.15em] text-[#4cc9f0]">
+
+                        <span className="mt-1 inline-block text-xs font-semibold uppercase tracking-[0.15em] text-white/35">
                           Google Verified
                         </span>
                       </div>
@@ -141,7 +142,7 @@ export default function GoogleReviewsBlock() {
                   </div>
 
                   {/* TEXT */}
-                  <p className="leading-relaxed text-white/72">
+                  <p className="text-left leading-8 text-white/78">
                     {shortText}
                   </p>
 
@@ -155,7 +156,7 @@ export default function GoogleReviewsBlock() {
         <div className="mt-16 text-center">
 
           <a
-            href="https://g.page/r/CakbqPzY1Kt7EAE/review"
+            href="https://search.google.com/local/writereview?placeid=ChIJRcuE-pEHdAIRqRuo_NjUq3s"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-3 rounded-full border border-[#f77f00]/25 bg-[#f77f00]/10 px-8 py-4 text-sm font-black uppercase tracking-[0.2em] text-[#f77f00] transition duration-300 hover:bg-[#f77f00] hover:text-black"
@@ -168,3 +169,4 @@ export default function GoogleReviewsBlock() {
     </section>
   );
 }
+
