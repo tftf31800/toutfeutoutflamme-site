@@ -3,7 +3,7 @@ import fs from "fs";
 const HOST = "toutfeutoutflamme31.fr";
 const SITE_URL = `https://${HOST}`;
 
-const KEY = process.env.INDEXNOW_KEY || "1bdc5bc4473c4336a416776852d44fea";
+const KEY = process.env.INDEXNOW_KEY || "17ebe1b853654b0991141f8c127c000a";
 const KEY_LOCATION = `${SITE_URL}/${KEY}.txt`;
 
 const sitemapPath = "public/sitemap.xml";
