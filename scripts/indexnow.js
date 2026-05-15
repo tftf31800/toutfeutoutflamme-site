@@ -22,7 +22,7 @@ if (!urls.length) {
   process.exit(0);
 }
 
-const response = await fetch("https://api.indexnow.org/indexnow", {
+const response = await fetch("https://www.bing.com/indexnow", {
   method: "POST",
   headers: {
     "Content-Type": "application/json; charset=utf-8",
