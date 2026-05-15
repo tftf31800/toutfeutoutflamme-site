@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
-export default function GoogleReviews() {
+export default function GoogleReviewsBlock() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -11,91 +11,158 @@ export default function GoogleReviews() {
       .catch(console.error);
   }, []);
 
-  if (!data) return null;
+  if (!data) {
+    return (
+      <section className="py-28">
+        <div className="mx-auto grid max-w-7xl gap-8 px-5 md:grid-cols-2 xl:grid-cols-3">
+          {[...Array(3)].map((_, i) => (
+            <div
+              key={i}
+              className="h-[320px] animate-pulse rounded-[2rem] border border-white/10 bg-white/[0.04]"
+            />
+          ))}
+        </div>
+      </section>
+    );
+  }
 
   return (
-    <section className="relative overflow-hidden py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(247,127,0,0.12),transparent_35%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(76,201,240,0.08),transparent_35%)]" />
+    <section className="relative overflow-hidden py-28">
+      {/* BACKGROUND FX */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(247,127,0,0.12),transparent_32%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(76,201,240,0.08),transparent_34%)]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-5">
-        <div className="mb-14 text-center">
+
+        {/* HEADER */}
+        <div className="mb-16 text-center">
           <p className="mb-4 text-sm font-black uppercase tracking-[0.35em] text-[#f77f00]">
-            Avis clients
+            Avis Google
           </p>
 
           <h2 className="text-4xl font-black text-white md:text-5xl">
             Ils nous font confiance
           </h2>
 
-          <div className="mt-6 flex items-center justify-center gap-3">
-            <div className="flex text-[#f77f00]">
+          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
+
+            <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
                   size={22}
                   fill="#f77f00"
                   strokeWidth={1.5}
+                  className="text-[#f77f00]"
                 />
               ))}
             </div>
 
-            <span className="text-2xl font-black text-white">
+            <div className="text-3xl font-black text-white">
               {data.rating}
-            </span>
+            </div>
 
-            <span className="text-white/60">
-              ({data.totalReviews} avis Google)
-            </span>
+            <div className="text-white/50">
+              ({data.totalReviews} avis)
+            </div>
+
           </div>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {data.reviews?.slice(0, 6).map((review, index) => (
-            <div
-              key={index}
-              className="rounded-[2rem] border border-white/10 bg-white/[0.05] p-8 shadow-2xl shadow-black/20 backdrop-blur-xl"
-            >
-              <div className="mb-5 flex items-center justify-between">
-                <div>
-                  <p className="font-bold text-white">
-                    {review.authorAttribution?.displayName ||
-                      review.author_name}
-                  </p>
+        {/* GRID */}
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
 
-                  <p className="text-sm text-white/40">
-                    Avis Google
-                  </p>
-                </div>
+          {data.reviews?.slice(0, 6).map((review, index) => {
 
-                <div className="flex text-[#f77f00]">
-                  {[...Array(review.rating || 5)].map((_, i) => (
-                    <Star
-                      key={i}
-                      size={16}
-                      fill="#f77f00"
-                      strokeWidth={1.5}
+            const text =
+              review.text?.text ||
+              review.originalText?.text ||
+              "";
+
+            const shortText =
+              text.length > 260
+                ? text.slice(0, 260) + "..."
+                : text;
+
+            return (
+              <article
+                key={index}
+                className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-500 hover:-translate-y-1 hover:border-[#f77f00]/30 hover:bg-white/[0.07]"
+              >
+                {/* glow */}
+                <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:opacity-100 bg-[radial-gradient(circle_at_top,rgba(247,127,0,0.12),transparent_55%)]" />
+
+                <div className="relative z-10">
+
+                  {/* TOP */}
+                  <div className="mb-6 flex items-start justify-between gap-4">
+
+                    <div className="flex items-center gap-4">
+
+                      <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-white/10 text-lg font-black text-white">
+                        {review.authorAttribution?.displayName?.charAt(0) || "G"}
+                      </div>
+
+                      <div>
+                        <p className="font-bold text-white">
+                          {review.authorAttribution?.displayName || "Client Google"}
+                        </p>
+
+                        <p className="mt-1 text-sm text-white/40">
+                          {review.relativePublishTimeDescription || "Avis Google"}
+                        </p>
+                        <span className="mt-1 inline-block text-xs font-semibold uppercase tracking-[0.15em] text-[#4cc9f0]">
+                          Google Verified
+                        </span>
+                      </div>
+
+                    </div>
+
+                    <Quote
+                      size={34}
+                      className="text-[#f77f00]/30"
                     />
-                  ))}
-                </div>
-              </div>
 
-              <p className="leading-relaxed text-white/75">
-                {review.text?.text || review.text}
-              </p>
-            </div>
-          ))}
+                  </div>
+
+                  {/* STARS */}
+                  <div className="mb-5 flex items-center gap-1">
+
+                    {[...Array(review.rating || 5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        size={16}
+                        fill="#f77f00"
+                        strokeWidth={1.5}
+                        className="text-[#f77f00]"
+                      />
+                    ))}
+
+                  </div>
+
+                  {/* TEXT */}
+                  <p className="leading-relaxed text-white/72">
+                    {shortText}
+                  </p>
+
+                </div>
+              </article>
+            );
+          })}
         </div>
 
-        <div className="mt-14 text-center">
+        {/* CTA */}
+        <div className="mt-16 text-center">
+
           <a
-            href="https://g.page/r/YOUR_LINK/review"
+            href="https://g.page/r/CakbqPzY1Kt7EAE/review"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-3 rounded-full border border-[#f77f00]/30 bg-[#f77f00]/10 px-8 py-4 text-sm font-bold uppercase tracking-[0.2em] text-[#f77f00] transition hover:bg-[#f77f00] hover:text-black"
+            className="inline-flex items-center gap-3 rounded-full border border-[#f77f00]/25 bg-[#f77f00]/10 px-8 py-4 text-sm font-black uppercase tracking-[0.2em] text-[#f77f00] transition duration-300 hover:bg-[#f77f00] hover:text-black"
           >
             Voir tous les avis Google
           </a>
+
         </div>
       </div>
     </section>
