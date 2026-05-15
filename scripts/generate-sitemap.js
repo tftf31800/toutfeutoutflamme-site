@@ -29,27 +29,27 @@ const staticRoutes = [
 staticRoutes.forEach((route) => {
   sitemap.write({
     url: route,
-    lastmod: today,
     changefreq: "weekly",
     priority: 0.9,
+    lastmod: new Date().toISOString(),
   });
 });
 
 blogPosts.forEach((post) => {
   sitemap.write({
     url: `/blog/${post.slug}`,
-    lastmod: post.date || today,
     changefreq: "monthly",
     priority: 0.8,
+    lastmod: new Date().toISOString(),
   });
 });
 
 seoCities.forEach((city) => {
   sitemap.write({
-    url: `/entretien-poele-granules/${city.slug}`,
-    lastmod: today,
+    url: `/entretien-poele-granules-${city.slug}`,
     changefreq: "monthly",
-    priority: 0.8,
+    priority: 0.7,
+    lastmod: new Date().toISOString(),
   });
 });
 
