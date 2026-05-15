@@ -52,12 +52,13 @@ export function routeToPath(route) {
 export function buildLocalBusinessSchema(url = SITE_URL) {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HomeAndConstructionBusiness",
     name: COMPANY,
     url,
     telephone: PHONE,
     email: EMAIL,
-    image: `${SITE_URL}/Logoweb.png`,
+    image: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/logo.png`,
     priceRange: "€€",
     description:
       "Entretien, ramonage mécanique et dépannage de poêles à granulés à Saint-Gaudens 31800 et dans un rayon de 100 km.",
@@ -68,32 +69,50 @@ export function buildLocalBusinessSchema(url = SITE_URL) {
       addressLocality: CITY,
       addressCountry: "FR",
     },
-    areaServed: seoCities.map((city) => ({ "@type": "City", name: city.name })),
+    areaServed: seoCities.map((city) => ({
+      "@type": "City",
+      name: city.name,
+    })),
     makesOffer: [
-  {
-    "@type": "Offer",
-    itemOffered: {
-      "@type": "Service",
-      name: "Entretien poêle à granulés",
-    },
-  },
-  {
-    "@type": "Offer",
-    itemOffered: {
-      "@type": "Service",
-      name: "Ramonage mécanique poêle à granulés",
-    },
-  },
-  {
-    "@type": "Offer",
-    itemOffered: {
-      "@type": "Service",
-      name: "Dépannage poêle à granulés",
-    },
-  },
-],
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Entretien poêle à granulés",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Ramonage mécanique poêle à granulés",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Dépannage poêle à granulés",
+        },
+      },
+    ],
   };
 }
+
+export function buildFaqSchema(faqs = seoFaqs) {
+  return {
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
 export function buildSeoGraph(url, faqs = seoFaqs) {
   return {
     "@context": "https://schema.org",
