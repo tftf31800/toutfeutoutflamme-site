@@ -37,3 +37,4 @@ const response = await fetch("https://www.bing.com/indexnow", {
 
 console.log(`IndexNow: ${response.status} - ${response.statusText}`);
 console.log(`IndexNow: ${urls.length} URLs envoyées.`);
+console.log(await response.text());
