@@ -49,7 +49,7 @@ async function updateReviews() {
     `);
 
     execSync(`
-      git remote set-url origin https://${GITHUB_TOKEN}@github.com/tftf31800/toutfeutoutflamme-site.git
+      git remote add origin https://${GITHUB_TOKEN}@github.com/tftf31800/toutfeutoutflamme-site.git
     `);
 
     execSync(`git add public/reviews.json`);
