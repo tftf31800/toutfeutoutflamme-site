@@ -29,13 +29,13 @@ export default function MentionsLegalesPage() {
         <div className="bg-transparent p-8 rounded-2xl border border-white/10 shadow-xl">
           <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Éditeur du site</h2>
           <p className="text-gray-300 leading-relaxed">
-            <strong>Tout Feu Tout Flamme</strong><br />
+            <strong>TFTF Studio</strong><br />
             Benjamin Plessis – Entrepreneur individuel<br />
             2045 rue de la vieille serre<br />
             31800 Saint-Gaudens<br /><br />
 
             Téléphone : 07 61 64 77 65<br />
-            Email : benjamin.plessis@toutfeutoutflamme.eu<br />
+            Email : contact@tftfstudio.fr<br />
             SIREN : 752 185 934
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function MentionsLegalesPage() {
           <h2 className="text-2xl font-semibold mb-4 text-white tracking-wide">Direction de la publication</h2>
           <p className="text-gray-300">
             Responsable : Benjamin Plessis<br />
-            Email : tftf31800@gmail.com
+            Email : contact@tftfstudio.fr
           </p>
         </div>
 
